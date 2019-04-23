@@ -37,7 +37,7 @@ Complex Front-end devstack for creating HTML, CSS, JS templates.
     │   ├── js                      # Compiled, concated, minified JS files
     │   └── index.html              # Compiled html
     ├── LICENSE
-    ├── package.json                # Initialization of node_modules
+    ├── package.json                # Initialization of node_modules packages
     ├── package-lock.json
     ├── gulpfile.js                 # Tasks for automatization
     └── README.md
@@ -79,7 +79,7 @@ exports.concatScripts = concatScripts;
 exports.htmlValidate = htmlValidate;
 exports.jsValidate = jsValidate;
 
-// complex
+// define complex tasks
 exports.production = production;
 exports.download = download;
 exports.test = test;
