@@ -1,6 +1,7 @@
 # Frontend-devstack
 Complex Front-end devstack for creating HTML, CSS, JS templates.
 
+
 ## Project structure
    
     .
@@ -40,3 +41,49 @@ Complex Front-end devstack for creating HTML, CSS, JS templates.
     ├── package-lock.json
     ├── gulpfile.js                 # Tasks for automatization
     └── README.md
+
+
+## Automatization with gulp
+```javascript
+// define simple tasks
+// images
+exports.images = images;
+exports.imagesMinifyClassic = imagesMinifyClassic;
+exports.imagesMinifyTiny = imagesMinifyTiny;
+exports.imagesResize = imagesResize;
+
+// fonts
+exports.webfonts = webfonts;
+exports.iconfonts = iconfonts;
+
+// scripts
+exports.scriptsDevelopment = scriptsDevelopment;
+exports.scriptsProduction = scriptsProduction;
+exports.babelCompile = babelCompile;
+
+// styles
+exports.stylesDevelopment = stylesDevelopment;
+exports.stylesProduction = stylesProduction;
+exports.unusedStyles = unusedStyles;
+
+// jade
+exports.jade = jade;
+
+// download, concat resources
+exports.downloadStyles = downloadStyles;
+exports.concatStyles = concatStyles;
+exports.downloadScripts = downloadScripts;
+exports.concatScripts = concatScripts;
+
+// validate
+exports.htmlValidate = htmlValidate;
+exports.jsValidate = jsValidate;
+
+// complex
+exports.production = production;
+exports.download = download;
+exports.test = test;
+exports.build = build;
+exports.watch = watch;
+exports.default = watch;
+```
