@@ -4,22 +4,39 @@ Complex Front-end devstack for creating HTML, CSS, JS templates.
 ## Project structure
    
     .
-    ├── assets                   # Assets - Images, webfonts, iconfonts, favicon
-    │   ├── favicon              # Favicon of website
-    │   ├── iconfonts            # icons generate from icomoon (old, actually used directly svg in html)
-    │   ├── images               # Images used in website
-    │   └── webfonts             # Folder for webfonts of website
-    ├── dev                      # Development - PUG, SASS, JS
-    │   ├── js                   # JS files
-    │   ├── sass                 # Sass files
-    │   └── template             # Pug files
-    ├── public                   # Compiled files - production
-    │   ├── css                  # Compiled minify css files
-    │   ├── images               # Compiled, compress images
-    │   ├── js                   # Compiled, contacted, minified JS files
-    │   └── index.html           # Compiled html
+    ├── assets                      # Assets - Images, webfonts, iconfonts, favicon
+    │   ├── favicon                 # Favicon of website
+    │   ├── iconfonts               # icons generate from icomoon (old, actually used directly svg in html)
+    │   ├── images                  # Images used in website
+    │   └── webfonts                # Folder for webfonts of website
+    ├── dev                         # Development - PUG, SCSS, JS
+    │   ├── js                      # JS files
+    │   │   ├── components          # JS components - accordion, tabs, modal, navigation, google-map, select, range-slider,...
+    │   │   ├── parts               # JS parts - small js scripts
+    │   │   └── core.js             # Core.js for include all scripts files
+    │   ├── sass                    # Sass files
+    │   │   ├── base                # Default css settings
+    │   │   ├── components          # Styles for components
+    |   |   |   ├── ...
+    │   │   ├── helpers             # Scss Helpers - class, form, animate, typography, print, variables, fonts, debug, mixins,...
+    |   |   |   ├── ...
+    │   │   ├── layout              # Styles for header, footer & content
+    │   │   ├── overrides           # Overides of used libraries
+    │   └── └── app.scss            # App.scss for include all scss files
+    │   ├── template                # Pug files
+    │   │   ├── components          # All templates components
+    |   |   |   ├── ...
+    │   │   ├── layout              # Template for header & footer
+    │   │   ├── main                # Template for head, scripts, template mixins
+    │   │   ├── social              # Social templates - facebook, disqus, twitter
+    │   └── └── index.html          # Specific page
+    ├── public                      # Compiled files - production
+    │   ├── css                     # Compiled minify css files
+    │   ├── images                  # Compiled, compress images
+    │   ├── js                      # Compiled, concated, minified JS files
+    │   └── index.html              # Compiled html
     ├── LICENSE
-    ├── package.json             # Initialization of node_modules
+    ├── package.json                # Initialization of node_modules
     ├── package-lock.json
-    ├── gulpfile.js              # Tasks for automatization
+    ├── gulpfile.js                 # Tasks for automatization
     └── README.md
