@@ -23,7 +23,7 @@ Complex Front-end devstack for creating HTML, CSS, JS templates.
     |   |   |   ├── ...
     │   │   ├── layout              # Styles for header, footer & content
     │   │   ├── overrides           # Overides of used libraries
-    │   └── └── app.scss            # App.scss for include all scss files
+    │   │   └── app.scss            # App.scss for include all scss files
     │   ├── template                # Pug files
     │   │   ├── components          # All templates components
     |   |   |   ├── ...
