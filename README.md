@@ -44,46 +44,24 @@ Complex Front-end devstack for creating HTML, CSS, JS templates.
 
 
 ## Automatization with gulp
-```javascript
-// define simple tasks
-// images
-exports.images = images;
-exports.imagesMinifyClassic = imagesMinifyClassic;
-exports.imagesMinifyTiny = imagesMinifyTiny;
-exports.imagesResize = imagesResize;
 
-// fonts
-exports.webfonts = webfonts;
-exports.iconfonts = iconfonts;
+### Task - styles
+    - compile sass, init sourcemaps, use autoprefixer, minify css, remove unused css
 
-// scripts
-exports.scriptsDevelopment = scriptsDevelopment;
-exports.scriptsProduction = scriptsProduction;
-exports.babelCompile = babelCompile;
+### Task - scripts
+    - concat script files, init sourcemaps, use babel compiler
 
-// styles
-exports.stylesDevelopment = stylesDevelopment;
-exports.stylesProduction = stylesProduction;
-exports.unusedStyles = unusedStyles;
+### Task - pug
+    - compile pug files, pretty html files
 
-// jade
-exports.jade = jade;
+### Task - images
+    - copy files, compress size, create responsive sizes
 
-// download, concat resources
-exports.downloadStyles = downloadStyles;
-exports.concatStyles = concatStyles;
-exports.downloadScripts = downloadScripts;
-exports.concatScripts = concatScripts;
+### Task - webfonts, iconfonts, favicon
+    - copy files to production folder
 
-// validate
-exports.htmlValidate = htmlValidate;
-exports.jsValidate = jsValidate;
+### Task - validate
+    - validate html & JS files
 
-// define complex tasks
-exports.production = production;
-exports.download = download;
-exports.test = test;
-exports.build = build;
-exports.watch = watch;
-exports.default = watch;
-```
+### Task - download & concat resources
+    - download & concat plugins
