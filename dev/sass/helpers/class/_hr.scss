@@ -1,0 +1,43 @@
+/* HR helper */
+
+.hr-line {
+    margin: 30px 0;
+    height: 1px;
+    background-color: $color-gray-light;
+}
+
+.hr-line-small{
+	margin: 10px 0;
+}
+
+.hr-line-normal{
+	margin: 20px 0;
+}
+
+.hr-line-big{
+	margin: 20px 0;
+}
+
+.hr-line-width-small{
+	width: 100px;
+}
+
+.hr-line-width-normal{
+	width: 200px;
+}
+
+.hr-line-width-big{
+	width: 300px;
+}
+
+.hr-line-center{
+	margin: 0 auto;
+}
+
+.hr-line-black{
+	background-color: $color-black-normal;
+}
+
+.hr-line-gray{
+	background-color: $color-gray-light;
+}

@@ -1,0 +1,57 @@
+/* Placeholder helpers */
+
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #817f7f;
+}
+
+input::-moz-input-placeholder,
+select::-moz-input-placeholder,
+textarea::-moz-input-placeholder {
+    color: #817f7f;
+}
+
+input:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #817f7f;
+}
+
+
+.input-white input::-webkit-input-placeholder,
+.input-white select::-webkit-input-placeholder,
+.input-white textarea::-webkit-input-placeholder {
+    color: white;
+}
+
+.input-white input::-moz-input-placeholder,
+.input-white select::-moz-input-placeholder,
+.input-white textarea::-moz-input-placeholder {
+    color: white;
+}
+
+.input-white input:-ms-input-placeholder,
+.input-white select:-ms-input-placeholder,
+.input-white textarea:-ms-input-placeholder {
+    color: white;
+}
+
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder{
+    color: transparent;
+    opacity: 1;
+}
+
+input:focus::-moz-input-placeholder,
+textarea:focus::-moz-input-placeholder{
+    color: transparent;
+    opacity: 1;
+}
+
+input:focus:-moz-input-placeholder,
+textarea:focus:-moz-input-placeholder{
+    color: transparent;
+    opacity: 1;
+}

@@ -1,0 +1,49 @@
+/* Float helpers */
+
+.float-0 {
+	float: none;
+}
+
+.float-r {
+	float: right;
+}
+
+.float-l {
+	float: left;
+}
+
+@include bp(rev-large) {
+	.float-lg-r {
+		float: right;
+	}
+	.float-lg-l {
+		float: left;
+	}
+}
+
+@include bp(rev-medium) {
+	.float-md-l {
+		float: left;
+	}
+	.float-md-r {
+		float: right;
+	}
+}
+
+@include bp(rev-small) {
+	.float-sm-l {
+		float: left;
+	}
+	.float-sm-r {
+		float: right;
+	}
+}
+
+@include bp(rev-xsmall) {
+	.float-xs-l {
+		float: left;
+	}
+	.float-xs-r {
+		float: right;
+	}
+}

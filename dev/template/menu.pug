@@ -1,0 +1,37 @@
+doctype html
+html(lang="")
+	// Head 
+	include _main/head.pug
+	body.overflow-x-hidden
+		include _main/mixins.pug
+		
+		// Page loader
+		include _components/block/page-loader.pug
+		
+		// Header 
+		include _layout/header.pug
+
+		- var projectTitle = 'Právne noviny';
+
+		- var menuArray = ['index', 'kategoria', 'clanok', 'o-nas', 'kontakt', 'redakcia', 'komentare'];
+
+		// Main content 
+		main
+			section
+				.container-small
+					.row
+						.col-12
+							.h-margin-1.txt-c
+								h1.alfa #{projectTitle}
+							ul.list-style
+								each menuItem in menuArray.length ? menuArray : ['There are no values']
+									li
+										a(href="#{menuItem}.html" target="_blank") #{menuItem}
+
+		// Footer 
+		include _layout/footer.pug
+
+
+		// Scripts 
+		include _main/scripts.pug
+		

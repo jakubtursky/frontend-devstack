@@ -1,0 +1,160 @@
+/* Content */
+
+section{
+	position: relative;
+	padding: 60px 0 60px;
+
+	@include bp(rev-small){
+		padding: 60px 0 60px;
+	}
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.padding-style-40{
+	padding: 40px 0 40px;
+
+	@include bp(rev-small){
+		padding: 40px 0 40px;
+	}
+}
+
+.padding-style-80{
+	padding: 80px 0 80px;
+
+	@include bp(rev-small){
+		padding: 60px 0 60px;
+	}
+}
+
+.padding-style-100{
+	padding: 100px 0 100px;
+
+	@include bp(rev-small){
+		padding: 60px 0 60px;
+	}
+}
+
+.padding-content-20{
+	padding: 20px 20px;
+}
+
+.padding-content-40{
+	padding: 40px 40px;
+}
+
+.padding-content-60{
+	padding: 60px 60px;
+}
+
+.padding-content-80{
+	padding: 80px 80px;
+}
+
+.padding-content-100{
+	padding: 100px 100px;
+}
+
+.content-width-200{
+	max-width: 200px;
+}
+
+.content-width-300{
+	max-width: 300px;
+}
+
+.content-width-400{
+	max-width: 400px;
+}
+
+.page-index{
+	main{
+		padding-top: 60px;
+
+		@include bp(rev-medium){
+			padding-top: 60px;
+		}
+	}
+}
+
+main{
+	position: relative;
+	display: block;
+	padding-top: 60px;
+
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	@include bp(rev-medium){
+		padding-top: 60px;
+	}
+}
+
+
+.container-full{
+	padding: 0 15px;
+}
+
+.container-small,
+.container-normal,
+.container-large{
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-small{
+	@include bp(small){
+		width: 730px;
+	}
+	@include bp(medium){
+		width: 800px;
+	}
+	@include bp(large){
+		width: 800px;
+	}
+	@include bp(xlarge){
+		width: 800px;
+	}
+	@include bp(rev-small){
+		width: 100%;
+	}
+}
+
+.container-normal{
+	@include bp(small){
+		width: 730px;
+	}
+	@include bp(medium){
+		width: 950px;
+	}
+	@include bp(large){
+		width: 1000px;
+	}
+	@include bp(xlarge){
+		width: 1000px;
+	}
+	@include bp(rev-small){
+		width: 100%;
+	}
+}
+
+.container-large{
+	@include bp(small){
+		width: 730px;
+	}
+	@include bp(medium){
+		width: 950px;
+	}
+	@include bp(large){
+		width: 1170px;
+	}
+	@include bp(xlarge){
+		width: 1360px;
+	}
+	@include bp(rev-small){
+		width: 100%;
+	}
+}

@@ -1,0 +1,16 @@
+.no-object-fit { 
+	.img-flex{
+		img{
+			height: auto;
+			width: auto;
+			vertical-align: middle;
+			margin: 0 auto;    
+		}
+	}
+	.img-contain{
+		height: auto;
+		width: auto;
+		vertical-align: middle;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,63 @@
+/* Color helpers */
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-gray-light{
+    background-color: $color-gray-light;
+}
+
+.txt-white{
+    color: #ffffff;
+}
+
+.txt-black{
+    color: #000000;
+}
+
+.h-white{
+	h1, .alfa,
+	h2, .beta,
+	h3, .gamma,
+	h4, .delta,
+	h5, .epsilon,
+	h6, .zeta{
+		color: #ffffff;
+	}
+}
+
+.h-purple{
+	h1, .alfa,
+	h2, .beta,
+	h3, .gamma,
+	h4, .delta,
+	h5, .epsilon,
+	h6, .zeta{
+		color: $color-purple-normal;
+	}
+}
+
+.p-white{
+	p{
+		color: #ffffff;
+	}
+}
+
+.ul-white{
+	li{
+		color: #ffffff!important;
+		&:before{
+			background-color: #ffffff!important;
+		}
+	}
+}
+
+.ol-white{
+	li{
+		color: #ffffff!important;
+		&:before{
+			color: #ffffff!important;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+/* Hidden helpers */
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-x-hidden{
+	overflow-x: hidden;
+}
+
+.overflow-visible {
+    overflow: visible;
+}

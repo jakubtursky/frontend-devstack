@@ -1,0 +1,139 @@
+/* Table block */
+
+.table-responsives{
+	@include bp(rev-small){
+		overflow-x: auto;
+		overflow-y: hidden;
+		width: 100%;
+		min-height: .01%;
+		border: 0!important;
+
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+
+		// overflow: auto;
+		// max-width: 100%;
+		background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 0), white 70%) 0 100%, radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+		background-repeat: no-repeat;
+		background-color: white;
+		background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+		background-position: 0 0, 100%, 0 0, 100%;
+		background-attachment: local, local, scroll, scroll;
+	}
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	thead{
+		tr{
+			border-bottom: 1px solid $color-gray-light;
+		}
+	}
+	th{
+		padding: 15px 15px 15px 15px;
+		font-family: $font-secondary;
+		font-weight: 700;
+		line-height: 1.4;
+		text-align: center;
+		// text-transform: uppercase;
+		color: $color-black-normal;
+
+		@include font-size(16px);
+		@include bp(rev-small){
+			@include font-size(16px);
+		}
+	}
+	tbody{
+	}
+	tr{
+	}
+	td{
+		padding: 15px 15px 15px 15px;
+		font-family: $font-primary;
+		font-weight: 700;
+		line-height: 1.4;
+		text-align: center;
+		color: $color-black-normal;
+
+		@include font-size(14px);
+		&:first-child{
+		}
+	}
+}
+
+
+.table-group{
+	margin-bottom: 50px;
+	border: 1px solid #f2f2f2;
+}
+
+.table-header{
+	background-color: #f7f7f7;
+}
+
+.table-header-row{
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 50px;
+}
+
+.table-header-cell{
+	display: table-cell;
+	float: none;
+	padding: 10px 20px;
+	vertical-align: middle;
+
+	@include bp(rev-small){
+		padding: 10px 10px;
+	}
+	@include bp(rev-xssmall){
+		padding: 10px 5px;
+	}
+}
+
+.table-header-text{
+	font-size: 10px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.table-body{
+
+}
+
+.table-body-cell{
+	display: table-cell;
+	float: none;
+	padding: 10px 20px;
+	vertical-align: middle;
+
+	@include bp(rev-small){
+		padding: 10px 10px;
+	}
+	@include bp(rev-xssmall){
+		padding: 10px 5px;
+	}
+}
+
+.table-body-text{
+	display: inline-block;
+	margin-bottom: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	line-height: 1.2;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.table-body-row{
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100px;
+	&:nth-child(even){
+		background-color: #f7f7f7;
+	}
+}
+

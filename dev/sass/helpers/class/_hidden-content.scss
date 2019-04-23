@@ -1,0 +1,83 @@
+/* Hidden content helpers */
+
+.hidden-content{
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	-webkit-transition: opacity 250ms ease;
+	-moz-transition: opacity 250ms ease;
+	transition: opacity 250ms ease;
+	&.is-active{
+		height: auto;
+		opacity: 1;
+		overflow: visible;
+		visibility: visible;
+		-webkit-transition: opacity 250ms ease;
+		-moz-transition: opacity 250ms ease;
+		transition: opacity 250ms ease;
+	}
+}
+
+@include bp(rev-medium){
+	.hidden-md-content{
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		-webkit-transition: opacity 250ms ease;
+		-moz-transition: opacity 250ms ease;
+		transition: opacity 250ms ease;
+		&.is-active{
+			height: auto;
+			opacity: 1;
+			overflow: visible;
+			visibility: visible;
+			-webkit-transition: opacity 250ms ease;
+			-moz-transition: opacity 250ms ease;
+			transition: opacity 250ms ease;
+		}
+	}
+}
+
+@include bp(rev-small){
+	.hidden-sm-content{
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		-webkit-transition: opacity 250ms ease;
+		-moz-transition: opacity 250ms ease;
+		transition: opacity 250ms ease;
+		&.is-active{
+			height: auto;
+			opacity: 1;
+			overflow: visible;
+			visibility: visible;
+			-webkit-transition: opacity 250ms ease;
+			-moz-transition: opacity 250ms ease;
+			transition: opacity 250ms ease;
+		}
+	}
+}
+
+@include bp(rev-xsmall){
+	.hidden-xs-content{
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		-webkit-transition: opacity 250ms ease;
+		-moz-transition: opacity 250ms ease;
+		transition: opacity 250ms ease;
+		&.is-active{
+			height: auto;
+			opacity: 1;
+			overflow: visible;
+			visibility: visible;
+			-webkit-transition: opacity 250ms ease;
+			-moz-transition: opacity 250ms ease;
+			transition: opacity 250ms ease;
+		}
+	}
+}
