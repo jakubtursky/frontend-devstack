@@ -30,7 +30,7 @@ Complex Front-end devstack for creating HTML, CSS, JS templates.
     │   │   ├── layout              # Template for header & footer
     │   │   ├── main                # Template for head, scripts, template mixins
     │   │   ├── social              # Social templates - facebook, disqus, twitter
-    │   └── └── index.html          # Specific page
+    │   └── └── index.pug           # Specific page
     ├── public                      # Compiled files - production
     │   ├── css                     # Compiled minify css files
     │   ├── images                  # Compiled, compress images
@@ -43,25 +43,25 @@ Complex Front-end devstack for creating HTML, CSS, JS templates.
     └── README.md
 
 
-## Automatization with gulp
+## Automatization with gulp tasks
 
-### Task - styles
+### styles
     - compile sass, init sourcemaps, use autoprefixer, minify css, remove unused css
 
-### Task - scripts
+### scripts
     - concat script files, init sourcemaps, use babel compiler
 
-### Task - pug
+### pug
     - compile pug files, pretty html files
 
-### Task - images
+### images
     - copy files, compress size, create responsive sizes
 
-### Task - webfonts, iconfonts, favicon
+### webfonts, iconfonts, favicon
     - copy files to production folder
 
-### Task - validate
+### validate
     - validate html & JS files
 
-### Task - download & concat resources
+### download & concat resources
     - download & concat plugins
