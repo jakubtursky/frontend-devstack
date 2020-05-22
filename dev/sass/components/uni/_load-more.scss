@@ -1,0 +1,33 @@
+/* Load more content block */
+
+.load-more-block{
+	&.is-last{
+		.load-more{
+			height: auto;
+		}
+		.js-load-more-content{
+			display: none;
+		}
+	}
+}
+
+.load-more{
+	&.is-disabled{
+		.js-load-more-content{
+			display: none;
+		}
+	}
+
+}
+
+.loading-post{
+	z-index: 1;
+	display: none;
+	&.is-active{
+		display: inline-block;
+	}
+}
+
+.load-more-content{
+	cursor: pointer;
+}

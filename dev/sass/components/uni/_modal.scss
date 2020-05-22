@@ -1,0 +1,128 @@
+/* Modal block */
+
+.modal-overlay{
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.8);
+	@include transition(opacity, 400ms, ease);
+	&.is-active{
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+		overflow: visible;
+		visibility: visible;
+	}
+}
+
+.modal-visible{
+    .modal-block{
+        position: relative;
+        overflow: visible;
+        padding: 200px 0 200px;
+
+        height: auto;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+    .modal-box .modal-close{
+        // right: 0;
+        // display: none;
+    }
+}
+
+.modal-block{
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	width: auto;
+	height: 0;
+	padding: 3rem 0 2rem;
+	opacity: 0;
+	-webkit-overflow-scrolling: touch;
+	display: flex;
+    justify-content: center;
+	@include transition(opacity, 400ms, ease);
+	@include bp(small){
+		padding: 6rem 0 4rem;
+	}
+	&.is-active{
+		visibility: visible;
+		overflow-x: hidden;
+		overflow-y: auto;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+
+		@include transition(opacity, 400ms, ease);
+		.modal-box{
+			position: relative;
+			top: auto;
+			left: auto;
+
+			@include transform(translate(0, 0));
+		}
+	}
+	&.modal-hidden{
+		.modal-close,
+		.modal-scroll{
+			display: none;
+		}
+	}
+}
+
+.modal-scroll{
+	width: 100%;
+	margin: auto 1rem;
+}
+
+.modal-box{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+
+	@include bp(xsmall){
+		width: 600px;
+	}
+}
+
+.modal-close{
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	display: flex;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+	text-align: center;
+	// color: $color-black-normal;
+	// background: white;
+	align-items: center;
+	justify-content: center;
+	svg{
+		fill: $color-black-normal;
+		@include font-size(22px);
+	}
+	&:hover{
+		color: $color-black-normal;
+	}
+}
+
+.modal-body{
+	padding: 2rem 2rem 2rem;
+	background-color: white;
+}
+

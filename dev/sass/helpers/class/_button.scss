@@ -1,0 +1,167 @@
+/* Buttons helper */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	margin: 0;
+	padding: 1.2em 1.2rem;
+	font-weight: 700;
+	line-height: 1.2;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 0;
+	outline: none !important;
+	background: $color-black-normal;
+	text-align: center;
+
+	@include transition(background-color, 250ms, ease);
+	@include border-radius(0);
+	@include font-size(16px);
+	-webkit-appearance: none;
+	&,
+	&:visited,
+	&:active,
+	&:focus {
+		color: white;
+	}
+
+	&:hover {
+		@include transition(background-color, 250ms, ease);
+		@include bp(medium) {
+			cursor: pointer;
+			text-decoration: none;
+			color: white;
+		}
+	}
+}
+
+.btn-responsive {
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	text-align: center;
+}
+
+.btn-icon {
+}
+
+.btn-font-size-12 {
+	@include font-size(12px);
+}
+
+.btn-font-size-14 {
+	@include font-size(14px);
+}
+
+.btn-font-size-16 {
+	@include font-size(16px);
+}
+
+.btn-font-size-18 {
+	@include font-size(18px);
+}
+
+.btn-font-size-20 {
+	@include font-size(20px);
+}
+
+.btn-size-xsmall {
+	padding: 0.5em 1rem;
+}
+
+.btn-size-small {
+	padding: 1.2em 1.2rem;
+}
+
+.btn-size-normal {
+	padding: 1.5em 1.5rem;
+}
+
+.btn-size-big {
+	padding: 2em 2rem;
+}
+
+.btn-min-width-xsmall {
+	min-width: 120px;
+}
+
+.btn-min-width-small {
+	min-width: 160px;
+}
+
+.btn-min-width-normal {
+	min-width: 220px;
+}
+
+.btn-min-width-big {
+	min-width: 300px;
+}
+
+.btn-black-fill {
+	color: #ffffff;
+	border: 2px solid transparent;
+	background-color: #000000;
+	&,
+	&:visited,
+	&:active,
+	&:focus {
+		color: #ffffff;
+	}
+	&:hover {
+		color: #000000;
+		background-color: #ffffff;
+		.btn-icon {
+			color: #000000;
+		}
+	}
+	.btn-icon {
+		color: #ffffff;
+	}
+}
+
+.btn-purple-fill {
+	color: #ffffff;
+	border: 2px solid transparent;
+	background-color: $color-purple-normal;
+	&,
+	&:visited,
+	&:active,
+	&:focus {
+		color: #ffffff;
+	}
+	&:hover {
+		color: #ffffff;
+		background-color: darken($color-purple-normal, 10%);
+		.btn-icon {
+			color: #ffffff;
+		}
+	}
+	.btn-icon {
+		color: #ffffff;
+	}
+}
+
+.btn-black-outline {
+	color: #000000;
+	border: 2px solid #000000;
+	background-color: transparent;
+	&,
+	&:visited,
+	&:active,
+	&:focus {
+		color: #000000;
+	}
+	&:hover {
+		color: #ffffff;
+		border: 2px solid #000000;
+		background-color: #000000;
+		.btn-icon {
+			color: #ffffff;
+		}
+	}
+	.btn-icon {
+		color: #000000;
+	}
+}

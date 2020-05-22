@@ -1,0 +1,29 @@
+.box-group{
+	position: relative;
+	background-color: #ffffff;
+	padding: 3rem 2rem 3rem;
+}
+
+.box-shadow{
+	box-shadow: 0 26px 42px rgba(0, 0, 0, 0.15);
+}
+
+.box-border{
+	border: 1px solid $color-black-normal;
+}
+
+.box-group-xsmall{
+	padding: 1rem 1.2rem 1rem;
+}
+
+.box-group-small{
+	padding: 2rem 1.2rem 2rem;
+}
+
+.box-group-normal{
+	padding: 3rem 1.2rem 3rem;
+}
+
+.box-group-big{
+	padding: 5rem 1.2rem 5rem;
+}

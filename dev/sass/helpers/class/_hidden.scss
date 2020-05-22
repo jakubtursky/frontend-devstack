@@ -1,0 +1,37 @@
+/* Hidden class */
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-x-hidden{
+	overflow-x: hidden;
+}
+
+.overflow-y-hidden{
+	overflow-y: hidden;
+}
+
+.overflow-visible {
+    overflow: visible;
+}

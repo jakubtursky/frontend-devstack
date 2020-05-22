@@ -1,0 +1,32 @@
+/* Social block */
+
+.social-list{
+}
+
+.social-list-item{
+	display: inline-block;
+	margin: 0 0 10px;
+	vertical-align: middle;
+}
+
+.social-list-link{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	@include font-size(18px);
+	svg{
+		@include font-size(18px);
+		fill: $color-black-normal;
+	}
+	&:hover{
+		svg{
+			fill: $color-purple-normal;
+		}
+	}
+}

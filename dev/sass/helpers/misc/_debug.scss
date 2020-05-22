@@ -1,0 +1,84 @@
+@if ($debug){
+	$error: red;
+	$warning: orange;
+	$normal: green;
+
+	*{
+		outline: 2px solid $normal;
+	}
+
+	div:empty, span:empty, li:empty, p:empty, td:empty, th:empty{
+		padding: 0.5em;
+		background: $warning;
+	}
+
+	*[style], font, center{
+		outline: 5px solid $normal;
+	}
+
+	*[class=""], *[id=""]{
+		outline: 5px dotted $error;
+	}
+
+	img[alt=""]{
+		border: 3px dotted $error;
+	}
+
+	img:not([alt]){
+		border: 5px solid $error;
+	}
+
+	img[title=""]{
+		outline: 3px dotted $error;
+	}
+
+	img:not([title]){
+		outline: 5px solid $error;
+	}
+
+	th{
+		border: 2px solid $warning;
+	}
+
+	th[scope="col"], th[scope="row"]{
+		border: none;
+	}
+
+	a[href]:not([title]){
+		border: 5px solid $error;
+	}
+
+	a[title=""]{
+		outline: 3px dotted $error;
+	}
+
+	a[href="#"]{
+		background: $normal;
+	}
+
+	a[href=""]{
+		background: $normal;
+	}
+
+}
+
+@if ($debug-screen){
+	.body-test{
+		main,
+		header,
+		footer{
+			opacity: 0.4!important;
+		}
+		.img-test{
+			display: block;
+		}
+	}
+
+	.img-test{
+		display: none;
+		opacity: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

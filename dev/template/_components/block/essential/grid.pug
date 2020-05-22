@@ -1,0 +1,42 @@
+.grid-switcher.js-grid-switcher
+	.grid-switcher-text grid
+
+.grid-container.js-grid-container
+	div(class={active: name === current}).container-normal
+	div(class=gridContainer)
+		.row
+			.grid-column-item.col-6.col-md-2
+				.grid-column
+			.grid-column-item.col-6.col-md-2
+				.grid-column
+			.grid-column-item.col-6.col-md-2
+				.grid-column
+			.grid-column-item.col-6.col-md-2
+				.grid-column
+			.grid-column-item.col-6.col-md-2
+				.grid-column
+			.grid-column-item.col-6.col-md-2
+				.grid-column
+
+			.grid-column-item.col-6.col-md-2.d-none.d-md-block
+				.grid-column
+			.grid-column-item.col-6.col-md-2.d-none.d-md-block
+				.grid-column
+			.grid-column-item.col-6.col-md-2.d-none.d-md-block
+				.grid-column
+			.grid-column-item.col-6.col-md-2.d-none.d-md-block
+				.grid-column
+			.grid-column-item.col-6.col-md-2.d-none.d-md-block
+				.grid-column
+			.grid-column-item.col-6.col-md-2.d-none.d-md-block
+				.grid-column
+
+
+script.
+	var gridSwitcher = document.querySelector('.js-grid-switcher');
+	var gridContainer = document.querySelector('.js-grid-container');
+	
+	gridSwitcher.addEventListener('click', function(){
+		gridSwitcher.classList.toggle('is-active');
+		gridContainer.classList.toggle('is-active');
+	});

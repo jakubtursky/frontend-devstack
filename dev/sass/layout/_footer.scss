@@ -1,0 +1,58 @@
+/* Footer */
+
+.footer{
+	position: relative;
+	z-index: 2;
+	padding: 3rem 1rem 3rem;
+
+	background-color: #000000;
+
+    flex-shrink: 0;
+}
+
+.footer-item{
+}
+
+.footer-title{
+}
+
+.footer-copy,
+.footer-author{
+	display: block;
+	color: #ffffff;
+	@include font-size(14px);
+	line-height: 1.6;
+}
+
+.footer-copy{
+}
+.footer-author{
+	margin-bottom: 0.5rem;
+}
+
+.footer-link{
+	color: #ffffff;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.footer-list{
+}
+
+.footer-list-item{
+	display: inline-block;
+	margin: 0 15px 25px;
+}
+
+.footer-list-link{
+	display: inline-block;
+	line-height: 1.4;
+	color: #ffffff;
+
+	@include font-size(16px);
+	&:hover{
+		text-decoration: underline;
+	}
+}
+

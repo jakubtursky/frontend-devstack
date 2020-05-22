@@ -1,0 +1,79 @@
+/* Tooltip block */
+
+.js-tooltip{
+	cursor: pointer;
+}
+
+.tippy-popper{
+	z-index: auto!important;
+	max-width: 280px;
+	@include bp(xsmall){
+		max-width: 330px;
+	}
+	@include bp(medium){
+		z-index: 99999999!important;
+	}
+}
+
+.tippy-tooltip{
+    padding: 12px 10px;
+	font-weight: 400;
+    line-height: 1.4;
+	transition: none;
+    color: #ffffff;
+	border-radius: 3px;
+	background-color: $color-purple-normal;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	// z-index: 99;
+
+	@include font-size(12px);
+}
+
+.tippy-popper[x-placement^=bottom-start]{
+	.tooltip-white-theme{
+		.tippy-arrow{
+			left: 25px!important;
+			border-bottom-color: #ffffff;
+		}
+	}
+}
+.tippy-popper[x-placement^=top]{
+	.tippy-tooltip{
+
+	}
+	.tippy-arrow{
+		border-top-color: $color-purple-normal;
+	}
+}
+
+.tippy-popper[x-placement^=bottom]{
+	.tippy-arrow{
+		border-bottom-color: $color-purple-normal;
+	}
+}
+
+.tippy-content{
+	display: flex;
+
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.tooltip-icon{
+	// position: absolute;
+	// top: 0;
+	// right: 0;
+	display: inline-flex;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-left: 0.5rem;
+	z-index: 9;
+	background-color: $color-purple-normal;
+	border-radius: 100%;
+	color: #ffffff;
+	@include font-size(12px);
+}

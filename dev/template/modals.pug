@@ -1,0 +1,54 @@
+doctype html
+html(lang="")
+	
+	// Head 
+	include _main/head.pug
+	body
+		//- include _social/facebook-plugin.pug
+		//- include _social/twitter-plugin.pug
+		//- include _social/google-plus-plugin.pug
+		//- include ../_main/disqus.pug (priamo v dokumente)
+		include _main/mixins.pug
+		
+
+		// Page loader
+		include _components/block/essential/page-loader.pug
+		
+		// SVG group
+		include _components/block/essential/svg-group.pug
+		
+		-var gridContainer = "container-normal"
+		// Grid
+		include _components/block/essential/grid.pug
+
+		// Header 
+		- var headerText = 'index';
+		include _layout/header.pug
+
+
+		// Main content 
+		main.overflow-hidden
+			section.padding-style-8
+				.container-normal
+					.row
+						.col-12.txt-c.margin-bottom-1
+							h1.beta Modals
+					.row.txt-c.margin-bottom-4
+						.col-12.col-sm-6.col-lg-4.margin-bottom-2
+							button.btn.btn-purple-fill.btn-responsive.js-modal-trigger(data-modal="modal") Button modal
+
+						
+
+		// Footer 
+		include _layout/footer.pug
+		
+		// Cookies bar
+		//- include _components/uni/cookies.pug
+
+		// Modals 
+		.modal-overlay
+		include _components/uni/modal.pug
+		
+	
+		// Scripts 
+		include _main/scripts.pug

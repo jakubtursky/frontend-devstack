@@ -1,0 +1,188 @@
+/* Content */
+
+section{
+	position: relative;
+	padding: 3rem 0 3rem;
+
+	@include bp(small){
+		padding: 3rem 0 3rem;
+	}
+}
+
+.padding-style-1{
+	padding: 1rem 0.5rem 1rem;
+
+	@include bp(small){
+		padding: 1rem 0 1rem;
+	}
+}
+
+.padding-style-2{
+	padding: 2rem 0.5rem 2rem;
+
+	@include bp(small){
+		padding: 2rem 0 2rem;
+	}
+}
+
+.padding-style-3{
+	padding: 2rem 0.5rem 2rem;
+
+	@include bp(small){
+		padding: 3rem 0 3rem;
+	}
+}
+
+.padding-style-4{
+	padding: 3rem 0.5rem 3rem;
+
+	@include bp(small){
+		padding: 4rem 0 4rem;
+	}
+}
+
+.padding-style-5{
+	padding: 3rem 0.5rem 3rem;
+
+	@include bp(small){
+		padding: 5rem 0 5rem;
+	}
+}
+
+.padding-style-6{
+	padding: 3rem 0.5rem 3rem;
+
+	@include bp(small){
+		padding: 6rem 0 6rem;
+	}
+}
+
+.padding-style-6-3{
+	padding: 3rem 0.5rem 3rem;
+
+	@include bp(small){
+		padding: 6rem 0 3rem;
+	}
+}
+
+.padding-content-1{
+	padding: 1rem 1rem;
+}
+
+.padding-content-2{
+	padding: 2rem 2rem;
+}
+
+.padding-content-3{
+	padding: 3rem 3rem;
+}
+
+.padding-content-4{
+	padding: 4rem 4rem;
+}
+
+.padding-content-5{
+	padding: 5rem 5rem;
+}
+
+@include bp(small){
+	.padding-content-2{
+		padding: 2rem 2rem;
+	}
+}
+
+.content-width-200{
+	max-width: 200px;
+}
+
+.content-width-300{
+	max-width: 300px;
+}
+
+.content-width-400{
+	max-width: 400px;
+}
+
+.content-width-500{
+	max-width: 500px;
+}
+
+.content-width-600{
+	max-width: 600px;
+}
+
+.page-index{
+	main{
+		padding-top: 60px;
+
+		@include bp(medium){
+			padding-top: 60px;
+		}
+	}
+}
+
+main{
+	position: relative;
+	display: block;
+	padding-top: 60px;
+	flex: 1 0 auto;
+	@include bp(medium){
+		padding-top: 60px;
+	}
+}
+
+.container-small,
+.container-normal,
+.container-large,
+.container-full{
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-small{
+	width: 100%;
+	@include bp(small){
+		width: 730px;
+	}
+	@include bp(medium){
+		width: 800px;
+	}
+	@include bp(large){
+		width: 800px;
+	}
+	@include bp(xlarge){
+		width: 800px;
+	}
+}
+
+.container-normal{
+	width: 100%;
+	@include bp(small){
+		width: 730px;
+	}
+	@include bp(medium){
+		width: 950px;
+	}
+	@include bp(large){
+		width: 1000px;
+	}
+	@include bp(xlarge){
+		width: 1000px;
+	}
+}
+
+.container-large{
+	width: 100%;
+	@include bp(small){
+		width: 730px;
+	}
+	@include bp(medium){
+		width: 950px;
+	}
+	@include bp(large){
+		width: 1140px;
+	}
+	@include bp(xlarge){
+		width: 1360px;
+	}
+}

@@ -1,0 +1,67 @@
+// GENERAL
+$project-name: 'project-name';
+$project-font-1:'Open Sans';
+$project-font-2:'Montserrat';
+$debug: false;
+$debug-screen: false;
+$grid: true;
+$dots-size: false;
+
+// BLOCK VARIABLES
+$border-radius: 5px;
+$transition-duration: 400ms;
+$transition-easing: 'ease-out';
+
+// HEADER VARIABLES
+$nav-bg-color: #000000;
+$nav-bg-color-active: #ffffff;
+
+// GRID VARIABLES
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+// CONTAINER VARIABLES
+$container-tablet: (720px + $grid-gutter-width);
+$container-sm: $container-tablet;
+$container-desktop: (940px + $grid-gutter-width);
+$container-md: $container-desktop;
+$container-large-desktop: (1140px + $grid-gutter-width);
+$container-lg: $container-large-desktop;
+
+// RESPONSIVE VARIABLES
+$screen-xs-phone: 370px;
+$screen-phone: 576px;
+$screen-tablet: 771px;
+$screen-desktop: 992px;
+$screen-lg-desktop: 1200px;
+$screen-xl-desktop: 1440px;
+$screen-xxl-desktop: 1600px;
+$screen-xxxl-desktop: 1800px;
+
+// FONT SETTINGS
+$font-size-12: 12px;
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-primary: $project-font-1, Arial, sans-serif;
+$font-secondary: $project-font-2, Arial, sans-serif;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$alfa: 48px;
+$beta: 36px;
+$gamma: 24px;
+$delta: 18px;
+$epsilon: 16px;
+$zeta: 14px;
+
+// COLORS SETTINGS
+$color-black-normal: #000000;
+$color-purple-normal: #75439a;
+$color-gray-light: #f7f7f7;
+
+
+$color-field-error: #ea4335;
+$color-field-success: #55a954;

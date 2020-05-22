@@ -1,0 +1,25 @@
+//- +navLink('onas.html', 'O nás')
+mixin navLink(link, name)
+	li.menu-item
+		a.menu-link(
+			href=link
+			class={active: name === current}
+		) #{name}
+
+//- +productItem('images/image-1.jpg', 'Titulok', 'Perex', 'detail.html')
+mixin productItem(imageUrl, title, perex, link)
+	.card-item.col-xs-12.col-sm-4.col-md-4
+		.card-content
+			.card-image-block
+				a(href="#{link}")
+					img(src="#{imageUrl}", alt="", class="img-responsive card-image")
+			.card-text-block
+				h3.card-title
+					a(href="#") #{title}
+				p.card-perex.dots  #{perex}
+				a(href="#{link}", class="card-btn btn btn-black-fill ") Pridať do košíka
+
+//- svg icon
+mixin svg(name)
+	svg(class=`icon-svg icon-${name}`)
+		use(xlink:href=`#icon-${name}`)

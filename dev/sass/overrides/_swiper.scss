@@ -1,0 +1,83 @@
+.swiper-arrow-group{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80px;
+	position: absolute;
+	left: 50%;
+	bottom: -50px;
+	transform: translateX(-50%);
+}
+
+.swiper-arrow{
+	outline: none;
+	&.swiper-button-disabled{
+		opacity: 0.3;
+		pointer-events: none;
+	}
+}
+
+.swiper-arrow-next{
+	order: 1;
+}
+
+.swiper-arrow-prev{
+	order: 0;
+}
+
+.swiper-arrow-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	&:hover{
+		svg{
+			fill: $color-purple-normal;
+		}
+	}
+	svg{
+		fill: $color-purple-normal;
+		@include font-size(28px);
+	}
+}
+
+.swiper-pagination{
+	position: relative;
+	width: 100%;
+}
+
+.swiper-pagination-bullet{
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 0;
+	opacity: 1;
+	background: transparent;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: block;
+		width: 12px;
+		height: 12px;
+		transform: translate(-50%, -50%);
+		background-color: $color-black-normal;
+		border-radius: 100%;
+	}
+}
+
+.swiper-pagination-bullet-active {
+	&:after{
+		background-color: $color-purple-normal;
+	}
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0;
+}

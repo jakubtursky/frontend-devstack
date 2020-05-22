@@ -1,0 +1,25 @@
+/* Position helpers */
+
+.pos-r {
+    position: relative;
+}
+
+.pos-f{
+	position: fixed;
+}
+
+.pos-s{
+	position: static;
+}
+
+.pos-sticky{
+	position: sticky;
+}
+
+.pos-a{
+	position: absolute;
+}
+
+.pos-auto{
+	position: inherit;
+}

@@ -1,0 +1,76 @@
+/* Color helpers */
+.bg-black-normal {
+    background-color: #000000;
+}
+
+.bg-gray-light{
+    background-color: $color-gray-light;
+}
+
+.txt-color-white{
+    color: #ffffff;
+}
+
+.txt-color-black{
+    color: #000000;
+}
+
+.h-color-white{
+	h1, .alfa,
+	h2, .beta,
+	h3, .gamma,
+	h4, .delta,
+	h5, .epsilon,
+	h6, .zeta{
+		color: #ffffff;
+	}
+}
+
+.h-color-purple{
+	h1, .alfa,
+	h2, .beta,
+	h3, .gamma,
+	h4, .delta,
+	h5, .epsilon,
+	h6, .zeta{
+		color: $color-purple-normal;
+	}
+}
+
+.p-color-white{
+	p{
+		color: #ffffff;
+	}
+}
+
+.p-color-black{
+	p{
+		color: $color-black-normal;
+	}
+}
+
+.p-color-purple{
+	p{
+		color: $color-purple-normal;
+	}
+}
+
+ul.list-style.ul-color-white,
+.ul-color-white{
+	li{
+		color: #ffffff;
+		&:before{
+			background-color: #ffffff;
+		}
+	}
+}
+
+ol.list-style.ol-color-white,
+.ol-color-white{
+	li{
+		color: #ffffff;
+		&:before{
+			color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+/* Web fonts */
+
+// @font-face {
+// 	font-family: $project-font-1;
+// 	src: url('../fonts/webfonts/fontname/fontname.woff2') format('woff2'), 
+// 		 url('../fonts/webfonts/fontname/fontname.woff') format('woff');
+// 	font-weight: normal;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
+
+// @font-face {
+// 	font-family: $project-font-2;
+// 	src: url('../fonts/webfonts/fontname/fontname-bold.woff2') format('woff2'), 
+// 		 url('../fonts/webfonts/fontname/fontname-bold.woff') format('woff');
+// 	font-weight: bold;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
+
+
+// @font-face{
+// 	font-family: $project-name;
+// 	font-weight: normal;
+// 	font-style: normal;
+
+// 	src: url('../fonts/iconfonts/icomoon.eot?akcumt');
+// 	src: url('../fonts/iconfonts/icomoon.eot?akcumt#iefix') format('embedded-opentype'), url('../fonts/iconfonts/icomoon.ttf?akcumt') format('truetype'), url('../fonts/iconfonts/icomoon.woff?akcumt') format('woff'), url('../fonts/iconfonts/icomoon.svg?akcumt#icomoon') format('svg');
+// }
+
+// [class^="fonticon"], [class*=" fonticon"]{
+// 	text-transform: none;	/* use !important to prevent issues with browser extensions that change fonts */
+// 	font-family: $project-name !important;
+// 	font-weight: normal;
+// 	font-style: normal;
+// 	font-variant: normal;
+// 	line-height: 1;
+
+// 	speak: none;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+
+// .icon-close:before {
+//   content: "\e909";
+// }
+// .icon-minus:before{
+// 	content: "\e90a";
+// }
+
+// .icon-plus:before{
+// 	content: "\e908";
+// }
+
+// .icon-chevron-thin-up:before{
+// 	content: "\e900";
+// }
+
+// .icon-chevron-thin-right:before{
+// 	content: "\e901";
+// }
+
+// .icon-chevron-thin-left:before{
+// 	content: "\e902";
+// }
+
+// .icon-chevron-thin-down:before{
+// 	content: "\e903";
+// }
+
+// .icon-chevron-right:before{
+// 	content: "\e904";
+// }
+
+// .icon-chevron-left:before{
+// 	content: "\e905";
+// }
+
+// .icon-chevron-down:before{
+// 	content: "\e906";
+// }
+
+// .icon-chevron-up:before{
+// 	content: "\e907";
+// }
+
+
+// .icon-close{
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	width: 40px;
+// 	height: 40px;
+// 	text-align: center;
+// 	margin-left: -20px;
+// 	margin-top: -20px;
+
+// 	&:before, &:after{
+// 		position: absolute;
+// 		display: block;
+// 		width: 30px;
+// 		height: 3px;
+// 		content: '';
+// 		background: $color-black-normal;
+// 	}
+
+// 	&:before{
+// 		-webkit-transform: rotate(45deg);
+// 		-moz-transform: rotate(45deg);
+// 		-o-transform: rotate(45deg);
+// 		transform: rotate(45deg);
+// 	}
+
+// 	&:after{
+// 		-webkit-transform: rotate(-45deg);
+// 		-moz-transform: rotate(-45deg);
+// 		-o-transform: rotate(-45deg);
+// 		transform: rotate(-45deg);
+// 	}
+
+// }

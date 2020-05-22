@@ -1,0 +1,60 @@
+/* Card block */
+.card-item{
+	margin-bottom: 2rem;
+}
+
+.card-content{
+	display: block;
+	overflow: hidden;
+	border: 1px solid $color-gray-light;
+	border-radius: 20px;
+	background-color: #ffffff;
+
+	&:hover{
+		.card-title{
+			text-decoration: underline;
+		}
+
+		img{
+			transform: scale(1.05, 1.05);
+		}
+
+	}
+
+}
+
+.card-image-block{
+	display: block;
+	overflow: hidden;
+	position: relative;
+
+	img{
+		transition: transform 400ms ease-out;
+	}
+
+}
+
+.card-text-block{
+	padding: 2rem 2rem;
+}
+
+.card-btn{
+
+}
+
+.card-tag-list {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.card-tag-list-item {
+	display: inline-block;
+	border-radius: 10px;
+	padding: 5px 10px;
+	color: #ffffff;
+	font-weight: 700;
+	margin-bottom: 5px;
+	background-color: $color-purple-normal;
+	@include font-size(14px);
+}

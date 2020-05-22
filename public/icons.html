@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="">
+	<!-- Head -->
+	<head>
+		<meta charset="utf-8">
+		<title> </title>
+		<meta name="description" content="">
+		<meta name="Robots" content="all, follow">
+		<meta name="Author" content="">
+		<meta http-equiv="content-type" content="text/html">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="">
+		<meta property="og:image:type" content="">
+		<meta property="og:image:width" content="">
+		<meta property="og:image:height" content="">
+		<meta property="og:image:alt" content="">
+		<style>
+			body header, body main, body footer {
+				opacity: 0;
+			}
+			
+			body.is-active header, body.is-active main, body.is-active footer {
+				opacity: 1;
+			}
+			
+			body.is-active .page-loader {
+				display: none;
+			}
+			
+			.page-loader {
+				position: fixed;
+				z-index: 9;
+				top: 0;
+				left: 0;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				width: 100%;
+				height: 100vh;
+			}
+			
+		</style>
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&amp;amp;subset=latin-ext&amp;display=swap">
+		<link rel="stylesheet" href="css/plugins/swiper.min.css">
+		<link rel="stylesheet" href="css/plugins/select2.min.css">
+		<link rel="stylesheet" href="css/plugins/ion.rangeslider.min.css">
+		<link rel="stylesheet" href="css/plugins/flatpickr.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
+		<link rel="stylesheet" href="css/plugins/aos.css">
+		<link rel="stylesheet" href="css/plugins/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body id="body">
+		<!-- Page loader-->
+		<div class="page-loader">
+			<div class="loading-spinner"></div>
+		</div>
+		<!-- SVG group-->
+		<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<symbol id="icon-play" viewBox="0 0 32 32">
+					<title>play</title>
+					<path d="M30.662 5.003c-4.488-0.645-9.448-1.003-14.662-1.003s-10.174 0.358-14.662 1.003c-0.86 3.366-1.338 7.086-1.338 10.997s0.477 7.63 1.338 10.997c4.489 0.645 9.448 1.003 14.662 1.003s10.174-0.358 14.662-1.003c0.86-3.366 1.338-7.086 1.338-10.997s-0.477-7.63-1.338-10.997zM12 22v-12l10 6-10 6z"></path>
+				</symbol>
+				<symbol id="icon-chevron-left" viewbox="0 0 22 32">
+					<title>chevron-left</title>
+					<path d="M7.065 15.931l12.329-12.329c0.554-0.554 0.554-1.385 0-1.939l-0.139-0.139c-0.554-0.554-1.385-0.554-1.939 0l-14.407 14.407 14.268 14.268c0.554 0.554 1.385 0.554 1.939 0l0.139-0.139c0.554-0.554 0.554-1.385 0-1.939l-12.19-12.19z"></path>
+				</symbol>
+				<symbol id="icon-chevron-right" viewbox="0 0 22 32">
+					<title>chevron-right</title>
+					<path d="M15.515 15.931l-12.19 12.19c-0.554 0.554-0.554 1.385 0 1.939v0.139c0.554 0.554 1.385 0.554 1.939 0l14.407-14.268-14.268-14.407c-0.554-0.554-1.385-0.554-1.939 0l-0.139 0.139c-0.554 0.554-0.554 1.385 0 1.939l12.19 12.329z"></path>
+				</symbol>
+				<symbol id="icon-chevron-down" viewbox="0 0 47 32">
+					<title>chevron-down</title>
+					<path d="M23.333 22.302l14.952-14.956c0.305-0.305 0.726-0.493 1.191-0.493s0.886 0.188 1.191 0.493v0l0.145 0.147c0.305 0.305 0.493 0.726 0.493 1.191s-0.188 0.886-0.493 1.191l-17.479 17.48-17.482-17.482c-0.304-0.305-0.492-0.725-0.492-1.19s0.188-0.885 0.492-1.19l-0 0 0.147-0.145c0.305-0.305 0.726-0.493 1.191-0.493s0.886 0.188 1.191 0.493v0z"></path>
+				</symbol>
+				<symbol id="icon-chevron-up" viewbox="0 0 47 32">
+					<title>chevron-up</title>
+					<path d="M23.825 10.658l14.956 14.956c0.305 0.304 0.725 0.492 1.19 0.492s0.885-0.188 1.19-0.492l-0 0 0.145-0.147c0.305-0.305 0.493-0.726 0.493-1.191s-0.188-0.886-0.493-1.191l-17.48-17.48-17.479 17.482c-0.304 0.305-0.492 0.725-0.492 1.19s0.188 0.885 0.492 1.19l0.145 0.145c0.305 0.305 0.726 0.493 1.191 0.493s0.886-0.188 1.191-0.493v0z"></path>
+				</symbol>
+				<symbol id="icon-close" viewbox="0 0 32 32">
+					<title>close</title>
+					<path d="M30.72 31.467l-14.72-14.72-14.613 14.72-0.853-0.747 14.72-14.72-14.72-14.613 0.853-0.853 14.613 14.72 14.72-14.72 0.747 0.853-14.72 14.613 14.72 14.72z"></path>
+				</symbol>
+			</defs>
+		</svg>
+		<!-- Grid-->
+		<div class="grid-switcher js-grid-switcher">
+			<div class="grid-switcher-text">grid</div>
+		</div>
+		<div class="grid-container js-grid-container">
+			<div class="active container-normal"></div>
+			<div class="container-normal">
+				<div class="row">
+					<div class="grid-column-item col-6 col-md-2">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2 d-none d-md-block">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2 d-none d-md-block">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2 d-none d-md-block">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2 d-none d-md-block">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2 d-none d-md-block">
+						<div class="grid-column"></div>
+					</div>
+					<div class="grid-column-item col-6 col-md-2 d-none d-md-block">
+						<div class="grid-column"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var gridSwitcher = document.querySelector('.js-grid-switcher');
+			var gridContainer = document.querySelector('.js-grid-container');
+			
+			gridSwitcher.addEventListener('click', function(){
+				gridSwitcher.classList.toggle('is-active');
+				gridContainer.classList.toggle('is-active');
+			});
+		</script>
+		<!-- Header -->
+		<header class="header">
+			<div class="navigation">
+				<div class="header-flex"><span class="navigation-trigger"><span class="navigation-trigger-icon"></span></span>
+					<div class="header-logo"><a class="header-logo-link" href="index.html"><img class="img-responsive header-image" src="images/logo.svg" alt="" width="80"></a></div>
+					<nav class="nav-collapse">
+						<ul class="dropdown-list d-block d-lg-none">
+							<li class="dropdown-list-item is-active"><a class="dropdown-list-link" href="#">SK</a></li>
+							<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">CZ</a></li>
+							<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">EN</a></li>
+							<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">DE</a></li>
+						</ul>
+						<ul class="menu-list">
+							<li class="menu-list-item"><a class="menu-list-link" href="#">Menu link 1</a></li>
+							<li class="menu-list-item"><a class="menu-list-link" href="#">Menu link 2</a></li>
+							<li class="menu-list-item"><a class="menu-list-link" href="#">Menu link 3</a></li>
+							<li class="menu-list-item"><a class="menu-list-link" href="#">Menu link 4</a></li>
+						</ul>
+						<div class="header-language-block dropdown-block js-dropdown-block margin-left-2 d-none d-lg-flex">
+							<div class="header-language-text dropdown-trigger js-dropdown-trigger">SK</div>
+							<div class="dropdown-content">
+								<ul class="dropdown-list">
+									<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">CZ</a></li>
+									<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">EN</a></li>
+									<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">DE</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- Main content -->
+		<main class="overflow-hidden">
+			<section>
+				<div class="container-normal">
+					<div class="row">
+						<div class="col-12 txt-c margin-bottom-1">
+							<h1 class="beta">Icons</h1>
+						</div>
+					</div>
+					<div class="row txt-c margin-bottom-4 icon-color-purple icon-size-60">
+						<div class="col-4 col-sm-3 col-lg-2 margin-bottom-2">
+									<svg class="icon-svg icon-play">
+										<use xlink:href="#icon-play"></use>
+									</svg>
+						</div>
+						<div class="col-4 col-sm-3 col-lg-2 margin-bottom-2">
+									<svg class="icon-svg icon-chevron-right">
+										<use xlink:href="#icon-chevron-right"></use>
+									</svg>
+						</div>
+						<div class="col-4 col-sm-3 col-lg-2 margin-bottom-2">
+									<svg class="icon-svg icon-chevron-left">
+										<use xlink:href="#icon-chevron-left"></use>
+									</svg>
+						</div>
+						<div class="col-4 col-sm-3 col-lg-2 margin-bottom-2">
+									<svg class="icon-svg icon-chevron-up">
+										<use xlink:href="#icon-chevron-up"></use>
+									</svg>
+						</div>
+						<div class="col-4 col-sm-3 col-lg-2 margin-bottom-2">
+									<svg class="icon-svg icon-chevron-down">
+										<use xlink:href="#icon-chevron-down"></use>
+									</svg>
+						</div>
+						<div class="col-4 col-sm-3 col-lg-2 margin-bottom-2">
+									<svg class="icon-svg icon-close">
+										<use xlink:href="#icon-close"></use>
+									</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-top margin-bottom-2">
+				<div class="container-large">
+					<div class="row">
+						<ul class="footer-list col-12 txt-c">
+							<li class="footer-list-item"><a class="footer-list-link" href="#">Contakt</a></li>
+							<li class="footer-list-item"><a class="footer-list-link" href="#">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container-large">
+					<div class="row">
+						<div class="col-12 txt-c">
+							<div class="footer-copy">© Copyright</div>
+							<div class="footer-author">WEB 2018 </div><a class="footer-link" href="#" target="_blank">www</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Cookies bar-->
+		<!-- Scripts -->
+		<script src="js/plugins/jquery.min.js" defer></script>
+		<script src="//platform.linkedin.com/in.js" type="text/javascript" defer>
+			<lang>
+				<en_US></en_US>
+			</lang>
+		</script>
+		<script src="js/plugins/select2.min.js" defer></script>
+		<script src="js/plugins/ion.rangeslider.js" defer></script>
+		<script src="js/plugins/flatpickr.js" defer></script>
+		<script src="js/plugins/flatpickr-sk.js" defer></script>
+		<script src="js/plugins/swiper.min.js" defer></script>
+		<script src="js/plugins/slick.min.js" defer></script>
+		<script src="js/plugins/mixitup.min.js" defer></script>
+		<script src="js/plugins/lightgallery.js" defer></script>
+		<script src="js/plugins/jquery.shave.min.js" defer></script>
+		<script src="js/plugins/modernizr.js" defer></script>
+		<script src="js/plugins/aos.js" defer></script>
+		<script src="js/plugins/autosize.js" defer></script>
+		<script src="https://www.google.com/recaptcha/api.js" defer></script>
+		<script src="js/plugins/tippy.min.js" defer></script>
+		<script src="js/plugins/parsley.min.js" defer></script>
+		<script src="js/localization/error-messages-sk.js" defer></script>
+		<script src="js/app.js" defer></script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+doctype html
+html(lang="")
+	// Head 
+	include _main/head.pug
+	body.page-index.overflow-x-hidden
+		//- include _social/facebook-plugin.pug
+		//- include _social/twitter-plugin.pug
+		//- include _social/google-plus-plugin.pug
+		//- include ../_main/disqus.pug (priamo v dokumente)
+		include _main/mixins.pug
+		
+
+		// Page loader
+		include _components/block/essential/page-loader.pug
+		
+		// SVG group
+		include _components/block/essential/svg-group.pug
+		
+		-var gridContainer = "container-large"
+		// Grid
+		include _components/block/essential/grid.pug
+
+		// Header 
+		- var headerText = 'index';
+		include _layout/header.pug
+
+		// Main content 
+		main
+			// Section hero
+			include _components/block/hero.pug
+			//- include _components/block/ajax-load.pug
+			
+			//- +svg('play')
+
+		// Footer 
+		include _layout/footer.pug
+
+
+		// Modals 
+		.modal-overlay
+		include _components/uni/modal.pug
+
+		//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0v1vEZl7oz-becY9ePEeWIN7lTNnetLk" defer)
+
+		// Scripts 
+		include _main/scripts.pug

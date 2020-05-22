@@ -1,0 +1,86 @@
+/* Form quantity */
+
+// .quantity-group.js-quantity
+//     input(type="number", id="confirm_trip_number_days" class="form-input quantity-input js-quantity-input", min="1", step="1" value="1")
+//     .quantity-up.js-quantity-up
+//     .quantity-down.js-quantity-down
+
+.quantity-group{
+	position: relative;
+}
+
+.quantity-input{
+	text-align: center;
+	padding-left: 65px;
+	padding-right: 65px;
+	outline: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	text-align: center;
+}
+
+.quantity-up,
+.quantity-down{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	&:after,
+	&:before{
+		content: ""!important;
+		width: 28px;
+		height: 19px;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	&:hover{
+		// background-color: black;
+		&:after,
+		&:before{
+			// color: white;
+		}
+	}
+	svg {
+	    fill: $color-black-normal;
+	}
+}
+
+.quantity-up{
+	right: 0;
+	&:before{
+		background-image: url('../images/icons/chevron-up.svg');
+	}
+}
+
+.quantity-down{
+	left: 0;
+	&:after{
+		background-image: url('../images/icons/chevron-down.svg');
+	}
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
