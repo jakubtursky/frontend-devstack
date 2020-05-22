@@ -1,5 +1,5 @@
 # Frontend-devstack
-Complex Front-end devstack for creating HTML, CSS, JS templates.
+Complex Front-end devstack for coding HTML, CSS, JS templates.
 
 ## Demo
 <a href="https://jakubtursky.sk/devstack/menu.html" target="_blank" title="Devstack" class="link">Live demo</a>
