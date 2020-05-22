@@ -1,8 +1,8 @@
 # Frontend-devstack
 Complex Front-end devstack for creating HTML, CSS, JS templates.
 
-## [Demo]
-<a href="https://jakubtursky.sk/devstack/menu.html" target="_blank" title="Devstack">Live demo</a>
+## Demo
+<a href="https://jakubtursky.sk/devstack/menu.html" target="_blank" title="Devstack" style="font-size: 20px; font-weight: 700;">Live demo</a>
 
 ## Frontend-devstack usage
 - in console run "npm install" for install node_modules listed in package.json
