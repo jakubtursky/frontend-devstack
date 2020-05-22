@@ -1,11 +1,3 @@
-<style type="text/css" rel="stylesheet">
-   a,
-   .link { 
-        font-size: 20px; 
-        font-weight: 700; 
-    }
-</style>
-
 # Frontend-devstack
 Complex Front-end devstack for creating HTML, CSS, JS templates.
 
