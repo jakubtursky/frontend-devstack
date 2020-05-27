@@ -26,8 +26,13 @@ html(lang="")
 
 		// Main content 
 		main
+			- var heroTitle = 'Index'
+			//- - var heroPerex = 'Ui'
 			// Section hero
-			include _components/block/hero.pug
+			include _components/block/essential/hero.pug
+
+			//- // Section hero
+			//- include _components/block/hero.pug
 			//- include _components/block/ajax-load.pug
 			
 			//- +svg('play')

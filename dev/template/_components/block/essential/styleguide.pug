@@ -1,12 +1,13 @@
-section.padding-style-6-3
-	.container-large
+section.padding-style-6
+	//- .container-large
 		.row.margin-bottom-6
 			.col-12.txt-c.h-margin-2
 				h1 UI Kit
 	.container-large
-		.row.margin-bottom-6
+		.row.margin-bottom-2
 			.col-12.txt-c
-				h1 General headlines
+				h1 Headlines
+		.row
 			.col-12.col-sm-6.col-lg-4.margin-bottom-2
 				h1.alfa h1, alfa
 				h2.beta h2, beta
@@ -15,10 +16,12 @@ section.padding-style-6-3
 				h5.epsilon h5, epsilon
 				h6.zeta h6, zeta
 
+section.padding-style-6.bg-gray-light
 	.container-large
-		.row.margin-bottom-6
+		.row.margin-bottom-2
 			.col-12.txt-c
-				h2 General paragraphs
+				h2 Paragraphs
+		.row
 			.col-12.col-sm-6.col-lg-6
 				p paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic
 				.p-size-20
@@ -40,21 +43,24 @@ section.padding-style-6-3
 					li styled order list item styled order list item styled order list item styled order list item
 					li styled order list item styled order list item styled order list item styled order list item
 
+
+section.padding-style-6
 	.container-large
-		.row.margin-bottom-6
+		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Typography
+		.row
 			.col-12.col-sm-6.col-lg-6
 				.padding-content-2.typography
-					h2 Nadpis H1
+					h2 Headline H1
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. 
-					h2 Nadpis H2
+					h2 Headline H2
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor.
-					h3 Nadpis H3
+					h3 Headline H3
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor.
-					h4 Nadpis H4
+					h4 Headline H4
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor.
-					h5 Nadpis H5
+					h5 Headline H5
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor.
 					ul
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -62,7 +68,7 @@ section.padding-style-6-3
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
-					h4 Nadpis H4
+					h4 Headline H4
 					ol
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -72,10 +78,12 @@ section.padding-style-6-3
 						img(src="https://via.placeholder.com/250x150", alt="")
 						figcaption Image caption
 
+section.padding-style-6.bg-gray-light
 	.container-large
-		.row.margin-bottom-6
+		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Buttons
+		.row
 			.col-12.margin-bottom-2
 				.margin-bottom-2
 					button.btn.btn-black-fill.btn-min-width-normal Button primary
@@ -112,10 +120,13 @@ section.padding-style-6-3
 			.col-12.txt-c
 				.margin-bottom-2
 					button.btn.btn-purple-fill.btn-size-big.btn-responsive.js-modal-trigger(data-modal="modal") Button modal
+
+section.padding-style-6
 	.container-large
-		.row.margin-bottom-6
+		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Form
+		.row
 			.col-12.col-sm-6.col-lg-6
 				.padding-content-2
 					.form-field.form-field-normal
@@ -177,6 +188,11 @@ section.padding-style-6-3
 						label.checkbox-label(for='checkbox_1')
 							span.checkbox-box
 							span.checkbox-text Checkbox 1
+
+					.checkbox.checkbox-switcher
+						input#checkbox_switcher.checkbox-hidden(type='checkbox')
+						label.checkbox-label(for='checkbox_switcher')
+							span.checkbox-slider
 				
 				.padding-content-2.margin-bottom-3
 					.js-range-block
@@ -206,10 +222,12 @@ section.padding-style-6-3
 							label(for='file_upload' class="btn btn-purple-fill btn-min-width-normal txt-c file-upload-label") Nahratie súboru
 							.file-upload-output.js-file-upload-output
 
+section.padding-style-6.bg-gray-light
 	.container-large
-		.row.margin-bottom-6
+		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Form
+		.row
 			.col-12
 				form#form-validation(role="form")
 					.form-field.form-field-big.form-field-placeholder.js-placeholder-block

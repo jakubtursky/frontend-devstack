@@ -113,8 +113,8 @@
 
 .loading-spinner {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   -webkit-animation-name: spinner-rotate;
           animation-name: spinner-rotate;
   -webkit-animation-duration: 0.75s;
@@ -123,7 +123,7 @@
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  border: 5px solid #75439a;
+  border: 10px solid #75439a;
   border-right-color: transparent;
   border-radius: 50%;
 }
@@ -691,6 +691,38 @@ textarea:focus:-moz-input-placeholder {
   margin-bottom: 2rem;
 }
 
+.checkbox-switcher {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 26px;
+}
+
+.checkbox-switcher .checkbox-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #000000;
+  border-radius: 35px;
+  background-color: transparent;
+}
+
+.checkbox-switcher .checkbox-hidden:checked + .checkbox-label {
+  border-color: #75439a;
+}
+
+.checkbox-switcher .checkbox-hidden:checked + .checkbox-label:after {
+  display: none;
+}
+
+.checkbox-switcher .checkbox-hidden:checked + .checkbox-label .checkbox-slider {
+  background-color: #75439a;
+  left: calc(100% - 20px);
+}
+
 .input-hidden,
 .checkbox-hidden {
   position: absolute;
@@ -750,6 +782,19 @@ textarea:focus:-moz-input-placeholder {
   font-size: 1rem;
   padding-left: 1rem;
   line-height: 1.4;
+}
+
+.checkbox-slider {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  border-radius: 50% !important;
+  background-color: #000000;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .checkbox-hidden:checked + .checkbox-label .checkbox-box:after {
@@ -1068,6 +1113,10 @@ input[type=number] {
 /* Color helpers */
 .bg-black-normal {
   background-color: #000000;
+}
+
+.bg-purple-normal {
+  background-color: #75439a;
 }
 
 .bg-gray-light {
@@ -4348,7 +4397,7 @@ ul.list-style li, ol.list-style li {
 }
 
 ul.list-style a, ol.list-style a {
-  color: #75439a;
+  text-decoration: underline;
 }
 
 ul.list-style a:hover, ol.list-style a:hover {
@@ -5518,7 +5567,7 @@ section {
 }
 
 .padding-style-1 {
-  padding: 1rem 0.5rem 1rem;
+  padding: 1rem 0 1rem;
 }
 
 @media (min-width: 771px) {
@@ -5528,7 +5577,7 @@ section {
 }
 
 .padding-style-2 {
-  padding: 2rem 0.5rem 2rem;
+  padding: 2rem 0 2rem;
 }
 
 @media (min-width: 771px) {
@@ -5538,7 +5587,7 @@ section {
 }
 
 .padding-style-3 {
-  padding: 2rem 0.5rem 2rem;
+  padding: 2rem 0 2rem;
 }
 
 @media (min-width: 771px) {
@@ -5548,7 +5597,7 @@ section {
 }
 
 .padding-style-4 {
-  padding: 3rem 0.5rem 3rem;
+  padding: 3rem 0 3rem;
 }
 
 @media (min-width: 771px) {
@@ -5558,7 +5607,7 @@ section {
 }
 
 .padding-style-5 {
-  padding: 3rem 0.5rem 3rem;
+  padding: 3rem 0 3rem;
 }
 
 @media (min-width: 771px) {
@@ -5568,7 +5617,7 @@ section {
 }
 
 .padding-style-6 {
-  padding: 3rem 0.5rem 3rem;
+  padding: 3rem 0 3rem;
 }
 
 @media (min-width: 771px) {
@@ -5578,7 +5627,7 @@ section {
 }
 
 .padding-style-6-3 {
-  padding: 3rem 0.5rem 3rem;
+  padding: 3rem 0 3rem;
 }
 
 @media (min-width: 771px) {
@@ -5659,10 +5708,13 @@ main {
   }
 }
 
+.container-full {
+  margin: 0 auto;
+}
+
 .container-small,
 .container-normal,
-.container-large,
-.container-full {
+.container-large {
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -6400,6 +6452,12 @@ main {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   padding: 10px 0;
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
 }
 
 @media (min-width: 576px) {
@@ -6408,19 +6466,19 @@ main {
   }
 }
 
+.tab-list-item:hover .tab-list-icon,
+.tab-list-item:hover .tab-list-text {
+  color: #75439a;
+}
+
 .tab-list-item.mixitup-control-active, .tab-list-item.is-active {
-  background-color: #ffffff;
+  background-color: #75439a;
 }
 
 .tab-list-item.mixitup-control-active .tab-list-icon,
 .tab-list-item.mixitup-control-active .tab-list-text, .tab-list-item.is-active .tab-list-icon,
 .tab-list-item.is-active .tab-list-text {
-  color: #75439a;
-}
-
-.tab-list-item:hover .tab-list-icon,
-.tab-list-item:hover .tab-list-text {
-  color: #75439a;
+  color: #ffffff;
 }
 
 .tab-list-text {
@@ -6434,19 +6492,19 @@ main {
 
 .tab-list-icon {
   display: inline-block;
-  margin-right: 15px;
   vertical-align: middle;
   color: #000000;
-  font-size: 26px;
-  font-size: 1.625rem;
+  margin-right: 0;
+  font-size: 22px;
+  font-size: 1.375rem;
 }
 
-@media (max-width: 575px) {
+@media (min-width: 576px) {
   .tab-list-icon {
-    width: 100%;
-    margin-right: 0;
-    font-size: 22px;
-    font-size: 1.375rem;
+    width: auto;
+    margin-right: 15px;
+    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 
@@ -6459,12 +6517,16 @@ main {
   overflow: hidden;
   height: 0;
   opacity: 0;
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
   -webkit-transition: opacity 400ms ease-out;
   -o-transition: opacity 400ms ease-out;
   transition: opacity 400ms ease-out;
 }
 
 .tab-content-item.is-active {
+  padding: 2rem 0;
   visibility: visible;
   overflow: visible;
   height: auto;
@@ -6675,6 +6737,8 @@ main {
   border: 1px solid #f7f7f7;
   border-radius: 20px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .blog-content:hover .blog-title {
@@ -6726,6 +6790,8 @@ main {
   border: 1px solid #f7f7f7;
   border-radius: 20px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .card-content:hover .card-title {

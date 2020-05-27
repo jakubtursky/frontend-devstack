@@ -11,6 +11,34 @@
 	margin-bottom: 2rem;
 }
 
+.checkbox-switcher{
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 26px;
+	.checkbox-label{
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border: 2px solid $color-black-normal;
+		border-radius: 35px;
+		background-color: transparent;
+	}
+	.checkbox-hidden:checked + .checkbox-label {
+		border-color: $color-purple-normal;
+		&:after {
+			display: none;
+		}
+		.checkbox-slider{
+			background-color: $color-purple-normal;
+			left: calc(100% - 20px);
+		}
+	}
+}
+
 .input-hidden ,
 .checkbox-hidden {
 	position: absolute;
@@ -62,6 +90,17 @@
 	@include font-size(16px);
 	padding-left: 1rem;
 	line-height: 1.4;
+}
+
+.checkbox-slider{
+	position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 2px;
+    border-radius: 50%!important;
+    background-color: $color-black-normal;
+    transition: all .2s ease;
 }
 
 

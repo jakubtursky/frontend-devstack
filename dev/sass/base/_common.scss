@@ -216,8 +216,8 @@ ul.list-style, ol.list-style{
 		@include font-size(16px);
 	}
 	a{
-		color: $color-purple-normal;
-
+		// color: $color-purple-normal;
+		text-decoration: underline;
 		&:hover{
 			text-decoration: underline;
 		}

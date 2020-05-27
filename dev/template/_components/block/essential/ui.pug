@@ -1,14 +1,14 @@
-section.padding-style-6-3
-	.container-large
+section.padding-style-6
+	//- .container-large
 		.row.margin-bottom-3.margin-bottom-sm-6
 			.col-12.txt-c.h-margin-2
 				h1 UI Kit
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
-				h2 General headlines
+				h2 Headlines
 		
-		.row.margin-bottom-6
+		.row
 			.col-12.col-md-6.col-lg-4.margin-bottom-2
 				.padding-content-sm-2
 					h1.alfa h1, alfa
@@ -26,7 +26,7 @@ section.padding-style-6-3
 					h5.epsilon h5, epsilon
 					h6.zeta h6, zeta
 			.col-12.col-md-6.col-lg-4.margin-bottom-2
-				.padding-content-2.bg-black-normal
+				.padding-content-2.bg-purple-normal
 					.h-color-white
 						h1.alfa h1, alfa
 						h2.beta h2, beta
@@ -34,12 +34,14 @@ section.padding-style-6-3
 						h4.delta h4, delta
 						h5.epsilon h5, epsilon
 						h6.zeta h6, zeta
+
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
-				h2 General paragraphs
-		.row.margin-bottom-6
-			.col-12.col-md-6.col-lg-6
+				h2 Paragraphs
+		.row
+			.col-12.col-md-6.col-lg-6.margin-bottom-4
 				.padding-content-sm-2
 					p paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic paragraph classic
 					.p-size-20
@@ -72,7 +74,7 @@ section.padding-style-6-3
 							+svg('chevron-right')
 			
 			.col-12.col-md-6.col-lg-6.margin-bottom-2
-				.padding-content-2.bg-black-normal
+				.padding-content-2.bg-purple-normal
 					.p-color-white
 						p paragraph white paragraph white paragraph white paragraph white paragraph white paragraph white paragraph white paragraph white paragraph white paragraph white
 					ul.list-style.ul-color-white
@@ -101,31 +103,33 @@ section.padding-style-6-3
 						span.a-link-icon.icon-size-26.margin-left-05.icon-color-white
 							+svg('chevron-right')
 
+section.padding-style-6
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Dots
-		.row.margin-bottom-6
+		.row
 			.col-12.col-md-6.col-lg-6
 				.padding-content-sm-2
 					p.dots(data-height="60") dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height dots 60 fixed height
 					p.dots(data-height="60") dots 60 fixed height 
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
-				h2 Typography
-		.row.margin-bottom-6
+				h2 Typography ( blog detail, etc.. )
+		.row
 			.col-12.col-md-6.col-lg-6
 				.padding-content-sm-2.typography
-					h2 Nadpis H1
+					h2 Headline H1
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. 
-					h2 Nadpis H2
+					h2 Headline H2
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor.
-					h3 Nadpis H3
+					h3 Headline H3
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor.
-					h4 Nadpis H4
+					h4 Headline H4
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor.
-					h5 Nadpis H5
+					h5 Headline H5
 					p Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor.
 					ul
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -133,7 +137,7 @@ section.padding-style-6-3
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
-					h4 Nadpis H4
+					h4 Headline H4
 					ol
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 						li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -143,11 +147,12 @@ section.padding-style-6-3
 						img(src="https://via.placeholder.com/250x150", alt="")
 						figcaption Image caption
 
+section.padding-style-6
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Buttons
-		.row.margin-bottom-6
+		.row
 			.col-12.col-md-6.col-lg-6.margin-bottom-2
 				.margin-bottom-2
 					button.btn.btn-black-fill.btn-min-width-normal Button normal
@@ -191,11 +196,39 @@ section.padding-style-6-3
 			.col-12.txt-c
 				.margin-bottom-2
 					button.btn.btn-purple-fill.btn-size-big.btn-responsive.js-modal-trigger(data-modal="modal") Button modal
+
+section.padding-style-6.bg-gray-light
+	.container-large
+		.row.margin-bottom-2
+			.col-12.txt-c
+				h2 Form validation ( parsley )
+		.row
+			.col-12
+				form#form-validation(role="form")
+					.form-field.form-field-big.form-field-placeholder.js-placeholder-block
+						label.form-label(for="form_validate_name") Name
+						input(type="text" class="form-input js-placeholder-trigger" id="form_validate_name" name="form_validate_name" required)
+					.checkbox.radiobox
+						input#radiobox_male.checkbox-hidden(type='radio', name="form_validate_gender" required value="male" data-parsley-errors-container=".js-form-validate-gender-error")
+						label.checkbox-label(for='radiobox_male')
+							span.checkbox-box
+							span.checkbox-text Male
+
+					.checkbox.radiobox
+						input#radiobox_female.checkbox-hidden(type='radio', name="form_validate_gender" required='' value="female" data-parsley-errors-container=".js-form-validate-gender-error")
+						label.checkbox-label(for='radiobox_female')
+							span.checkbox-box
+							span.checkbox-text Female
+					.js-form-validate-gender-error
+
+					button(type="submit").btn.btn-purple-fill.btn-min-width-normal Button normal
+
+section.padding-style-6
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Form
-		.row.margin-bottom-6
+		.row
 			.col-12.col-md-6.col-lg-6
 				.padding-content-sm-2
 					.form-field.form-field-normal
@@ -257,6 +290,11 @@ section.padding-style-6-3
 						label.checkbox-label(for='checkbox_1')
 							span.checkbox-box
 							span.checkbox-text Checkbox 1
+
+					.checkbox.checkbox-switcher
+						input#checkbox_switcher.checkbox-hidden(type='checkbox')
+						label.checkbox-label(for='checkbox_switcher')
+							span.checkbox-slider
 				
 				.padding-content-sm-2.margin-bottom-3
 					.js-range-block
@@ -286,39 +324,16 @@ section.padding-style-6-3
 							label(for='file_upload' class="btn btn-purple-fill btn-min-width-normal txt-c file-upload-label") Nahratie súboru
 							.file-upload-output.js-file-upload-output
 
-	.container-large
-		.row.margin-bottom-2
-			.col-12.txt-c
-				h2 Form validation ( parsley )
-		.row.margin-bottom-6
-			.col-12
-				form#form-validation(role="form")
-					.form-field.form-field-big.form-field-placeholder.js-placeholder-block
-						label.form-label(for="form_validate_name") Name
-						input(type="text" class="form-input js-placeholder-trigger" id="form_validate_name" name="form_validate_name" required)
-					.checkbox.radiobox
-						input#radiobox_male.checkbox-hidden(type='radio', name="form_validate_gender" required value="male" data-parsley-errors-container=".js-form-validate-gender-error")
-						label.checkbox-label(for='radiobox_male')
-							span.checkbox-box
-							span.checkbox-text Male
 
-					.checkbox.radiobox
-						input#radiobox_female.checkbox-hidden(type='radio', name="form_validate_gender" required='' value="female" data-parsley-errors-container=".js-form-validate-gender-error")
-						label.checkbox-label(for='radiobox_female')
-							span.checkbox-box
-							span.checkbox-text Female
-					.js-form-validate-gender-error
-
-					button(type="submit").btn.btn-purple-fill.btn-min-width-normal Button normal
-
-
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Slider
-		.row.margin-bottom-8
+		.row.margin-bottom-2
 			.col-12.txt-c
 				.padding-content-sm-2
+					//- .js-slider.js-slider-classic
 					.js-slider.js-slider-classic.slick-margin-negative-20.slick-margin-negative-sm-30.slick-margin-negative-md-50
 						.js-slide-item
 							figure
@@ -351,11 +366,12 @@ section.padding-style-6-3
 							h2.gamma slider title
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, ut, doloremque quaerat hic, omnis aut iste quod, cum molestias inventore vitae quae autem dolorem magni aspernatur amet dicta distinctio aperiam.
 
+section.padding-style-6
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Swiper
-		.row.margin-bottom-8
+		.row.margin-bottom-2
 			.col-12.txt-c
 				.padding-content-sm-2.js-slider-group
 					.swiper-container.js-slider-hero
@@ -385,11 +401,13 @@ section.padding-style-6-3
 						.swiper-arrow.swiper-arrow-prev.js-swiper-arrow-prev
 							.swiper-arrow-content
 								+svg('chevron-left')
+
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Accordion
-		.row.margin-bottom-6
+		.row
 			.col-12.col-md-6.margin-bottom-2
 				.padding-content-sm-2.p-margin-0
 					.accordion-group.js-accordion-group
@@ -428,11 +446,13 @@ section.padding-style-6-3
 							.accordion-trigger.js-accordion-trigger Accordion title
 							.accordion-content.js-accordion-content
 								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ea vel repellendus provident ipsa quam fuga, at illo, velit, aliquam dolore voluptatibus doloribus. Dolorum totam ut optio. Nisi, porro, repellat.
+
+section.padding-style-6
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Tabs
-		.row.margin-bottom-6
+		.row
 			.col-12.txt-c
 				.tabs-group.js-tabs-group
 					ul.tabs-list.tabs-list-3.margin-bottom-2
@@ -447,19 +467,24 @@ section.padding-style-6-3
 							span.tab-list-text Tab 3
 					.tabs-content.js-tabs-content
 						.tab-content-item.js-tab-content-item.is-active(data-id="tab-1")
-							h2.gamma tab 1
-							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam explicabo pariatur accusantium iusto in eligendi eius asperiores harum, numquam autem, eveniet, esse hic nihil modi molestias cumque. Accusantium, natus.
+							.content-width-500.margin-center
+								h2.gamma tab 1
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam explicabo pariatur accusantium iusto in eligendi eius asperiores harum, numquam autem, eveniet, esse hic nihil modi molestias cumque. Accusantium, natus.
 						.tab-content-item.js-tab-content-item(data-id="tab-2")
-							h2.gamma tab 2
-							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam explicabo pariatur accusantium iusto in eligendi eius asperiores harum, numquam autem, eveniet, esse hic nihil modi molestias cumque. Accusantium, natus.
+							.content-width-500.margin-center
+								h2.gamma tab 2
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam explicabo pariatur accusantium iusto in eligendi eius asperiores harum, numquam autem, eveniet, esse hic nihil modi molestias cumque. Accusantium, natus.
 						.tab-content-item.js-tab-content-item(data-id="tab-3")
-							h2.gamma tab 3
-							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam explicabo pariatur accusantium iusto in eligendi eius asperiores harum, numquam autem, eveniet, esse hic nihil modi molestias cumque. Accusantium, natus.
+							.content-width-500.margin-center
+								h2.gamma tab 3
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam explicabo pariatur accusantium iusto in eligendi eius asperiores harum, numquam autem, eveniet, esse hic nihil modi molestias cumque. Accusantium, natus.
+
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Pagination
-		.row.margin-bottom-8
+		.row.margin-bottom-2
 			.col-12
 				.pagination
 					a(href="#").pagination-list-icon.fonticon.icon-chevron-left.is-disabled
@@ -479,11 +504,12 @@ section.padding-style-6-3
 					li.pagination-list-item
 						a(href="#").pagination-list-link 5
 	
+section.padding-style-6
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Card
-		.row.margin-bottom-8
+		.row
 			.col-12.col-md-6.col-lg-4
 				h2.epsilon Card - classic
 				.card-item
@@ -521,11 +547,12 @@ section.padding-style-6-3
 							p.dots(data-height="100") Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenati nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id l ae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenati nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id la…
 							button.btn.btn-purple-fill Add to basket
 
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Article
-		.row.margin-bottom-8
+		.row
 			.col-12
 				ul.breadcrumbs-list
 					li.breadcrumb-list-item
@@ -549,22 +576,25 @@ section.padding-style-6-3
 									+svg('chevron-right')
 
 
-	.container-large
-		.row.margin-bottom-2
+section.padding-style-6.padding-left-0.padding-right-0.padding-bottom-0
+	.container-full
+		.row.no-gutter.margin-bottom-2
 			.col-12.txt-c
 				h2 Map
-		.row.margin-bottom-6
+		.row.no-gutter
 			.col-12
 				.map
 					-var mapId = "map";
 					-var langitude = "49.033960";
 					-var longitude = "19.739368";
 					.map-block(id=`${mapId}` data-langitude=`${langitude}`, data-longitude=`${longitude}`)
+
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Gallery
-		.row.margin-bottom-8.js-gallery
+		.row.js-gallery
 			.col-6.col-sm-4.col-md-3
 				a(href="https://via.placeholder.com/250x150").js-gallery-item
 					img(src="https://via.placeholder.com/250x150", alt="", class="img-responsive img-full")
@@ -577,11 +607,13 @@ section.padding-style-6-3
 			.col-6.col-sm-4.col-md-3
 				a(href="https://via.placeholder.com/250x150").js-gallery-item
 					img(src="https://via.placeholder.com/250x150", alt="", class="img-responsive img-full")
+
+section.padding-style-6
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Another
-		.row.margin-bottom-8
+		.row
 			.col-12.col-md-6.col-lg-4
 				.margin-bottom-3
 					h1.gamma Tooltip
@@ -652,11 +684,13 @@ section.padding-style-6-3
 									a(href="#").dropdown-list-link EN
 								li.dropdown-list-item
 									a(href="#").dropdown-list-link DE
+
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Table
-		.row.margin-bottom-8
+		.row
 			.col-12
 				.table-responsives
 					table
@@ -697,11 +731,13 @@ section.padding-style-6-3
 								td table body 4
 								td table body 5
 								td table body 6
+
+section.padding-style-6
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
 				h2 Gallery with fadein animation
-		.js-gallery.js-gallery.load-more-block.js-load-more-block.margin-bottom-8(data-aos="fade-in" data-aos-delay="300" data-aos-once="true" data-aos-duration="700")
+		.js-gallery.js-gallery.load-more-block.js-load-more-block(data-aos="fade-in" data-aos-delay="300" data-aos-once="true" data-aos-duration="700")
 			.row.js-load-more-grid
 				.col-6.col-sm-4.col-md-3.margin-bottom-2
 					a(href="https://via.placeholder.com/250x150").js-gallery-item
@@ -719,6 +755,7 @@ section.padding-style-6-3
 				button.btn.btn-purple-fill.btn-min-width-normal.load-more-content.margin-center.js-load-more-content(data-content="gallery") load more
 				.loading-post.loading-spinner
 
+section.padding-style-6.bg-gray-light
 	.container-large
 		.row.margin-bottom-2
 			.col-12.txt-c
@@ -730,7 +767,7 @@ section.padding-style-6-3
 						span.tab-list-text red
 					li.tab-list-item(data-toggle=".blue")
 						span.tab-list-text blue
-		.row.js-filter-group.margin-bottom-8.js-gallery
+		.row.js-filter-group.js-gallery
 			.col-6.col-sm-4.col-md-3.margin-bottom-2.mix.red
 				a(href="https://via.placeholder.com/250x150").js-gallery-item
 					img(src="https://via.placeholder.com/250x150", alt="", class="img-responsive img-full")

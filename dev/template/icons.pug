@@ -28,11 +28,16 @@ html(lang="")
 		// Main content 
 		main.overflow-hidden
 
+			- var heroTitle = 'Icons'
+			//- - var heroPerex = 'Ui'
+			// Section hero
+			include _components/block/essential/hero.pug
+
 			section
 				.container-normal
-					.row
-						.col-12.txt-c.margin-bottom-1
-							h1.beta Icons
+					//- .row
+					//- 	.col-12.txt-c.margin-bottom-1
+					//- 		h1.beta Icons
 					.row.txt-c.margin-bottom-4.icon-color-purple.icon-size-60
 						.col-4.col-sm-3.col-lg-2.margin-bottom-2
 							+svg('play')

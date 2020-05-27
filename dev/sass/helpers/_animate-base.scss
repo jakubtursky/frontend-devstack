@@ -18,13 +18,13 @@
 
 .loading-spinner{
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 80px;
 	animation-name: spinner-rotate;
 	animation-duration: 0.75s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	border: 5px solid $color-purple-normal;
+	border: 10px solid $color-purple-normal;
 	border-right-color: transparent;
 	border-radius: 50%;
 }

@@ -10,7 +10,7 @@ section{
 }
 
 .padding-style-1{
-	padding: 1rem 0.5rem 1rem;
+	padding: 1rem 0 1rem;
 
 	@include bp(small){
 		padding: 1rem 0 1rem;
@@ -18,7 +18,7 @@ section{
 }
 
 .padding-style-2{
-	padding: 2rem 0.5rem 2rem;
+	padding: 2rem 0 2rem;
 
 	@include bp(small){
 		padding: 2rem 0 2rem;
@@ -26,7 +26,7 @@ section{
 }
 
 .padding-style-3{
-	padding: 2rem 0.5rem 2rem;
+	padding: 2rem 0 2rem;
 
 	@include bp(small){
 		padding: 3rem 0 3rem;
@@ -34,7 +34,7 @@ section{
 }
 
 .padding-style-4{
-	padding: 3rem 0.5rem 3rem;
+	padding: 3rem 0 3rem;
 
 	@include bp(small){
 		padding: 4rem 0 4rem;
@@ -42,7 +42,7 @@ section{
 }
 
 .padding-style-5{
-	padding: 3rem 0.5rem 3rem;
+	padding: 3rem 0 3rem;
 
 	@include bp(small){
 		padding: 5rem 0 5rem;
@@ -50,7 +50,7 @@ section{
 }
 
 .padding-style-6{
-	padding: 3rem 0.5rem 3rem;
+	padding: 3rem 0 3rem;
 
 	@include bp(small){
 		padding: 6rem 0 6rem;
@@ -58,7 +58,7 @@ section{
 }
 
 .padding-style-6-3{
-	padding: 3rem 0.5rem 3rem;
+	padding: 3rem 0 3rem;
 
 	@include bp(small){
 		padding: 6rem 0 3rem;
@@ -131,10 +131,13 @@ main{
 	}
 }
 
+.container-full{
+	margin: 0 auto;
+}
+
 .container-small,
 .container-normal,
-.container-large,
-.container-full{
+.container-large{
 	margin: 0 auto;
 	padding: 0 15px;
 }

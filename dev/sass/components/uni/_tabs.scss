@@ -30,6 +30,10 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 10px 0;
+
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background-color: #fff;
+    transition: all 250ms ease;
 	// border-right: 1px solid #e7e9ec;
 	@include bp(xsmall){
 		padding: 0 20px;
@@ -37,18 +41,18 @@
 	// &:last-child{
 	// 	border-right: 0;
 	// }
-	&.mixitup-control-active,
-	&.is-active{
-		background-color: #ffffff;
+	&:hover{
 		.tab-list-icon,
 		.tab-list-text{
 			color: $color-purple-normal;
 		}
 	}
-	&:hover{
+	&.mixitup-control-active,
+	&.is-active{
+		background-color: $color-purple-normal;
 		.tab-list-icon,
 		.tab-list-text{
-			color: $color-purple-normal;
+			color: #ffffff;
 		}
 	}
 }
@@ -64,16 +68,17 @@
 
 .tab-list-icon{
 	display: inline-block;
-	margin-right: 15px;
 	vertical-align: middle;
 	color: $color-black-normal;
 
-	@include font-size(26px);
-	@include bp(rev-xsmall){
-		width: 100%;
-		margin-right: 0;
+	// width: 100%;
+	margin-right: 0;
+	@include font-size(22px);
+	@include bp(xsmall){
+		width: auto;
+		margin-right: 15px;
+		@include font-size(26px);
 
-		@include font-size(22px);
 	}
 }
 
@@ -86,8 +91,11 @@
 	overflow: hidden;
 	height: 0;
 	opacity: 0;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background-color: #fff;
 	@include transition(opacity, 400ms, ease-out);
 	&.is-active{
+		padding: 2rem 0;
 		visibility: visible;
 		overflow: visible;
 		height: auto;

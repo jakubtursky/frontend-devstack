@@ -23,6 +23,11 @@ html(lang="")
 		
 		// Main content 
 		main
+			- var heroTitle = 'Styleguide'
+			//- - var heroPerex = 'Ui'
+			// Section hero
+			include _components/block/essential/hero.pug
+
 			// Section styleguide
 			include _components/block/essential/styleguide.pug
 

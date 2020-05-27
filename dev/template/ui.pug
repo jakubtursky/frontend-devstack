@@ -2,7 +2,7 @@ doctype html
 html(lang="")
 	// Head 
 	include _main/head.pug
-	body.overflow-x-hidden.body-test
+	body.body-test
 		//- img(src="images/test/hp.jpg", alt="", class="img-test")
 		// Page loader
 		include _components/block/essential/page-loader.pug
@@ -27,7 +27,12 @@ html(lang="")
 
 		
 		// Main content 
-		main
+		main.overflow-x-hidden
+			- var heroTitle = 'UI Kit'
+			//- - var heroPerex = 'Ui'
+			// Section hero
+			include _components/block/essential/hero.pug
+			
 			// Section ui
 			include _components/block/essential/ui.pug
 
