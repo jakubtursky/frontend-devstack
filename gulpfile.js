@@ -223,7 +223,8 @@ function browserSync() {
 	//});
 	connect.server({
 		root: 'public',
-		livereload: true
+		livereload: true,
+		port: 4000
 	})
 }
 

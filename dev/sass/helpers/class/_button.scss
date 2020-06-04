@@ -47,40 +47,36 @@
 .btn-icon {
 }
 
-.btn-font-size-12 {
+.btn-font-size-xsmall {
 	@include font-size(12px);
 }
 
-.btn-font-size-14 {
+.btn-font-size-small {
 	@include font-size(14px);
 }
 
-.btn-font-size-16 {
+.btn-font-size-normal {
 	@include font-size(16px);
 }
 
-.btn-font-size-18 {
+.btn-font-size-big {
 	@include font-size(18px);
 }
 
-.btn-font-size-20 {
+.btn-font-size-large {
 	@include font-size(20px);
 }
 
-.btn-size-xsmall {
-	padding: 0.5em 1rem;
-}
-
 .btn-size-small {
-	padding: 1.2em 1.2rem;
+	padding: 0.6em 1.2rem;
 }
 
 .btn-size-normal {
-	padding: 1.5em 1.5rem;
+	padding: 1.2em 1.5rem;
 }
 
 .btn-size-big {
-	padding: 2em 2rem;
+	padding: 2.2em 2rem;
 }
 
 .btn-min-width-xsmall {

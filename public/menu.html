@@ -196,7 +196,6 @@
 				background: var(--main-color);
 			}
 			header{
-				overflow: hidden;
 				line-height: 1;
 				height: 90px;
 				position: fixed;
@@ -205,6 +204,11 @@
 				right: 0;
 				z-index: 200;
 				background: #fff;
+			}
+			@media (max-width: 780px){
+				header{	
+					overflow: hidden;
+				}
 			}
 			header h1{
 				background: #f9e900;
@@ -254,12 +258,16 @@
 			.types{
 				position: absolute;
 				right: 40px;
-				top: 24px;
+				top: 12px;
+				max-width: 650px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-end;
 			}
 			.types button,.types button:active{
-				height: 46px;
+				height: 45px;
 				width: 112px;
-				border: 1px solid #eee;
+				border: 1px solid #75439a;
 				background: #fff;
 				font-size: 14px;
 				color: #000;
@@ -270,11 +278,15 @@
 				outline: none;
 				cursor: pointer;
 				transition: all .25s ease-in-out;
+				margin-bottom: 5px;
+				margin-left: 5px;
+				line-height: 1.4;
 			}
 			.types button:hover{
 				background: #eee;
 			}
 			.types strong{
+				font-size: 12px;
 				font-weight: normal;
 				font-family: var(--font-primary),sans-serif;
 			}
@@ -406,25 +418,50 @@
 			<h1><span>DevStack</span></h1>
 			<div class="header__updated"><em>Menu</em></div>
 			<nav class="types">
+				<button data-mode="mobile" data-width="320">
+					<svg class="icon icon-mobile">
+						<use xlink:href="#icon-mobile"></use>
+					</svg><strong>Mobile XS</strong><span>320px</span>
+				</button>
 				<button data-mode="mobile" data-width="375">
 					<svg class="icon icon-mobile">
 						<use xlink:href="#icon-mobile"></use>
-					</svg><strong>Mobile</strong><span>375px</span>
+					</svg><strong>Mobile SM</strong><span>375px</span>
+				</button>
+				<button data-mode="ipad" data-width="480">
+					<svg class="icon icon-tablet">
+						<use xlink:href="#icon-tablet"></use>
+					</svg><strong>Mobile XL</strong><span>480px</span>
+				</button>
+				<button data-mode="ipad" data-width="600">
+					<svg class="icon icon-tablet">
+						<use xlink:href="#icon-tablet"></use>
+					</svg><strong>Tablet XS </strong><span>600px</span>
 				</button>
 				<button data-mode="ipad" data-width="768">
 					<svg class="icon icon-tablet">
 						<use xlink:href="#icon-tablet"></use>
-					</svg><strong>Tablet</strong><span>768px</span>
+					</svg><strong>Tablet SM</strong><span>768px</span>
 				</button>
-				<button data-mode="desktop" data-width="1024">
+				<button data-mode="ipad" data-width="1024">
+					<svg class="icon icon-tablet">
+						<use xlink:href="#icon-tablet"></use>
+					</svg><strong>Tablet XL</strong><span>1024px</span>
+				</button>
+				<button data-mode="desktop" data-width="1366">
 					<svg class="icon icon-desktop">
 						<use xlink:href="#icon-desktop"></use>
-					</svg><strong>Desktop</strong><span>1024px</span>
+					</svg><strong>Desktop XS</strong><span>1366px</span>
 				</button>
-				<button class="is-active" data-mode="wide" data-width="1440">
+				<button class="is-active" data-mode="desktop" data-width="1440">
+					<svg class="icon icon-desktop">
+						<use xlink:href="#icon-desktop"></use>
+					</svg><strong>Desktop SM</strong><span>1440px</span>
+				</button>
+				<button data-mode="wide" data-width="1920">
 					<svg class="icon icon-wide">
 						<use xlink:href="#icon-wide"></use>
-					</svg><strong>Desktop HD</strong><span>1440px</span>
+					</svg><strong>Desktop XL</strong><span>1920px</span>
 				</button>
 			</nav>
 		</header>

@@ -37,8 +37,8 @@
 	&:after,
 	&:before{
 		content: ""!important;
-		width: 28px;
-		height: 19px;
+		width: 19px;
+		height: 28px;
 		display: block;
 		position: absolute;
 		top: 50%;
@@ -63,14 +63,14 @@
 .quantity-up{
 	right: 0;
 	&:before{
-		background-image: url('../images/icons/chevron-up.svg');
+		background-image: url('../images/icons/chevron-right.svg');
 	}
 }
 
 .quantity-down{
 	left: 0;
 	&:after{
-		background-image: url('../images/icons/chevron-down.svg');
+		background-image: url('../images/icons/chevron-left.svg');
 	}
 }
 
