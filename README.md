@@ -1,15 +1,18 @@
 # Frontend-devstack
+
 Complex Front-end devstack for coding HTML, CSS, JS templates.
 
 ## Demo
+
 <a href="https://jakubtursky.sk/devstack/menu.html" target="_blank" title="Devstack" class="link">Live demo</a>
 
 ## Frontend-devstack usage
+
 - in console run "npm install" for install node_modules listed in package.json
 - in console run "gulp" for default task
 
 ## Project structure
-   
+
     .
     ├── assets                      # Assets - Images, webfonts, iconfonts, favicon
     │   ├── favicon                 # Favicon of website
@@ -48,48 +51,48 @@ Complex Front-end devstack for coding HTML, CSS, JS templates.
     ├── gulpfile.js                 # Tasks for automatization
     └── README.md
 
-
 ## Automatization with gulp
+
 ```javascript
 // define simple tasks
 // images
-exports.images = images;
-exports.imagesMinifyClassic = imagesMinifyClassic;
-exports.imagesMinifyTiny = imagesMinifyTiny;
-exports.imagesResize = imagesResize;
+exports.images = images
+exports.imagesMinifyClassic = imagesMinifyClassic
+exports.imagesMinifyTiny = imagesMinifyTiny
+exports.imagesResize = imagesResize
 
 // fonts
-exports.webfonts = webfonts;
-exports.iconfonts = iconfonts;
+exports.webfonts = webfonts
+exports.iconfonts = iconfonts
 
 // scripts
-exports.scriptsDevelopment = scriptsDevelopment;
-exports.scriptsProduction = scriptsProduction;
-exports.babelCompile = babelCompile;
+exports.scriptsDevelopment = scriptsDevelopment
+exports.scriptsProduction = scriptsProduction
+exports.babelCompile = babelCompile
 
 // styles
-exports.stylesDevelopment = stylesDevelopment;
-exports.stylesProduction = stylesProduction;
-exports.unusedStyles = unusedStyles;
+exports.stylesDevelopment = stylesDevelopment
+exports.stylesProduction = stylesProduction
+exports.unusedStyles = unusedStyles
 
 // jade
-exports.jade = jade;
+exports.jade = jade
 
 // download, concat resources
-exports.downloadStyles = downloadStyles;
-exports.concatStyles = concatStyles;
-exports.downloadScripts = downloadScripts;
-exports.concatScripts = concatScripts;
+exports.downloadStyles = downloadStyles
+exports.concatStyles = concatStyles
+exports.downloadScripts = downloadScripts
+exports.concatScripts = concatScripts
 
 // validate
-exports.htmlValidate = htmlValidate;
-exports.jsValidate = jsValidate;
+exports.htmlValidate = htmlValidate
+exports.jsValidate = jsValidate
 
 // define complex tasks
-exports.production = production;
-exports.download = download;
-exports.test = test;
-exports.build = build;
-exports.watch = watch;
-exports.default = watch;
+exports.production = production
+exports.download = download
+exports.test = test
+exports.build = build
+exports.watch = watch
+exports.default = watch
 ```
