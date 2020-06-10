@@ -1,145 +1,145 @@
 // --- GLOBAL VARIABLES --- //
-var $window = $(window);
-var $document = $(document);
-var $header = $('.header');
-var bpSmall = 771;
-var bpMedium = 992;
-var bpLarge = 1200;
-var classActive = 'is-active';
-var classDisabled = 'is-disabled';
-var classLast = 'is-last';
-var classHasError = 'has-error';
-var classLoading = 'is-loading';
-var classOpened = 'is-opened';
-var classSelected = 'is-selected';
-var classCollapse = 'is-collapse';
-var classAnimated = 'is-animated';
-var $this = null;
-var $containers = $('html,body');
+var $window = $(window)
+var $document = $(document)
+var $header = $('.header')
+var bpSmall = 771
+var bpMedium = 992
+var bpLarge = 1200
+var classIsActive = 'is-active'
+var classIsDisabled = 'is-disabled'
+var classIsLast = 'is-last'
+var classHasError = 'has-error'
+var classIsLoading = 'is-loading'
+var classIsOpened = 'is-opened'
+var classIsSelected = 'is-selected'
+var classIsCollapse = 'is-collapse'
+var classIsAnimated = 'is-animated'
+var $this = null
+var $containers = $('html,body')
 
 // --- COMPONENTS, PARTS --- //
-$(document).ready(function() {
-	// ---  COMPONENTS --- //
-	// Modal
-	componentModal();
-	
-	// Modal
-	componentSelect();
-	
-	// Range Slider
-	componentRangeSlider();
-	
-	// Quantity Input
-	componentQuantityInput();
-	
-	// Calendar
-	componentCalendar();
-	
-	// Slider
-	componentSlider();
-	
-	// Swiper
-	componentSwiper();
-	
-	// Accordion
-	componentAccordion();
-	
-	// Textarea Resize
-	componentTextareaResize();
-	
-	// Tabs
-	componentTabs();
-	
-	// Google Maps
-	componentGoogleMaps();
-	
-	// Gallery
-	componentGallery();
-	
-	// Remove
-	componentRemove();
-	
-	// Tooltip
-	componentTooltip();
-	
-	// Rate
-	componentRate();
-	
-	// Navigation
-	componentFullscreenNavigation();
-	
-	// Ajax
-	componentAjaxLoad();
-	
-	// AOS
-	componentAOS();
-	
-	// File upload
-	componentFileUpload();
-	
-	// mix it up
-	componentMixItUp();
-	
-	// Validate forms
-	componentValidateForms();
+$(document).ready(function () {
+  // ---  COMPONENTS --- //
+  // Modal
+  componentModal()
 
-	// Clear Filter
-	componentClearFilter();
+  // Modal
+  componentSelect()
 
-	// ---  PART --- //
-	// Placeholder
-	partPlaceholder();
+  // Range Slider
+  componentRangeSlider()
 
-	// Detect IE
-	partDetectIE();
+  // Quantity Input
+  componentQuantityInput()
 
-	// Scroll to
-	partScrollTo();
+  // Calendar
+  componentCalendar()
 
-	// Show Hidden
-	partShowHidden();
+  // Slider
+  componentSlider()
 
-	// Dropdown
-	partDropdown();
+  // Swiper
+  componentSwiper()
 
-	// Scroll Resize
-	partScrollResize();
-});
+  // Accordion
+  componentAccordion()
 
-var resizeTimer;
+  // Textarea Resize
+  componentTextareaResize()
+
+  // Tabs
+  componentTabs()
+
+  // Google Maps
+  componentGoogleMaps()
+
+  // Gallery
+  componentGallery()
+
+  // Remove
+  componentRemove()
+
+  // Tooltip
+  componentTooltip()
+
+  // Rate
+  componentRate()
+
+  // Navigation
+  componentFullscreenNavigation()
+
+  // Ajax
+  componentAjaxLoad()
+
+  // AOS
+  componentAOS()
+
+  // File upload
+  componentFileUpload()
+
+  // mix it up
+  componentMixItUp()
+
+  // Validate forms
+  componentValidateForms()
+
+  // Clear Filter
+  componentClearFilter()
+
+  // ---  PART --- //
+  // Placeholder
+  partPlaceholder()
+
+  // Detect IE
+  partDetectIE()
+
+  // Scroll to
+  partScrollTo()
+
+  // Show Hidden
+  partShowHidden()
+
+  // Dropdown
+  partDropdown()
+
+  // Scroll Resize
+  partScrollResize()
+})
+
+var resizeTimer
 
 // --- SCROLL EVENT --- //
-$(document).scroll(function() {
-	if (resizeTimer) {
-		window.cancelAnimationFrame(resizeTimer);
-	}
+$(document).scroll(function () {
+  if (resizeTimer) {
+    window.cancelAnimationFrame(resizeTimer)
+  }
 
-	resizeTimer = window.requestAnimationFrame(function () {
-		partScrollResize();
-	});
-});
+  resizeTimer = window.requestAnimationFrame(function () {
+    partScrollResize()
+  })
+})
 
 // --- RESIZE EVENT --- //
-$(window).resize(function() {
-	if (resizeTimer) {
-		window.cancelAnimationFrame(resizeTimer);
-	}
+$(window).resize(function () {
+  if (resizeTimer) {
+    window.cancelAnimationFrame(resizeTimer)
+  }
 
-	resizeTimer = window.requestAnimationFrame(function () {
-		partScrollResize();
-	});
-});
+  resizeTimer = window.requestAnimationFrame(function () {
+    partScrollResize()
+  })
+})
 
 // --- LOAD EVENT --- //
-$(window).bind('load', function() {
-	// Dots
-	partDots();
+$(window).bind('load', function () {
+  // Dots
+  partDots()
 
-	// Page Loader
-	$('body').addClass(classActive);
+  // Page Loader
+  $('body').addClass(classIsActive)
 
-	// Cookies bar
-	setTimeout(function() {
-		$('#cookies-bar').addClass(classActive);
-	}, 2000);
-});
+  // Cookies bar
+  setTimeout(function () {
+    $('#cookies-bar').addClass(classIsActive)
+  }, 2000)
+})

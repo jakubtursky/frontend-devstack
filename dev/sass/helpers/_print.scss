@@ -1,6 +1,6 @@
 /* Print */
 
-/* @media print{    
+/* @media print{
 	h2, h3, h4{
 		page-break-after: avoid;
 	}
@@ -8,129 +8,147 @@
 	img{
 		max-width: 100% !important;
 	}
-	
+
 	ul, img{
 		page-break-inside: avoid;
 	}
-	
+
 	.hidden-print{
 		display: none;
 	}
 }
 */
-@media print{
-	*{
-		position: relative !important;
-		top: auto !important;
-		right: auto !important;
-		bottom: auto !important;
-		left: auto !important;
-		width: auto !important;
-		min-width: 1px !important;
-		max-width: none !important;
-		height: auto !important;
-		min-height: 1px !important;
-		max-height: none !important;
-		margin: inherit !important;
-		padding: inherit !important;
-		color: #000000 !important;
-		border: none !important;
-		background: #ffffff !important;
-		box-shadow: none !important;
-		text-shadow: none !important;
-		font-family: sans-serif !important;
-	}
+@media print {
+  * {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: auto !important;
+    min-width: 1px !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 1px !important;
+    max-height: none !important;
+    margin: inherit !important;
+    padding: inherit !important;
+    color: $color-black !important;
+    border: none !important;
+    background: $color-white !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-family: sans-serif !important;
+  }
 
-	body{
-		width: 100% !important;
-		margin: 0px !important;
-		padding: 20px !important;
-		letter-spacing: 0.2pt !important;
-		word-spacing: 1.1pt !important;
-		color: #000000 !important;
-		background: none !important;
-		font-family: sans-serif !important;
-		font-size: 12pt !important;
-		line-height: 1.4 !important;
-	}
+  body {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 20px !important;
+    letter-spacing: 0.2pt !important;
+    word-spacing: 1.1pt !important;
+    color: $color-black !important;
+    background: none !important;
+    font-family: sans-serif !important;
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+  }
 
-	h1, h2, h3, h4{
-		clear: both !important;
-		color: black !important;
-		font-family: Helvetica, Arial, sans-serif !important;
-	}
+  h1,
+  h2,
+  h3,
+  h4 {
+    clear: both !important;
+    color: black !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+  }
 
-	h1{
-		font-size: 19pt !important;
-	}
+  h1 {
+    font-size: 19pt !important;
+  }
 
-	h2{
-		font-size: 17pt !important;
-	}
+  h2 {
+    font-size: 17pt !important;
+  }
 
-	h3{
-		font-size: 15pt !important;
-	}
+  h3 {
+    font-size: 15pt !important;
+  }
 
-	h4{
-		font-size: 12pt !important;
-	}
+  h4 {
+    font-size: 12pt !important;
+  }
 
-	ul, ol{
-		padding-left: 20px !important;
-	}
+  ul,
+  ol {
+    padding-left: 20px !important;
+  }
 
-	a img{
-		border: none !important;
-	}
+  a img {
+    border: none !important;
+  }
 
-	a, a:link, a:visited, a:hover, a:active, a:focus{
-		text-decoration: none !important;
-		color: #000000 !important;
-	}
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: none !important;
+    color: $color-black !important;
+  }
 
-	table{
-		margin: 1px !important;
-		text-align: left !important;
-	}
+  table {
+    margin: 1px !important;
+    text-align: left !important;
+  }
 
-	th{
-		border-bottom: 1px solid #000000 !important;
-		font-weight: bold !important;
-	}
+  th {
+    border-bottom: 1px solid $color-black !important;
+    font-weight: bold !important;
+  }
 
-	td{
-		border-bottom: 1px solid #000000 !important;
-	}
+  td {
+    border-bottom: 1px solid $color-black !important;
+  }
 
-	th, td{
-		padding: 4px 10px 4px 0px !important;
-	}
+  th,
+  td {
+    padding: 4px 10px 4px 0px !important;
+  }
 
-	tr{
-		page-break-inside: avoid !important;
-	}
+  tr {
+    page-break-inside: avoid !important;
+  }
 
-	img{
-		max-width: 100% !important;
-	}
+  img {
+    max-width: 100% !important;
+  }
 
-	.no, object, .noprint, nav, .nav, iframe, form, .form, button, .button{
-		display: none !important;
-	}
+  .no,
+  object,
+  .noprint,
+  nav,
+  .nav,
+  iframe,
+  form,
+  .form,
+  button,
+  .button {
+    display: none !important;
+  }
 
-	// specifické definice
-	.header__logo img{
-		margin: 0 0 0 10px !important;
-		padding: 10px;
-		background-color: black !important;
+  // specifické definice
+  .header__logo img {
+    margin: 0 0 0 10px !important;
+    padding: 10px;
+    background-color: black !important;
 
-		-webkit-print-color-adjust: exact;
-	}
+    -webkit-print-color-adjust: exact;
+  }
 
-	ul li{
-		padding: 0 !important;
-		list-style-type: square;
-	}
-
+  ul li {
+    padding: 0 !important;
+    list-style-type: square;
+  }
 }

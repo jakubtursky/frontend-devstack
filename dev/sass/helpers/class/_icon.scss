@@ -1,95 +1,95 @@
 /* Icon helpers */
 
-.icon-svg{
-	display: inline-block;
-	width: 1em;
-	height: 1em;
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
 
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
-.icon-size-12{
-	svg{
-		@include font-size(12px);
-	}
+.icon--size-12 {
+  svg {
+    @include font-size(12px);
+  }
 }
 
-.icon-size-14{
-	svg{
-		@include font-size(14px);
-	}
+.icon--size-14 {
+  svg {
+    @include font-size(14px);
+  }
 }
 
-.icon-size-16{
-	svg{
-		@include font-size(16px);
-	}
+.icon--size-16 {
+  svg {
+    @include font-size(16px);
+  }
 }
 
-.icon-size-18{
-	svg{
-		@include font-size(18px);
-	}
+.icon--size-18 {
+  svg {
+    @include font-size(18px);
+  }
 }
 
-.icon-size-20{
-	svg{
-		@include font-size(20px);
-	}
+.icon--size-20 {
+  svg {
+    @include font-size(20px);
+  }
 }
 
-.icon-size-22{
-	svg{
-		@include font-size(22px);
-	}
+.icon--size-22 {
+  svg {
+    @include font-size(22px);
+  }
 }
 
-.icon-size-24{
-	svg{
-		@include font-size(24px);
-	}
+.icon--size-24 {
+  svg {
+    @include font-size(24px);
+  }
 }
 
-.icon-size-26{
-	svg{
-		@include font-size(26px);
-	}
+.icon--size-26 {
+  svg {
+    @include font-size(26px);
+  }
 }
 
-.icon-size-28{
-	svg{
-		@include font-size(28px);
-	}
+.icon--size-28 {
+  svg {
+    @include font-size(28px);
+  }
 }
 
-.icon-size-30{
-	svg{
-		@include font-size(30px);
-	}
+.icon--size-30 {
+  svg {
+    @include font-size(30px);
+  }
 }
 
-.icon-size-60{
-	svg{
-		@include font-size(60px);
-	}
+.icon--size-60 {
+  svg {
+    @include font-size(60px);
+  }
 }
 
-.icon-color-white{
-	svg{
-		fill: #ffffff;
-	}
+.icon---white {
+  svg {
+    fill: $color-white;
+  }
 }
 
-.icon-color-black{
-	svg{
-		fill: $color-black-normal
-	}
+.icon---black {
+  svg {
+    fill: $color-black;
+  }
 }
 
-.icon-color-purple{
-	svg{
-		fill: $color-purple-normal
-	}
+.icon---purple {
+  svg {
+    fill: $color-purple;
+  }
 }

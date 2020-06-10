@@ -1,352 +1,106 @@
 /* Base settings */
 
-*, *::before, *::after{
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-*{
-	transition: color .15s, background .15s, border .15s, opacity .15s;
+* {
+  transition: color 0.15s, background 0.15s, border 0.15s, opacity 0.15s;
 }
 
-*:after, *:before{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	outline: none;
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
 
-::-moz-selection{
-	color: #fff;
-	background-color: $color-purple-normal;
+::-moz-selection {
+  color: #fff;
+  background-color: $color-purple;
 }
 
-::selection{
-	color: #fff;
-	background-color: $color-purple-normal;
+::selection {
+  color: #fff;
+  background-color: $color-purple;
 }
 
 ::-webkit-scrollbar {
-	width: 6px;
-	height: 6px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-	border-radius: 0;
-	background: $color-gray-light; 
+  border-radius: 0;
+  background: $color-gray-light;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-	border-radius: 0;
-	background: $color-purple-normal;
+  border-radius: 0;
+  background: $color-purple;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: darken($color-purple-normal,5%);
+  background: darken($color-purple, 5%);
 }
 
-@-ms-viewport{
-	width: device-width;
+@-ms-viewport {
+  width: device-width;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
 
-html{
-	position: relative;
-	box-sizing: border-box;
-	height: 100%;
-	font-size: 100%;
+html {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 100%;
 }
 
-body{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	min-width: 310px;
-	margin: 0;
-	color: #000;
-	background-color: #ffffff;
-	font-family: $font-primary;
-	font-weight: 400;
-	line-height: 1;
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 310px;
+  margin: 0;
+  color: #000;
+  background-color: $color-white;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-a{
-	cursor: pointer;
-	text-decoration: none;
-	color: inherit;
-	outline: none;
-	font-family: $font-primary;
+em,
+i,
+.italic {
+  font-style: italic;
 }
 
-a:focus, a:active, a:visited{
-	outline: none;
+strong,
+.strong {
+  font-weight: 700;
 }
 
-.a-hover{
-	&:hover, &:focus{
-		text-decoration: underline;
-	}
+small,
+.small {
+  @include font-size(12px);
 }
-
-.a-link{
-	display: inline-flex;
-	align-items: center;
-	cursor: pointer;
-	padding: 0.6rem 0;
-}
-
-.a-link-text{
-	color: $color-purple-normal;
-	font-family: $font-secondary;
-	font-weight: 700;
-	@include font-size(16px);
-}
-
-.a-link-text-black{
-	color: $color-purple-normal;
-}
-
-.a-link-text-white{
-	color: #ffffff
-}
-
-.a-link-text-purple{
-	color: $color-purple-normal;
-}
-
-.a-link-text-12{
-	@include font-size(12px);
-}
-
-.a-link-text-14{
-	@include font-size(14px);
-}
-
-.a-link-text-16{
-	@include font-size(16px);
-}
-
-.a-link-text-18{
-	@include font-size(18px);
-}
-
-.a-link-icon{
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.a-hover-link-underline{
-	position: relative;
-	&:after{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		display: block;
-		width: 0;
-		height: 1px;
-		transition: width 250ms ease-out;
-		background-color: currentColor;
-	}
-	&:hover{
-		&:after{
-			width: 100%;
-		}
-	}
-}
-
-.a-hover-link-block{
-	.a-hover-link-underline{
-		position: relative;
-		&:after{
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			display: block;
-			width: 0;
-			height: 1px;
-			transition: width 250ms ease-out;
-			background-color: currentColor;
-		}
-	}
-	&:hover{
-		.a-hover-link-underline{
-			&:after{
-				width: 100%;
-			}
-		}
-	}
-}
-
-
-p{
-	display: block;
-	margin-top: 0;
-	margin-bottom: 2.5rem;
-	color: $color-black-normal;
-	font-family: $font-primary;
-	font-weight: 400;
-	line-height: 1.8;
-
-	@include font-size(16px);
-}
-
-ol, ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-ul.list-style, ol.list-style{
-	margin-bottom: 2rem;
-
-	li{
-		position: relative;
-		display: block;
-		margin-bottom: 8px;
-		padding-left: 25px;
-		color: $color-black-normal;
-		font-family: $font-primary;
-		font-weight: 400;
-		line-height: 1.4;
-		@include font-size(16px);
-	}
-	a{
-		// color: $color-purple-normal;
-		text-decoration: underline;
-		&:hover{
-			text-decoration: underline;
-		}
-	}
-}
-
-ul.list-style{
-	li{
-		&:before{
-			position: absolute;
-			top: 9px;
-			left: 3px;
-			display: block;
-			width: 6px;
-			height: 6px;
-			content: "";
-			color: $color-black-normal;
-			border-radius: 100%;
-			background-color: $color-black-normal;
-		}
-	}
-}
-
-ol.list-style{
-	list-style-position: inside;
-	counter-reset: item;
-	li{
-		&:before{
-			position: absolute;
-			top: 0;
-			left: 0;
-			display: inline-block;
-			content: counter(item)'.';
-			counter-increment: item;
-			color: $color-black-normal;
-			line-height: 1.4;
-			@include font-size(16px);
-		}
-	}
-}
-
-em, i, .italic{
-	font-style: italic;
-}
-
-strong, .strong{
-	font-weight: 700;
-}
-
-small, .small{
-	@include font-size(12px);
-}
-
-h1, .alfa, h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta{
-	margin: 0;
-	margin-bottom: 1.5rem;
-	color: $color-black-normal;
-	font-family: $font-secondary;
-	font-weight: 700;
-	line-height: 1.2;
-	a{
-		color: inherit;
-	}
-
-}
-
-h1, .alfa{
-	@include font-size(46px);
-	@include bp(xsmall){
-		@include font-size(46px);
-	}
-	@include bp(small){
-		@include font-size(50px);
-	}
-
-}
-
-h2, .beta{
-	@include font-size(34px);
-	@include bp(xsmall){
-		@include font-size(38px);
-	}
-	@include bp(small){
-		@include font-size(42px);
-	}
-
-}
-
-h3, .gamma{
-	@include font-size(30px);
-	@include bp(xsmall){
-		@include font-size(34px);
-	}
-	@include bp(small){
-		@include font-size(36px);
-	}
-
-}
-
-h4, .delta{
-	@include font-size(28px);
-	@include bp(xsmall){
-		@include font-size(30px);
-	}
-	@include bp(small){
-		@include font-size(32px);
-	}
-
-}
-
-h5, .epsilon{
-	@include font-size(24px);
-	@include bp(xsmall){
-		@include font-size(26px);
-	}
-	@include bp(small){
-		@include font-size(28px);
-	}
-
-}
-
-h6, .zeta{
-	@include font-size(22px);
-	@include bp(xsmall){
-		@include font-size(24px);
-	}
-	@include bp(small){
-		@include font-size(26px);
-	}
-
-}
-

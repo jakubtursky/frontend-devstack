@@ -1,95 +1,92 @@
 /* Pagination style 1 */
 
-.pagination{
-	display: block;
-	width: 100%;
-	margin-top: 20px;
-	text-align: center;
+.pagination {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
 }
 
-.pagination-list-icon{
-	display: inline-block;
-	vertical-align: middle;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	font-weight: 400;
-	margin-right: -4px;
-	color: $color-purple-normal;
-	@include font-size(24px);
-	&:hover{
-		color: darken($color-purple-normal,10%);
-	}
-	&.is-disabled{
-		color: $color-black-normal;
-	}
+.pagination-list__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  margin-right: -4px;
+  color: $color-purple;
+  @include font-size(24px);
+  &:hover {
+    color: darken($color-purple, 10%);
+  }
+  &.is-disabled {
+    color: $color-black;
+  }
 }
 
-.pagination-text{
-	display: inline-block;
-	vertical-align: middle;
-	color: $color-black-normal;
-	font-family: $font-secondary;
-	font-weight: 700;
-	line-height: 1.2;
-	margin: 0 15px 0 10px;
-	@include font-size(16px);
+.pagination__text {
+  display: inline-block;
+  vertical-align: middle;
+  color: $color-black;
+  font-family: $font-secondary;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 15px 0 10px;
+  @include font-size(16px);
 }
 
-.pagination-input{
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
-	width: 50px;
-	height: 50px;
-	font-family: $font-secondary;
-	font-weight: 700;
-	border-radius: 5px;
-	color: $color-black-normal;
-	border: 0;
-	box-shadow: none;
-	@include font-size(16px);
-	padding: 0 5px;
-	margin-right: -4px;
-	background-color: $color-gray-light;
-	outline: none;
+.pagination__input {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-family: $font-secondary;
+  font-weight: 700;
+  border-radius: 5px;
+  color: $color-black;
+  border: 0;
+  box-shadow: none;
+  @include font-size(16px);
+  padding: 0 5px;
+  margin-right: -4px;
+  background-color: $color-gray-light;
+  outline: none;
 }
-
 
 /* Pagination style 2 */
 
-.pagination-list{
-	display: block;
-	width: auto;
-	margin: 0;
-	text-align: center;
-	margin-top: 30px;
+.pagination-list {
+  display: block;
+  width: auto;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.pagination-list-item{
-	display: inline-block;
-	vertical-align: middle; 
-	&:hover,
-	&.is-active{
-		.pagination-list-link{
-			color: #ffffff;
-			background-color: $color-purple-normal;
-		}
-	}
+.pagination-list__item {
+  display: inline-block;
+  vertical-align: middle;
+  &:hover,
+  &.is-active {
+    .pagination-list__link {
+      color: $color-white;
+      background-color: $color-purple;
+    }
+  }
 }
 
-.pagination-list-link{
-	display: block;
-	position: relative;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	font-weight: 800;
-	text-align: center;
-	color: $color-black-normal;
-	border-radius: 100%;
-	text-transform: uppercase;
-	@include font-size(16px);
+.pagination-list__link {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  text-align: center;
+  color: $color-black;
+  border-radius: 100%;
+  text-transform: uppercase;
+  @include font-size(16px);
 }
-
-

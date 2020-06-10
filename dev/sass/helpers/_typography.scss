@@ -1,202 +1,208 @@
 /* Typography */
 
-.typography{
-	p, 
-    li, 
-    td, 
-    th{
-        line-height: 1.5em;
+.typography {
+  p,
+  li,
+  td,
+  th {
+    line-height: 1.5em;
+  }
+
+  p,
+  ul,
+  ol,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  table,
+  fieldset,
+  blockquote,
+  iframe {
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-black;
+    @include font-size(26px);
+    @include bp(small) {
+      @include font-size(30px);
     }
+  }
 
-    p,
-    ul,ol,
-    h1, h2, h3, h4, h5, h6,
-    table,
-    fieldset,
-    blockquote,
-    iframe{
-        margin-bottom: 1rem;
+  h2 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-black;
+
+    @include font-size(24px);
+    @include bp(small) {
+      @include font-size(26px);
     }
+  }
 
-	h1{
-		display: block;
-		margin-top: 0;
-		margin-bottom: 1rem;
-		font-family: $font-secondary;
-		font-weight: 700;
-		color: $color-black-normal;
-		@include font-size(26px);
-		@include bp(small){
-			@include font-size(30px);
-		}
-	}
+  h3 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-black;
 
-	h2{
-		display: block;
-		margin-top: 0;
-		margin-bottom: 1rem;
-		font-family: $font-secondary;
-		font-weight: 700;
-		color: $color-black-normal;
+    @include font-size(22px);
+    @include bp(small) {
+      @include font-size(24px);
+    }
+  }
 
-		@include font-size(24px);
-		@include bp(small){
-			@include font-size(26px);
-		}
-	}
+  h4 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-black;
 
-	h3{
-		display: block;
-		margin-top: 0;
-		margin-bottom: 1rem;
-		font-family: $font-secondary;
-		font-weight: 700;
-		color: $color-black-normal;
+    @include font-size(20px);
+    @include bp(small) {
+      @include font-size(22px);
+    }
+  }
 
-		@include font-size(22px);
-		@include bp(small){
-			@include font-size(24px);
-		}
-	}
+  h5 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-black;
 
-	h4{
-		display: block;
-		margin-top: 0;
-		margin-bottom: 1rem;
-		font-family: $font-secondary;
-		font-weight: 700;
-		color: $color-black-normal;
+    @include font-size(18px);
+    @include bp(small) {
+      @include font-size(20px);
+    }
+  }
 
-		@include font-size(20px);
-		@include bp(small){
-			@include font-size(22px);
-		}
-	}
+  h6 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-black;
 
-	h5{
-		display: block;
-		margin-top: 0;
-		margin-bottom: 1rem;
-		font-family: $font-secondary;
-		font-weight: 700;
-		color: $color-black-normal;
+    @include font-size(18px);
+    @include bp(small) {
+      @include font-size(18px);
+    }
+  }
 
-		@include font-size(18px);
-		@include bp(small){
-			@include font-size(20px);
-		}
-	}
+  a {
+    text-decoration: underline;
+    color: $color-black;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
-	h6{
-		display: block;
-		margin-top: 0;
-		margin-bottom: 1rem;
-		font-family: $font-secondary;
-		font-weight: 700;
-		color: $color-black-normal;
+  p {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $color-black;
+    @include font-size(16px);
+  }
 
-		@include font-size(18px);
-		@include bp(small){
-			@include font-size(18px);
-		}
-	}
+  strong {
+    font-weight: 700;
+    color: $color-black;
+  }
 
-	a{
-		text-decoration: underline;
-		color: $color-black-normal;
-		&:hover{
-			text-decoration: underline;
-		}
-	}
+  img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
 
-	p{
-		display: block;
-		margin-top: 0;
-		margin-bottom: 2.5rem;
-		font-family: $font-primary;
-		font-weight: 400;
-		line-height: 1.6;
-		color: $color-black-normal;
-		@include font-size(16px);
-	}
+  ul,
+  ol {
+    margin-bottom: 2.5rem;
+    padding-left: 0;
+    list-style: none;
+    li {
+      position: relative;
+      margin-bottom: 0.3rem;
+      padding-left: 3rem;
+      font-family: $font-primary;
+      font-weight: 400;
+      line-height: 1.6;
+      color: $color-black;
 
-	strong{
-		font-weight: 700;
-		color: $color-black-normal;
-	}
-	
-	img{
-		max-width: 100%;
-		margin-bottom: 2rem;
-	}
+      @include font-size(16px);
+    }
+  }
 
-	ul,
-	ol{
-		margin-bottom: 2.5rem;
-		padding-left: 0;
-		list-style: none;
-		li{
-			position: relative;
-			margin-bottom: 0.3rem;
-			padding-left: 3rem;
-			font-family: $font-primary;
-			font-weight: 400;
-			line-height: 1.6;
-			color: $color-black-normal;
+  ul {
+    li {
+      &:before {
+        position: absolute;
+        top: 9px;
+        left: 3px;
+        display: block;
+        width: 6px;
+        height: 6px;
+        content: "";
+        color: $color-black;
+        border-radius: 100%;
+        background-color: $color-black;
+      }
+    }
+  }
 
-			@include font-size(16px);
-		}
-	}
+  ol {
+    list-style-position: inside;
+    counter-reset: item;
+    li {
+      &:before {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        display: inline-block;
+        line-height: 1.4;
+        content: counter(item) ".";
+        counter-increment: item;
+        color: $color-black;
 
-	ul{
-		li{
-			&:before{
-				position: absolute;
-				top: 9px;
-				left: 3px;
-				display: block;
-				width: 6px;
-				height: 6px;
-				content: "";
-				color: $color-black-normal;
-				border-radius: 100%;
-				background-color: $color-black-normal;
-			}
-		}
-	}
+        @include font-size(16px);
+      }
+    }
+  }
 
-	ol{
-		list-style-position:inside;
-		counter-reset: item;
-		li{
-			&:before{
-				position: absolute;
-				top: 1px;
-				left: 0;
-				display: inline-block;
-				line-height: 1.4;
-				content: counter(item)'.';
-				counter-increment: item;
-				color: $color-black-normal;
+  figure {
+    margin: 0;
+    margin-bottom: 2rem;
+    img {
+      margin: 0;
+    }
+  }
 
-				@include font-size(16px);
-			}
-		}
-	}
-
-	figure{
-		margin: 0;
-		margin-bottom: 2rem;
-		img{
-			margin: 0;
-		}
-	}
-
-	figcaption{
-		margin-top: 0.6rem;
-		font-family: $font-primary;
-		font-weight: 400;
-		color: $color-black-normal;
-		@include font-size(12px);
-	}
+  figcaption {
+    margin-top: 0.6rem;
+    font-family: $font-primary;
+    font-weight: 400;
+    color: $color-black;
+    @include font-size(12px);
+  }
 }

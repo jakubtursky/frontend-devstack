@@ -2,21 +2,24 @@
 //  Function: Fullscreen navigation
 //====================================================
 function componentFullscreenNavigation() {
-	if ($(".navigation").length) {
-		$(".navigation-trigger").on("click", function(e) {
-			$(this).closest(".navigation").toggleClass("is-collapse");
-			e.preventDefault();
-		});
-		checkNavigationTrigger();
-	}
+  if ($('.js-navigation').length) {
+    $('.js-navigation-trigger').on('click', function (e) {
+      $(this).closest('.js-navigation').toggleClass(classIsCollapse)
+      e.preventDefault()
+    })
+    checkNavigationTrigger()
+  }
 }
 
-function checkNavigationTrigger(){
-	(function($){
-		if($( '.navigation' ).hasClass( 'is-collapse' ) && $(window).width() > bp_medium ){
-			$( '.navigation' ).removeClass( 'is-collapse' );
-			// $("body").removeClass("overflow-hidden");
-			// $("main, footer").show();
-		}
-	})(jQuery);
+function checkNavigationTrigger() {
+  ;(function ($) {
+    if (
+      $('.js-navigation').hasClass(classIsCollapse) &&
+      $(window).width() > bp_medium
+    ) {
+      $('.js-navigation').removeClass(classIsCollapse)
+      // $("body").removeClass("overflow-hidden");
+      // $("main, footer").show();
+    }
+  })(jQuery)
 }

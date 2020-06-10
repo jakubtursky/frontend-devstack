@@ -4,22 +4,22 @@
   display: block;
 }
 
-.img-full {
+.img--full {
   width: 100%;
 }
 
-.img-responsive {
+.img--responsive {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.img-cover {
+.img--cover {
   height: 100%;
   object-fit: cover;
 }
 
-.img-contain {
+.img--contain {
   height: 100%;
   object-fit: contain;
 }
@@ -35,6 +35,7 @@
   }
   img {
     transition: transform 400ms ease-out;
+    will-change: transform;
   }
 }
 
@@ -74,7 +75,4 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.bg-rectangle {
 }

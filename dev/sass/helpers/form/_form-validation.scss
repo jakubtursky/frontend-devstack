@@ -1,79 +1,79 @@
 /* Form validation */
 
-// .form-field-validation{
+// .form__field-validation{
 // }
 
-.has-field-error{
-	.field-error-message{
-		display: block;
-	}
-	&.select2-container .select2-selection--single,
-	&.select-classic .select2-container .select2-selection--multiple,
-	&.form-textarea,
-	&.form-input{
-		border-color: $color-field-error!important;
-	}
-	& + .select2-container .select2-selection--single,
-	& + .select-classic .select2-container .select2-selection--multiple{
-		border-color: $color-field-error!important;
-	}
+.has-field-error {
+  .form__field-message {
+    display: block;
+  }
+  &.select2-container .select2-selection--single,
+  &.select-classic .select2-container .select2-selection--multiple,
+  &.form__textarea,
+  &.form__input {
+    border-color: $color-field-error !important;
+  }
+  & + .select2-container .select2-selection--single,
+  & + .select-classic .select2-container .select2-selection--multiple {
+    border-color: $color-field-error !important;
+  }
 }
 
-.has-field-success{
-	&.select2-container .select2-selection--single,
-	&.select-classic .select2-container .select2-selection--multiple,
-	&.form-textarea,
-	&.form-input{
-		border-color: $color-field-success!important;
-	}
-	& + .select2-container .select2-selection--single,
-	& + .select-classic .select2-container .select2-selection--multiple{
-		border-color: $color-field-success!important;
-	}
+.has-field-success {
+  &.select2-container .select2-selection--single,
+  &.select-classic .select2-container .select2-selection--multiple,
+  &.form__textarea,
+  &.form__input {
+    border-color: $color-field-success !important;
+  }
+  & + .select2-container .select2-selection--single,
+  & + .select-classic .select2-container .select2-selection--multiple {
+    border-color: $color-field-success !important;
+  }
 }
 
 .parsley-error,
-.has-error{
-	&.select2-container .select2-selection--single,
-	&.select-classic .select2-container .select2-selection--multiple,
-	&.form-textarea,
-	&.form-input{
-		border-color: $color-field-error!important;
-	}
-	& + .select2-container .select2-selection--single,
-	& + .select-classic .select2-container .select2-selection--multiple{
-		border-color: $color-field-error!important;
-	}
+.has-error {
+  &.select2-container .select2-selection--single,
+  &.select-classic .select2-container .select2-selection--multiple,
+  &.form__textarea,
+  &.form__input {
+    border-color: $color-field-error !important;
+  }
+  & + .select2-container .select2-selection--single,
+  & + .select-classic .select2-container .select2-selection--multiple {
+    border-color: $color-field-error !important;
+  }
 }
 
 .has-field-success,
-.parsley-success{
-	&.select2-container .select2-selection--single,
-	&.select-classic .select2-container .select2-selection--multiple,
-	&.form-textarea,
-	&.form-input{
-		border-color: $color-field-success!important;
-	}
-	& + .select2-container .select2-selection--single,
-	& + .select-classic .select2-container .select2-selection--multiple{
-		border-color: $color-field-success!important;
-	}
+.parsley-success {
+  &.select2-container .select2-selection--single,
+  &.select-classic .select2-container .select2-selection--multiple,
+  &.form__textarea,
+  &.form__input {
+    border-color: $color-field-success !important;
+  }
+  & + .select2-container .select2-selection--single,
+  & + .select-classic .select2-container .select2-selection--multiple {
+    border-color: $color-field-success !important;
+  }
 }
 
-.field-error-message{
-	display: none;
-	margin-top: 5px;
-	color: #870000;
-	text-align: right;
-	@include font-size(14px);
+.form__field-message {
+  display: none;
+  margin-top: 5px;
+  color: #870000;
+  text-align: right;
+  @include font-size(14px);
 }
 
-.parsley-errors-list{
-	color: $color-field-error;
-	text-align: right;
-	@include font-size(14px);
-	li{
-		display: block;
-		margin-top: 5px;
-	}
+.parsley-errors-list {
+  color: $color-field-error;
+  text-align: right;
+  @include font-size(14px);
+  li {
+    display: block;
+    margin-top: 5px;
+  }
 }

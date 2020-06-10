@@ -2,7 +2,7 @@
 
 // @font-face {
 // 	font-family: $project-font-1;
-// 	src: url('../fonts/webfonts/fontname/fontname.woff2') format('woff2'), 
+// 	src: url('../fonts/webfonts/fontname/fontname.woff2') format('woff2'),
 // 		 url('../fonts/webfonts/fontname/fontname.woff') format('woff');
 // 	font-weight: normal;
 // 	font-style: normal;
@@ -11,13 +11,12 @@
 
 // @font-face {
 // 	font-family: $project-font-2;
-// 	src: url('../fonts/webfonts/fontname/fontname-bold.woff2') format('woff2'), 
+// 	src: url('../fonts/webfonts/fontname/fontname-bold.woff2') format('woff2'),
 // 		 url('../fonts/webfonts/fontname/fontname-bold.woff') format('woff');
 // 	font-weight: bold;
 // 	font-style: normal;
 // 	font-display: swap;
 // }
-
 
 // @font-face{
 // 	font-family: $project-name;
@@ -84,7 +83,6 @@
 // 	content: "\e907";
 // }
 
-
 // .icon-close{
 // 	position: absolute;
 // 	top: 50%;
@@ -104,7 +102,7 @@
 // 		width: 30px;
 // 		height: 3px;
 // 		content: '';
-// 		background: $color-black-normal;
+// 		background: $color-black;
 // 	}
 
 // 	&:before{

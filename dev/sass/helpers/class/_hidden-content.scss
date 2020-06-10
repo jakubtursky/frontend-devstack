@@ -1,84 +1,84 @@
 /* Hidden content */
 
-.hidden-content{
-	height: 0;
-	opacity: 0;
-	visibility: hidden;
-	overflow: hidden;
-	transition: opacity 250ms ease;
-	&.is-active{
-		height: auto;
-		opacity: 1;
-		overflow: visible;
-		visibility: visible;
-		transition: opacity 250ms ease;
-	}
+.hidden-content {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity 250ms ease;
+  &.is-active {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
+    transition: opacity 250ms ease;
+  }
 }
 
-@include bp(rev-xsmall){
-	.hidden-xs-content{
-		height: 0;
-		opacity: 0;
-		visibility: hidden;
-		overflow: hidden;
-		transition: opacity 250ms ease;
-		&.is-active{
-			height: auto;
-			opacity: 1;
-			overflow: visible;
-			visibility: visible;
-			transition: opacity 250ms ease;
-		}
-	}
+@include bp(rev-xsmall) {
+  .hidden-xs-content {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 250ms ease;
+    &.is-active {
+      height: auto;
+      opacity: 1;
+      overflow: visible;
+      visibility: visible;
+      transition: opacity 250ms ease;
+    }
+  }
 }
 
-@include bp(rev-small){
-	.hidden-sm-content{
-		height: 0;
-		opacity: 0;
-		visibility: hidden;
-		overflow: hidden;
-		transition: opacity 250ms ease;
-		&.is-active{
-			height: auto;
-			opacity: 1;
-			overflow: visible;
-			visibility: visible;
-			transition: opacity 250ms ease;
-		}
-	}
+@include bp(rev-small) {
+  .hidden-sm-content {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 250ms ease;
+    &.is-active {
+      height: auto;
+      opacity: 1;
+      overflow: visible;
+      visibility: visible;
+      transition: opacity 250ms ease;
+    }
+  }
 }
 
-@include bp(rev-medium){
-	.hidden-md-content{
-		height: 0;
-		opacity: 0;
-		visibility: hidden;
-		overflow: hidden;
-		transition: opacity 250ms ease;
-		&.is-active{
-			height: auto;
-			opacity: 1;
-			overflow: visible;
-			visibility: visible;
-			transition: opacity 250ms ease;
-		}
-	}
+@include bp(rev-medium) {
+  .hidden-md-content {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 250ms ease;
+    &.is-active {
+      height: auto;
+      opacity: 1;
+      overflow: visible;
+      visibility: visible;
+      transition: opacity 250ms ease;
+    }
+  }
 }
 
-@include bp(rev-large){
-	.hidden-lg-content{
-		height: 0;
-		opacity: 0;
-		visibility: hidden;
-		overflow: hidden;
-		transition: opacity 250ms ease;
-		&.is-active{
-			height: auto;
-			opacity: 1;
-			overflow: visible;
-			visibility: visible;
-			transition: opacity 250ms ease;
-		}
-	}
+@include bp(rev-large) {
+  .hidden-lg-content {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 250ms ease;
+    &.is-active {
+      height: auto;
+      opacity: 1;
+      overflow: visible;
+      visibility: visible;
+      transition: opacity 250ms ease;
+    }
+  }
 }

@@ -1,168 +1,167 @@
 /* Form base */
 
-%input{
-	width: 100%;
-	height: 60px;
-	padding: 0.2rem 1.5rem;
-	border: 2px solid #d1d7db;
-	background-color: #ffffff;
-	color: $color-black-normal;
+%input {
+  width: 100%;
+  height: 60px;
+  padding: 0.2rem 1.5rem;
+  border: 2px solid #d1d7db;
+  background-color: $color-white;
+  color: $color-black;
 
-	font-family: $font-secondary;
-	font-weight: 700;
-	@include font-size(16px);
-	@include border-radius(0);
-	outline: none!important;
-	-webkit-appearance: none;
-	&:placeholder-shown{
-		border-color: $color-black-normal;
-	}
-	&:focus{
-		border-color: $color-black-normal;
-	}
+  font-family: $font-secondary;
+  font-weight: 700;
+  @include font-size(16px);
+  @include border-radius(0);
+  outline: none !important;
+  -webkit-appearance: none;
+  &:placeholder-shown {
+    border-color: $color-black;
+  }
+  &:focus {
+    border-color: $color-black;
+  }
 }
 
-.form-input{
-	@extend %input;
+.form__input {
+  @extend %input;
 }
 
-.form-input-ext{
-	border: 0;
-	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+.form__input-ext {
+  border: 0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
 
-.form-textarea{
-	height: 150px;
-	padding: 1rem 1.5rem;
-	line-height: 1.5rem;
-	resize: none;
+.form__textarea {
+  height: 150px;
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+  resize: none;
 
-	@extend %input;
-	@include border-radius(0);
+  @extend %input;
+  @include border-radius(0);
 }
 
-.form-textarea-limit{
-	@include bp(xsmall){
-	    -webkit-box-sizing: border-box;
-	    box-sizing: border-box;
-	    resize: none;
-	    min-height: 100px;
-	    max-height: 250px;
-	}
-	@include bp(rev-xsmall){
-		height: 200px!important;
-	}
+.form__textarea--limit {
+  @include bp(xsmall) {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    min-height: 100px;
+    max-height: 250px;
+  }
+  @include bp(rev-xsmall) {
+    height: 200px !important;
+  }
 }
 
-.form-select{
-	width: 100%;
-	height: 60px;
-	padding: 0.2rem 1.5rem;
-	font-family: $font-secondary;
-	font-weight: 700;
-	line-height: 1.2;
-	color: $color-black-normal;
-	border: 2px solid $color-black-normal;
-	outline: none;
-	background-color: #ffffff;
+.form__select {
+  width: 100%;
+  height: 60px;
+  padding: 0.2rem 1.5rem;
+  font-family: $font-secondary;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-black;
+  border: 2px solid $color-black;
+  outline: none;
+  background-color: $color-white;
 
-	@include font-size(16px);
-	-webkit-appearance: value;
-	-moz-appearance: value;
-	-ms-appearance: value;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
+  @include font-size(16px);
+  -webkit-appearance: value;
+  -moz-appearance: value;
+  -ms-appearance: value;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 }
 
-.form-icon{
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: flex;
-	width: 60px;
-	height: 60px;
-	@include font-size(22px);
-	color: $color-black-normal;
-	align-items: center;
-	justify-content: center;
-	pointer-events: none;
+.form__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  @include font-size(22px);
+  color: $color-black;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 }
 
-.form-icon-block{
-	.form-input{
-		padding-right: 60px;
-	}
+.form__icon-block {
+  .form__input {
+    padding-right: 60px;
+  }
 }
 
-.form-label{
-	display: block;
-	margin: 0 0 10px;
-	font-family: $font-primary;
-	font-weight: 700;
-	color: $color-black-normal;
+.form__label {
+  display: block;
+  margin: 0 0 10px;
+  font-family: $font-primary;
+  font-weight: 700;
+  color: $color-black;
 
-	@include font-size(16px);
+  @include font-size(16px);
 }
 
-.form-field{
-	position: relative;
+.form__field {
+  position: relative;
 }
 
-
-.form-field-small{
-	margin-bottom: 0.5rem;
+.form__field--small {
+  margin-bottom: 0.5rem;
 }
 
-.form-field-normal{
-	margin-bottom: 1rem;
+.form__field--medium {
+  margin-bottom: 1rem;
 }
 
-.form-field-big{
-	margin-bottom: 2rem;
+.form__field--big {
+  margin-bottom: 2rem;
 }
 
-.form-field-placeholder{
-    position: relative;
-    z-index: 1;
-    &.is-active{
-        .form-label{
-            width: calc(100% - 20px);
-            transform: translateX(1px) translateY(1px);
-            @include font-size(12px);
-            padding: 10px 25px 5px;
-        }
+.form__placeholder {
+  position: relative;
+  z-index: 1;
+  &.is-active {
+    .form__label {
+      width: calc(100% - 20px);
+      transform: translateX(1px) translateY(1px);
+      @include font-size(12px);
+      padding: 10px 25px 5px;
     }
-    .form-input,
-    .form-textarea{
-        padding: 25px 25px 13px;
-    }
-    .select2-container .select2-selection--single{
-    	padding: 7px 40px 0 25px;
-    }
-    .form-label{
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        margin: 0;
-        // padding: 8px 0 2px;
-        cursor: text;
-        transition: all .3s ease;
-        transform: translateX(1px) translateY(8px);
-        text-transform: none;
-        pointer-events: none;
-        padding: 15px 25px 10px;
-    }
+  }
+  .form__input,
+  .form__textarea {
+    padding: 25px 25px 13px;
+  }
+  .select2-container .select2-selection--single {
+    padding: 7px 40px 0 25px;
+  }
+  .form__label {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    margin: 0;
+    // padding: 8px 0 2px;
+    cursor: text;
+    transition: all 0.3s ease;
+    transform: translateX(1px) translateY(8px);
+    text-transform: none;
+    pointer-events: none;
+    padding: 15px 25px 10px;
+  }
 }
 
-.form-field-placeholder-textarea{
-	.form-label{
-		top: 1px;
-		left: 2px;
-        background: white;
-	}
+.form__placeholder-textarea {
+  .form__label {
+    top: 1px;
+    left: 2px;
+    background: white;
+  }
 }
 
 input:-webkit-autofill,

@@ -1,0 +1,113 @@
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  font-family: $font-primary;
+}
+
+a:focus,
+a:active,
+a:visited {
+  outline: none;
+}
+
+.a-hover {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.a-link {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.6rem 0;
+}
+
+.a-link__text {
+  color: $color-purple;
+  font-family: $font-secondary;
+  font-weight: 700;
+  @include font-size(16px);
+}
+
+// Link COLOR
+.a-link__text--black {
+  color: $color-purple;
+}
+
+.a-link__text--white {
+  color: $color-white;
+}
+
+.a-link__text--purple {
+  color: $color-purple;
+}
+
+// Link FONT SIZE
+.a-link__text--size-12 {
+  @include font-size(12px);
+}
+
+.a-link__text--size-14 {
+  @include font-size(14px);
+}
+
+.a-link__text--size-16 {
+  @include font-size(16px);
+}
+
+.a-link__text--size-18 {
+  @include font-size(18px);
+}
+
+.a-link__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.a-link--hover-underline {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 1px;
+    transition: width 250ms ease-out;
+    background-color: currentColor;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.a-link--hover-block {
+  .a-link--hover-underline {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 0;
+      height: 1px;
+      transition: width 250ms ease-out;
+      background-color: currentColor;
+    }
+  }
+  &:hover {
+    .a-link--hover-underline {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}

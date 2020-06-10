@@ -1,64 +1,64 @@
 doctype html
 html(lang="")
-	
-	// Head 
-	include _main/head.pug
-	body#body
-		//- include _social/facebook-plugin.pug
-		//- include _social/twitter-plugin.pug
-		//- include _social/google-plus-plugin.pug
-		//- include ../_main/disqus.pug (priamo v dokumente)
-		include _main/mixins.pug
-		
 
-		// Page loader
-		include _components/block/essential/page-loader.pug
-		
-		// SVG group
-		include _components/block/essential/svg-group.pug
-		
-		-var gridContainer = "container-normal"
-		// Grid
-		include _components/block/essential/grid.pug
+  // Head
+  include _main/head.pug
+  body#body
+    //- include _social/facebook-plugin.pug
+    //- include _social/twitter-plugin.pug
+    //- include _social/google-plus-plugin.pug
+    //- include ../_main/disqus.pug (priamo v dokumente)
+    include _main/mixins.pug
 
-		// Header 
-		- var headerText = 'index';
-		include _layout/header.pug
 
-		// Main content 
-		main.overflow-hidden
+    // Page loader
+    include _components/block/essential/page-loader.pug
 
-			- var heroTitle = 'Icons'
-			//- - var heroPerex = 'Ui'
-			// Section hero
-			include _components/block/essential/hero.pug
+    // SVG group
+    include _components/block/essential/svg-group.pug
 
-			section
-				.container-normal
-					//- .row
-					//- 	.col-12.txt-c.margin-bottom-1
-					//- 		h1.beta Icons
-					.row.txt-c.margin-bottom-4.icon-color-purple.icon-size-60
-						.col-4.col-sm-3.col-lg-2.margin-bottom-2
-							+svg('play')
-						.col-4.col-sm-3.col-lg-2.margin-bottom-2
-							+svg('chevron-right')
-						.col-4.col-sm-3.col-lg-2.margin-bottom-2
-							+svg('chevron-left')
-						.col-4.col-sm-3.col-lg-2.margin-bottom-2
-							+svg('chevron-up')
-						.col-4.col-sm-3.col-lg-2.margin-bottom-2
-							+svg('chevron-down')
-						.col-4.col-sm-3.col-lg-2.margin-bottom-2
-							+svg('close')
-						
+    -var gridContainer = "container-normal"
+    // Grid
+    include _components/block/essential/grid.pug
 
-		// Footer 
-		include _layout/footer.pug
-		
-		// Cookies bar
-		//- include _components/uni/cookies.pug
+    // Header
+    - var headerText = 'index';
+    include _layout/header.pug
 
-	
-		// Scripts 
-		include _main/scripts.pug
+    // Main content
+    main.overflow-hidden
+
+      - var heroTitle = 'Icons'
+      //- - var heroPerex = 'Ui'
+      // Section hero
+      include _components/block/essential/hero.pug
+
+      section
+        .container-normal
+          //- .row
+          //- 	.col-12.txt-c.margin-bottom-1
+          //- 		h1.beta Icons
+          .row.txt-c.margin-bottom-4.icon---purple.icon--size-60
+            .col-4.col-sm-3.col-lg-2.margin-bottom-2
+              +svg('play')
+            .col-4.col-sm-3.col-lg-2.margin-bottom-2
+              +svg('chevron-right')
+            .col-4.col-sm-3.col-lg-2.margin-bottom-2
+              +svg('chevron-left')
+            .col-4.col-sm-3.col-lg-2.margin-bottom-2
+              +svg('chevron-up')
+            .col-4.col-sm-3.col-lg-2.margin-bottom-2
+              +svg('chevron-down')
+            .col-4.col-sm-3.col-lg-2.margin-bottom-2
+              +svg('close')
+
+
+    // Footer
+    include _layout/footer.pug
+
+    // Cookies bar
+    //- include _components/uni/cookies.pug
+
+
+    // Scripts
+    include _main/scripts.pug

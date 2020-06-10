@@ -1,22 +1,22 @@
 /* IE fallback */
 
-.no-object-fit { 
-	.img-flex-cover{
-		img{
-			height: auto;
-			width: auto;
-			vertical-align: middle;
-			margin: 0 auto;    
-		}
-	}
-	.img-flex-contain{
-		display: block;
-		height: auto;
-		img{
-			height: 100%;
-			width: auto;
-			vertical-align: middle;
-			margin: 0 auto;
-		}
-	}
+.no-object-fit {
+  .img-flex-cover {
+    img {
+      height: auto;
+      width: auto;
+      vertical-align: middle;
+      margin: 0 auto;
+    }
+  }
+  .img-flex-contain {
+    display: block;
+    height: auto;
+    img {
+      height: 100%;
+      width: auto;
+      vertical-align: middle;
+      margin: 0 auto;
+    }
+  }
 }

@@ -8,16 +8,16 @@
 		<style>
 			*{margin:0;padding: 0;box-sizing: border-box}
 			:root{
-				--main-color: #75439a;
-				--font-primary: 'Oswald';
+			    --main-color: #75439a;
+			    --font-primary: 'Oswald';
 			}
 			body {
-				color: #333;
-				margin: 0;
-				padding: 0 40px;
-				font-size: 20px;
-				line-height: 1.6;
-				font-family: var(--font-primary), serif;
+			    color: #333;
+			    margin: 0;
+			    padding: 0 40px;
+			    font-size: 20px;
+			    line-height: 1.6;
+			    font-family: var(--font-primary), serif;
 			}
 			.icon-logo { width: 3.66em; height: 1em; fill: #221F20; }
 			.icon-desktop { width: 1.41em; height: 1em; fill: #000; }
@@ -27,354 +27,354 @@
 			.icon-watch { width: 0.67em; height: 1em; fill: #000; }
 			.icon-wide { width: 1.1em; height: 1em; fill: #000; }
 			section{
-				width: 300px;
-				padding: 30px 0;
+			    width: 300px;
+			    padding: 30px 0;
 			}
 			.preview{
-				position: fixed;
-				right: 42px;
-				top: 120px;
-				left: 355px;
-				bottom: 40px;
+			    position: fixed;
+			    right: 42px;
+			    top: 120px;
+			    left: 355px;
+			    bottom: 40px;
 			}
 			iframe{
-				opacity: 1;
-				box-shadow: 0 0 8px rgba(#000,.5);
-				margin: 0 auto;
-				transform-origin: 0 0;
-				box-shadow: 0 0 20px rgba(0,0,0,.6);
+			    opacity: 1;
+			    box-shadow: 0 0 8px rgba(#000,.5);
+			    margin: 0 auto;
+			    transform-origin: 0 0;
+			    box-shadow: 0 0 20px rgba(0,0,0,.6);
 			}
 			.preview footer{
-				position: absolute;
-				bottom: -50px;
-				right: 0;
-				left: 0;
-				padding: 0;
+			    position: absolute;
+			    bottom: -50px;
+			    right: 0;
+			    left: 0;
+			    padding: 0;
 			}
 			.preview footer a{
-				color: #000;
+			    color: #000;
 			}
 			.pagelist{
-				padding-top: 100px;
-				width: 275px;
+			    padding-top: 100px;
+			    width: 275px;
 			}
 			.pagelist ol{
-				list-style-type: none;
-				margin-bottom: 4rem
+			    list-style-type: none;
+			    margin-bottom: 4rem
 			}
 			.pagelist li{
-				position: relative;
-				margin-bottom: 5px;
+			    position: relative;
+			    margin-bottom: 5px;
 			}
 			.pagelist li:last-child{
-				margin-bottom: 0;
+			    margin-bottom: 0;
 			}
 			.pagelist h2{
-				margin-bottom: 15px;
+			    margin-bottom: 15px;
 			}
 			.pagelist .beta{
-				text-align: center;
-				margin-bottom: 40px;
+			    text-align: center;
+			    margin-bottom: 40px;
 			}
 			.pagelist .beta svg{
-				display: inline-block;
-				width: 1em;
-				height: 1em;
+			    display: inline-block;
+			    width: 1em;
+			    height: 1em;
 			
-				stroke-width: 0;
-				stroke: currentColor;
-				fill: currentColor;
-				margin-right: 1rem;
+			    stroke-width: 0;
+			    stroke: currentColor;
+			    fill: currentColor;
+			    margin-right: 1rem;
 			}
 			.pagelist .beta a{
-				display: -webkit-inline-flex;
-				display: -moz-inline-flex;
-				display: -ms-inline-flex;
-				display: -o-inline-flex;
-				display: inline-flex;
-				align-items: center;
-				color: inherit;
-				text-decoration: none;
-				text-transform: uppercase;
+			    display: -webkit-inline-flex;
+			    display: -moz-inline-flex;
+			    display: -ms-inline-flex;
+			    display: -o-inline-flex;
+			    display: inline-flex;
+			    align-items: center;
+			    color: inherit;
+			    text-decoration: none;
+			    text-transform: uppercase;
 			}
 			
 			.pagelist__preview{
-				display: inline-block;
-				box-shadow: none;
-				padding: 5px 20px;
-				border: 1px solid #000;
-				font-size: 13px;
-				margin-top: 10px;
-				text-transform: uppercase;
-				text-shadow: none;
-				font-size: 24px;
+			    display: inline-block;
+			    box-shadow: none;
+			    padding: 5px 20px;
+			    border: 1px solid #000;
+			    font-size: 13px;
+			    margin-top: 10px;
+			    text-transform: uppercase;
+			    text-shadow: none;
+			    font-size: 24px;
 			}
 			.pagelist__title{
-				color: #000;
-				text-decoration: none;
-				padding: 5px 8px 5px 10px;
-				position: relative;
-				display: flex;
-				min-height: 50px;
-				align-items: center;
-				width: calc(100% - 50px);
-				border-right: 5px solid white;
+			    color: #000;
+			    text-decoration: none;
+			    padding: 5px 8px 5px 10px;
+			    position: relative;
+			    display: flex;
+			    min-height: 50px;
+			    align-items: center;
+			    width: calc(100% - 50px);
+			    border-right: 5px solid white;
 			}
 			.is-notready .pagelist__title{
-				color: #aaaaaa;
-				background: #fff;
-				pointer-events: none;
+			    color: #aaaaaa;
+			    background: #fff;
+			    pointer-events: none;
 			}
 			.pagelist__title span{
-				margin-right: 10px;
+			    margin-right: 10px;
 			}
 			.pagelist__title em{
-				font-style: normal;
-				font-weight: normal;
-				font-family: var(--font-primary),sans-serif;
-				position: relative;
-				display: inline-block;
-				line-height: 1.2;
+			    font-style: normal;
+			    font-weight: normal;
+			    font-family: var(--font-primary),sans-serif;
+			    position: relative;
+			    display: inline-block;
+			    line-height: 1.2;
 			}
 			
 			.pagelist__title:hover,
 			.pagelist__title.is-active{
-				background: var(--main-color);
-				color: #fff;
+			    background: var(--main-color);
+			    color: #fff;
 			}
 			.pagelist__url{
-				width: 50px;
-				height: 50px;
-				display: inline-block;
-				position: relative;
-				vertical-align: middle;
-				position: absolute;
-				top: calc(50% - 5px);
-				-webkit-transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
-				-o-transform: translateY(-50%);
-				transform: translateY(-50%);
-				right: 0;
-				z-index: 9;
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				background: var(--main-color);
+			    width: 50px;
+			    height: 50px;
+			    display: inline-block;
+			    position: relative;
+			    vertical-align: middle;
+			    position: absolute;
+			    top: calc(50% - 5px);
+			    -webkit-transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			    -o-transform: translateY(-50%);
+			    transform: translateY(-50%);
+			    right: 0;
+			    z-index: 9;
+			    display: inline-flex;
+			    align-items: center;
+			    justify-content: center;
+			    background: var(--main-color);
 			}
 			.pagelist__url:hover .icon{
-				fill: #ffffff;
-				font-size: 26px;
-				transition: all .2s ease;
-				display: inline-block;
-				width: auto;
-				height: 1em;
-				stroke-width: 0;
+			    fill: $color-white;
+			    font-size: 26px;
+			    transition: all .2s ease;
+			    display: inline-block;
+			    width: auto;
+			    height: 1em;
+			    stroke-width: 0;
 			}
 			.is-notready .pagelist__url{
-				pointer-events: none;
+			    pointer-events: none;
 			}
 			.pagelist__url .icon{
-				fill: #fff;
-				font-size: 20px;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%,-50%);
-				transition: all .2s ease;
+			    fill: #fff;
+			    font-size: 20px;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%,-50%);
+			    transition: all .2s ease;
 			}
 			.is-notready .pagelist__url .icon{
-				fill:#aaaaaa;
+			    fill:#aaaaaa;
 			}
 			.pagelist__progress{
-				height: 4px;
-				background: #eeeeee;
-				margin-top: 5px;
+			    height: 4px;
+			    background: #eeeeee;
+			    margin-top: 5px;
 			}
 			.pagelist__progress i{
-				height: 4px;
-				display: block;
-				background: var(--main-color);
+			    height: 4px;
+			    display: block;
+			    background: var(--main-color);
 			}
 			header{
-				line-height: 1;
-				height: 90px;
-				position: fixed;
-				top: 0;
-				left: 0;
-				right: 0;
-				z-index: 200;
-				background: #fff;
+			    line-height: 1;
+			    height: 90px;
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    z-index: 200;
+			    background: #fff;
 			}
 			@media (max-width: 780px){
-				header{	
-					overflow: hidden;
-				}
+			    header{
+			        overflow: hidden;
+			    }
 			}
 			header h1{
-				background: #f9e900;
-				background: var(--main-color);
-				color: #ffffff;
-				height: 91px;
-				position: relative;
-				width: 355px;
-				display: inline-flex;
-				justify-content: center;
-				-ms-align-items: center;
-				align-items: center;
-				vertical-align: top;
-				font-size: 32px;
+			    background: #f9e900;
+			    background: var(--main-color);
+			    color: $color-white;
+			    height: 91px;
+			    position: relative;
+			    width: 355px;
+			    display: inline-flex;
+			    justify-content: center;
+			    -ms-align-items: center;
+			    align-items: center;
+			    vertical-align: top;
+			    font-size: 32px;
 			}
 			
 			header h1:before{
-				width: 200px;
-				height: 200px;
-				position: absolute;
-				right: 0;
-				bottom: 0;
-				content: "";
-				background: #f9e900;
-				background: var(--main-color);
-				transform: rotate(38deg);
-				transform-origin: 100% 100%;
+			    width: 200px;
+			    height: 200px;
+			    position: absolute;
+			    right: 0;
+			    bottom: 0;
+			    content: "";
+			    background: #f9e900;
+			    background: var(--main-color);
+			    transform: rotate(38deg);
+			    transform-origin: 100% 100%;
 			}
 			
 			header h1 .icon{
-				font-size: 47px;
+			    font-size: 47px;
 			}
 			.header__updated{
-				font-size: 24px;
-				height: 90px;
-				line-height: 90px;
-				color: #050a0f;
-				display: inline-block;
-				vertical-align: top;
-				margin-left: 80px;
+			    font-size: 24px;
+			    height: 90px;
+			    line-height: 90px;
+			    color: #050a0f;
+			    display: inline-block;
+			    vertical-align: top;
+			    margin-left: 80px;
 			}
 			.header__updated em{
-				font-weight: normal;
-				font-family: var(--font-primary),sans-serif;
-				font-style: normal;
+			    font-weight: normal;
+			    font-family: var(--font-primary),sans-serif;
+			    font-style: normal;
 			}
 			.types{
-				position: absolute;
-				right: 40px;
-				top: 12px;
-				max-width: 650px;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: flex-end;
+			    position: absolute;
+			    right: 40px;
+			    top: 12px;
+			    max-width: 710px;
+			    display: flex;
+			    flex-wrap: wrap;
+			    justify-content: flex-end;
 			}
 			.types button,.types button:active{
-				height: 45px;
-				width: 112px;
-				border: 1px solid #75439a;
-				background: #fff;
-				font-size: 14px;
-				color: #000;
-				text-align: left;
-				font-family: var(--font-primary), serif;
-				padding-left: 38px;
-				position: relative;
-				outline: none;
-				cursor: pointer;
-				transition: all .25s ease-in-out;
-				margin-bottom: 5px;
-				margin-left: 5px;
-				line-height: 1.4;
+			    height: 45px;
+			    width: 112px;
+			    border: 1px solid #75439a;
+			    background: #fff;
+			    font-size: 14px;
+			    color: #000;
+			    text-align: left;
+			    font-family: var(--font-primary), serif;
+			    padding-left: 38px;
+			    position: relative;
+			    outline: none;
+			    cursor: pointer;
+			    transition: all .25s ease-in-out;
+			    margin-bottom: 5px;
+			    margin-left: 5px;
+			    line-height: 1.4;
 			}
 			.types button:hover{
-				background: #eee;
+			    background: #eee;
 			}
 			.types strong{
-				font-size: 12px;
-				font-weight: normal;
-				font-family: var(--font-primary),sans-serif;
+			    font-size: 12px;
+			    font-weight: normal;
+			    font-family: var(--font-primary),sans-serif;
 			}
 			.types .icon{
-				position: absolute;
-				top: 50%;
-				left: 10px;
-				transform: translate(0, -50%);
-				font-size: 20px;
+			    position: absolute;
+			    top: 50%;
+			    left: 10px;
+			    transform: translate(0, -50%);
+			    font-size: 20px;
 			}
 			.types .icon-desktop{left: 5px;}
 			.types .icon-wide{left: 8px;}
 			.types button.is-active{
-				border-color: var(--main-color);
-				color: #fff;
-				background: var(--main-color);
+			    border-color: var(--main-color);
+			    color: #fff;
+			    background: var(--main-color);
 			}
 			.types button.is-active .icon{
-				color: #fff;
-				fill: #fff;
+			    color: #fff;
+			    fill: #fff;
 			}
 			.types span{
-				display: block;
+			    display: block;
 			}
 			@media (max-width: 1200px){
-				.header__updated{
-					position: absolute;
-					right: 42px;
-					bottom: 0;
-					line-height: 1;
-					height: auto;
-					margin: 0;
-					font-size: 18px;
-				}
+			    .header__updated{
+			        position: absolute;
+			        right: 42px;
+			        bottom: 0;
+			        line-height: 1;
+			        height: auto;
+			        margin: 0;
+			        font-size: 18px;
+			    }
 			}
 			@media (max-width: 780px){
-				body{
-					padding: 0;
-				}
-				.preview iframe,.types{
-					display: none;
-				}
-				.preview{
-					position: static;
-					text-align: center;
-				}
-				header{
-					position: relative;
-					height: auto;
-					text-align: center;
-				}
-				header h1{
-					display: block;
-					width: auto;
-					height: auto;
-					padding: 20px 0 30px;
-				}
-				header h1 span{
-					position: static;
-				}
-				header .icon{
-					font-size: 30px;
-				}
-				.header__updated{
-					display: block;
-					text-align: center;
-					font-size: 18px;
-					line-height: 1;
-					text-align: center;
-					padding: 0;
-					height: auto;
-					margin: 0;
-					position: absolute;
-					bottom: 6px;
-					left: 0;
-					right: 0;
-					color: #ffffff;
-				}
-				section{
-					margin: 0;
-					width: auto;
-					padding: 0;
-				}
-				.pagelist{
-					margin: 0;
-					padding: 20px;
-					width: auto;
-				}
+			    body{
+			        padding: 0;
+			    }
+			    .preview iframe,.types{
+			        display: none;
+			    }
+			    .preview{
+			        position: static;
+			        text-align: center;
+			    }
+			    header{
+			        position: relative;
+			        height: auto;
+			        text-align: center;
+			    }
+			    header h1{
+			        display: block;
+			        width: auto;
+			        height: auto;
+			        padding: 20px 0 30px;
+			    }
+			    header h1 span{
+			        position: static;
+			    }
+			    header .icon{
+			        font-size: 30px;
+			    }
+			    .header__updated{
+			        display: block;
+			        text-align: center;
+			        font-size: 18px;
+			        line-height: 1;
+			        text-align: center;
+			        padding: 0;
+			        height: auto;
+			        margin: 0;
+			        position: absolute;
+			        bottom: 6px;
+			        left: 0;
+			        right: 0;
+			        color: $color-white;
+			    }
+			    section{
+			        margin: 0;
+			        width: auto;
+			        padding: 0;
+			    }
+			    .pagelist{
+			        margin: 0;
+			        padding: 20px;
+			        width: auto;
+			    }
 			}
 		</style>
 	</head>
@@ -436,7 +436,7 @@
 				<button data-mode="ipad" data-width="600">
 					<svg class="icon icon-tablet">
 						<use xlink:href="#icon-tablet"></use>
-					</svg><strong>Tablet XS </strong><span>600px</span>
+					</svg><strong>Tablet XS</strong><span>600px</span>
 				</button>
 				<button data-mode="ipad" data-width="768">
 					<svg class="icon icon-tablet">
@@ -448,20 +448,30 @@
 						<use xlink:href="#icon-tablet"></use>
 					</svg><strong>Tablet XL</strong><span>1024px</span>
 				</button>
+				<button data-mode="desktop" data-width="1200">
+					<svg class="icon icon-desktop">
+						<use xlink:href="#icon-desktop"></use>
+					</svg><strong>Desktop XS</strong><span>1200px</span>
+				</button>
 				<button data-mode="desktop" data-width="1366">
 					<svg class="icon icon-desktop">
 						<use xlink:href="#icon-desktop"></use>
-					</svg><strong>Desktop XS</strong><span>1366px</span>
+					</svg><strong>Desktop SM</strong><span>1366px</span>
 				</button>
 				<button class="is-active" data-mode="desktop" data-width="1440">
 					<svg class="icon icon-desktop">
 						<use xlink:href="#icon-desktop"></use>
-					</svg><strong>Desktop SM</strong><span>1440px</span>
+					</svg><strong>Desktop MD</strong><span>1440px</span>
 				</button>
 				<button data-mode="wide" data-width="1920">
 					<svg class="icon icon-wide">
 						<use xlink:href="#icon-wide"></use>
 					</svg><strong>Desktop XL</strong><span>1920px</span>
+				</button>
+				<button data-mode="wide" data-width="2500">
+					<svg class="icon icon-wide">
+						<use xlink:href="#icon-wide"></use>
+					</svg><strong>Desktop XXL</strong><span>2500px</span>
 				</button>
 			</nav>
 		</header>

@@ -1,0 +1,885 @@
+h1,
+.alfa,
+h2,
+.beta,
+h3,
+.gamma,
+h4,
+.delta,
+h5,
+.epsilon,
+h6,
+.zeta {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  color: $color-black;
+  font-family: $font-secondary;
+  font-weight: 700;
+  line-height: 1.2;
+  line-height: calc(2px + 2ex + 2px);
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  a {
+    color: inherit;
+  }
+}
+
+h1,
+.alfa {
+  @include font-size(46px);
+  @include bp(xsmall) {
+    @include font-size(46px);
+  }
+  @include bp(small) {
+    @include font-size(50px);
+  }
+}
+
+h2,
+.beta {
+  @include font-size(34px);
+  @include bp(xsmall) {
+    @include font-size(38px);
+  }
+  @include bp(small) {
+    @include font-size(42px);
+  }
+}
+
+h3,
+.gamma {
+  @include font-size(30px);
+  @include bp(xsmall) {
+    @include font-size(34px);
+  }
+  @include bp(small) {
+    @include font-size(36px);
+  }
+}
+
+h4,
+.delta {
+  @include font-size(28px);
+  @include bp(xsmall) {
+    @include font-size(30px);
+  }
+  @include bp(small) {
+    @include font-size(32px);
+  }
+}
+
+h5,
+.epsilon {
+  @include font-size(24px);
+  @include bp(xsmall) {
+    @include font-size(26px);
+  }
+  @include bp(small) {
+    @include font-size(28px);
+  }
+}
+
+h6,
+.zeta {
+  @include font-size(22px);
+  @include bp(xsmall) {
+    @include font-size(24px);
+  }
+  @include bp(small) {
+    @include font-size(26px);
+  }
+}
+
+// Headline FONT WEIGHT
+.h--font-light {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    font-weight: 300;
+  }
+}
+
+.h--font-regular {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    font-weight: 400;
+  }
+}
+
+.h--font-semibold {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    font-weight: 600;
+  }
+}
+
+.h--font-bold {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    font-weight: 700;
+  }
+}
+
+.h--font-black {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    font-weight: 900;
+  }
+}
+
+// Headline FONT FAMILY
+.h--font-primary {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    font-family: $font-primary;
+  }
+}
+
+.h--font-secondary {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    font-family: $font-secondary;
+  }
+}
+
+// Headline TEXT TRANSFORM
+.h--text-upper {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    text-transform: uppercase;
+  }
+}
+
+// Headline LINE HEIGHT
+.h--line-08 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 0.8;
+  }
+}
+
+.h--line-1 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 1;
+  }
+}
+
+.h--line-1-2 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 1.2;
+  }
+}
+
+.h--line-1-4 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 1.4;
+  }
+}
+
+.h--line-1-5 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 1.5;
+  }
+}
+
+.h--line-1-6 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 1.6;
+  }
+}
+
+.h--line-1-8 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 1.8;
+  }
+}
+
+.h--line-2 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 2;
+  }
+}
+
+.h--line-2-2 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 2.2;
+  }
+}
+
+.h--line-2-5 {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    line-height: 2.5;
+  }
+}
+
+@include bp(xsmall) {
+  .h--line-xs-1 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1;
+    }
+  }
+
+  .h--line-xs-1-2 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.2;
+    }
+  }
+
+  .h--line-xs-1-4 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.4;
+    }
+  }
+
+  .h--line-xs-1-6 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.6;
+    }
+  }
+}
+
+@include bp(small) {
+  .h--line-sm-1 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1;
+    }
+  }
+
+  .h--line-sm-1-2 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.2;
+    }
+  }
+
+  .h--line-sm-1-4 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.4;
+    }
+  }
+
+  .h--line-sm-1-6 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.6;
+    }
+  }
+}
+
+@include bp(medium) {
+  .h--line-md-1 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1;
+    }
+  }
+
+  .h--line-md-1-2 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.2;
+    }
+  }
+
+  .h--line-md-1-4 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.4;
+    }
+  }
+
+  .h--line-md-1-6 {
+    h1,
+    .alfa,
+    h2,
+    .beta,
+    h3,
+    .gamma,
+    h4,
+    .delta,
+    h5,
+    .epsilon,
+    h6,
+    .zeta {
+      line-height: 1.6;
+    }
+  }
+}
+
+// Headlines MARGIN
+.h--margin-0 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+}
+
+.h--margin-01 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.h--margin-02 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.h--margin-03 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.h--margin-04 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.h--margin-05 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.h--margin-06 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.h--margin-07 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.7rem;
+  }
+}
+
+.h--margin-08 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.h--margin-09 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.9rem;
+  }
+}
+
+.h--margin-1 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1rem;
+  }
+}
+
+.h--margin-1-2 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.h--margin-1-5 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.h--margin-2 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 2rem;
+  }
+}
+
+.h--margin-2-5 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.h--margin-3 {
+  .alfa,
+  .beta,
+  .gamma,
+  .delta,
+  .epsilon,
+  .zeta,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 3rem;
+  }
+}

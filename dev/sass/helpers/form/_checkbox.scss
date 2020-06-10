@@ -1,154 +1,153 @@
-/* .checkbox.radiobox
-	input#checkbox_payment_1.checkbox-hidden(type='radio', name="payment" required='')
-	label.checkbox-label(for='checkbox_payment_1')
-		span.checkbox-box
-		span.checkbox-text Platba kartou */
-	   
+/* .checkbox.checkbox--radiobox
+	input#checkbox_payment_1.checkbox__input-hidden(type='radio', name="payment" required='')
+	label.checkbox__label(for='checkbox_payment_1')
+		span.checkbox__box
+		span.checkbox__text Platba kartou */
 
 /* Checkbox helpers */
 
-.checkbox{
-	margin-bottom: 2rem;
+.checkbox {
+  margin-bottom: 2rem;
 }
 
-.checkbox-switcher{
-	position: relative;
-	display: inline-block;
-	width: 60px;
-	height: 26px;
-	.checkbox-label{
-		position: absolute;
-		cursor: pointer;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		border: 2px solid $color-black-normal;
-		border-radius: 35px;
-		background-color: transparent;
-	}
-	.checkbox-hidden:checked + .checkbox-label {
-		border-color: $color-purple-normal;
-		&:after {
-			display: none;
-		}
-		.checkbox-slider{
-			background-color: $color-purple-normal;
-			left: calc(100% - 20px);
-		}
-	}
+.input-hidden,
+.checkbox__input-hidden {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  // display: none;
+  // appearance: none;
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
 }
 
-.input-hidden ,
-.checkbox-hidden {
-	position: absolute;
-	opacity: 0;
-	z-index: -1;
-	// display: none;
-	// appearance: none;
-	// -webkit-appearance: none;
-	// -moz-appearance: none;
+.checkbox__label {
+  margin: 0;
+  padding-left: 0;
+  min-height: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding-top: 0;
+  cursor: pointer;
+  text-transform: none;
+  // justify-content: center;
 }
 
-.checkbox-label {
-	margin: 0;
-	padding-left: 0;
-	min-height: inherit;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	vertical-align: middle;
-	padding-top: 0;
-	cursor: pointer;
-	text-transform: none;
-	// justify-content: center;
+.checkbox__box {
+  position: relative;
+  max-width: 20px;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $color-black;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0;
 }
 
-.checkbox-box {
-	position: relative;
-	max-width: 20px;
-	flex: 0 0 20px;
-	width: 20px;
-	height: 20px;
-	border: 2px solid $color-black-normal;
-	cursor: pointer;
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 0;
+.checkbox__text {
+  max-width: calc(100% - 20px);
+  flex: 0 0 calc(100% - 20px);
+  width: calc(100% - 20px);
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  color: $color-black;
+  @include font-size(16px);
+  padding-left: 1rem;
+  line-height: 1.4;
 }
 
-.checkbox-text {
-	max-width: calc(100% - 20px);
-	flex: 0 0 calc(100% - 20px);
-	width: calc(100% - 20px);
-	display: block;
-	position: relative;
-	cursor: pointer;
-	text-align: left;
-	vertical-align: middle;
-	color: $color-black-normal;
-	@include font-size(16px);
-	padding-left: 1rem;
-	line-height: 1.4;
+.checkbox__slider {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  border-radius: 50% !important;
+  background-color: $color-black;
+  transition: all 0.2s ease;
 }
 
-.checkbox-slider{
-	position: absolute;
-    height: 18px;
-    width: 18px;
-    left: 2px;
-    bottom: 2px;
-    border-radius: 50%!important;
-    background-color: $color-black-normal;
-    transition: all .2s ease;
+.checkbox__input-hidden:checked + .checkbox__label {
+  .checkbox__box {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 5px;
+      width: 7px;
+      height: 13px;
+      border: solid $color-black;
+      border-width: 0 2px 2px 0;
+      transform: rotate(40deg);
+    }
+  }
 }
 
-
-.checkbox-hidden:checked + .checkbox-label {
-	.checkbox-box {
-		&:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0px;
-			left: 5px;
-			width: 7px;
-			height: 13px;
-			border: solid $color-black-normal;
-			border-width: 0 2px 2px 0;
-			transform: rotate(40deg);
-		}
-	}
+// Checkbox SWITCHER
+.checkbox--switcher {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 26px;
+  .checkbox__label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid $color-black;
+    border-radius: 35px;
+    background-color: transparent;
+  }
+  .checkbox__input-hidden:checked + .checkbox__label {
+    border-color: $color-purple;
+    &:after {
+      display: none;
+    }
+    .checkbox__slider {
+      background-color: $color-purple;
+      left: calc(100% - 20px);
+    }
+  }
 }
 
-.radiobox{
-	margin-bottom: 2rem;
-	.checkbox-box {
-		top: 0;
-		max-width: 20px;
-		flex: 0 0 20px;
-		width: 20px;
-		height: 20px;
-		border: 2px solid $color-black-normal;
-		// background-color: rgba(0,0,0,0.03);
-		@include border-radius(100%);
-	}
-	.checkbox-hidden:checked + .checkbox-label {
-		.checkbox-box {
-			// border: 2px solid $color-black-normal;
-			&:after {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				@include border-radius(100%);
-				margin-top: -5px;
-				margin-left: -5px;
-				width: 10px;
-				height: 10px;
-				background-color: $color-black-normal;
-			}
-		}
-	}
+// Checkbox RADIO
+.checkbox--radiobox {
+  margin-bottom: 2rem;
+  .checkbox__box {
+    top: 0;
+    max-width: 20px;
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $color-black;
+    // background-color: rgba(0,0,0,0.03);
+    @include border-radius(100%);
+  }
+  .checkbox__input-hidden:checked + .checkbox__label {
+    .checkbox__box {
+      // border: 2px solid $color-black;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include border-radius(100%);
+        margin-top: -5px;
+        margin-left: -5px;
+        width: 10px;
+        height: 10px;
+        background-color: $color-black;
+      }
+    }
+  }
 }

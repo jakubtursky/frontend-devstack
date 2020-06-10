@@ -1,81 +1,92 @@
 /* Color helpers */
-.bg-black-normal {
-    background-color: #000000;
+.bg-black {
+  background-color: $color-black;
 }
 
-.bg-purple-normal {
-    background-color: $color-purple-normal;
-
+.bg-purple {
+  background-color: $color-purple;
 }
 
-.bg-gray-light{
-    background-color: $color-gray-light;
+.bg-gray-light {
+  background-color: $color-gray-light;
 }
 
-.txt-color-white{
-    color: #ffffff;
+.txt-white {
+  color: $color-white;
 }
 
-.txt-color-black{
-    color: #000000;
+.txt-black {
+  color: $color-black;
 }
 
-.h-color-white{
-	h1, .alfa,
-	h2, .beta,
-	h3, .gamma,
-	h4, .delta,
-	h5, .epsilon,
-	h6, .zeta{
-		color: #ffffff;
-	}
+.h--white {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    color: $color-white;
+  }
 }
 
-.h-color-purple{
-	h1, .alfa,
-	h2, .beta,
-	h3, .gamma,
-	h4, .delta,
-	h5, .epsilon,
-	h6, .zeta{
-		color: $color-purple-normal;
-	}
+.h--purple {
+  h1,
+  .alfa,
+  h2,
+  .beta,
+  h3,
+  .gamma,
+  h4,
+  .delta,
+  h5,
+  .epsilon,
+  h6,
+  .zeta {
+    color: $color-purple;
+  }
 }
 
-.p-color-white{
-	p{
-		color: #ffffff;
-	}
+.p--white {
+  p {
+    color: $color-white;
+  }
 }
 
-.p-color-black{
-	p{
-		color: $color-black-normal;
-	}
+.p--black {
+  p {
+    color: $color-black;
+  }
 }
 
-.p-color-purple{
-	p{
-		color: $color-purple-normal;
-	}
+.p--purple {
+  p {
+    color: $color-purple;
+  }
 }
 
-ul.list-style.ul-color-white,
-.ul-color-white{
-	li{
-		color: #ffffff;
-		&:before{
-			background-color: #ffffff;
-		}
-	}
+ul.list-style.ul--white,
+.ul--white {
+  li {
+    color: $color-white;
+    &:before {
+      background-color: $color-white;
+    }
+  }
 }
 
-ol.list-style.ol-color-white,
-.ol-color-white{
-	li{
-		color: #ffffff;
-		&:before{
-			color: #ffffff;
-		}
-	}
+ol.list-style.ol-white,
+.ol-white {
+  li {
+    color: $color-white;
+    &:before {
+      color: $color-white;
+    }
+  }
 }

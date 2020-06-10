@@ -1,7 +1,7 @@
 // GENERAL
 $project-name: 'project-name';
-$project-font-1:'Open Sans';
-$project-font-2:'Montserrat';
+$project-font-1: 'Open Sans';
+$project-font-2: 'Montserrat';
 $debug: false;
 $debug-screen: false;
 $grid: true;
@@ -11,10 +11,6 @@ $dots-size: false;
 $border-radius: 5px;
 $transition-duration: 400ms;
 $transition-easing: 'ease-out';
-
-// HEADER VARIABLES
-$nav-bg-color: #000000;
-$nav-bg-color-active: #ffffff;
 
 // GRID VARIABLES
 $grid-columns: 12;
@@ -58,10 +54,14 @@ $epsilon: 16px;
 $zeta: 14px;
 
 // COLORS SETTINGS
-$color-black-normal: #000000;
-$color-purple-normal: #75439a;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-purple: #75439a;
 $color-gray-light: #f7f7f7;
-
 
 $color-field-error: #ea4335;
 $color-field-success: #55a954;
+
+// HEADER VARIABLES
+$nav-bg-color: $color-black;
+$nav-bg-color-active: $color-white;

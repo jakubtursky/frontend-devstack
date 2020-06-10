@@ -3,55 +3,53 @@
 input::-webkit-input-placeholder,
 select::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-    color: #817f7f;
+  color: #817f7f;
 }
 
 input::-moz-input-placeholder,
 select::-moz-input-placeholder,
 textarea::-moz-input-placeholder {
-    color: #817f7f;
+  color: #817f7f;
 }
 
 input:-ms-input-placeholder,
 select:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-    color: #817f7f;
+  color: #817f7f;
 }
 
-
-.form-field-white input::-webkit-input-placeholder,
-.form-field-white select::-webkit-input-placeholder,
-.form-field-white textarea::-webkit-input-placeholder {
-    color: white;
+.form__field--white input::-webkit-input-placeholder,
+.form__field--white select::-webkit-input-placeholder,
+.form__field--white textarea::-webkit-input-placeholder {
+  color: white;
 }
 
-.form-field-white input::-moz-input-placeholder,
-.form-field-white select::-moz-input-placeholder,
-.form-field-white textarea::-moz-input-placeholder {
-    color: white;
+.form__field--white input::-moz-input-placeholder,
+.form__field--white select::-moz-input-placeholder,
+.form__field--white textarea::-moz-input-placeholder {
+  color: white;
 }
 
-.form-field-white input:-ms-input-placeholder,
-.form-field-white select:-ms-input-placeholder,
-.form-field-white textarea:-ms-input-placeholder {
-    color: white;
+.form__field--white input:-ms-input-placeholder,
+.form__field--white select:-ms-input-placeholder,
+.form__field--white textarea:-ms-input-placeholder {
+  color: white;
 }
-
 
 input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder{
-    color: transparent;
-    opacity: 1;
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+  opacity: 1;
 }
 
 input:focus::-moz-input-placeholder,
-textarea:focus::-moz-input-placeholder{
-    color: transparent;
-    opacity: 1;
+textarea:focus::-moz-input-placeholder {
+  color: transparent;
+  opacity: 1;
 }
 
 input:focus:-moz-input-placeholder,
-textarea:focus:-moz-input-placeholder{
-    color: transparent;
-    opacity: 1;
+textarea:focus:-moz-input-placeholder {
+  color: transparent;
+  opacity: 1;
 }

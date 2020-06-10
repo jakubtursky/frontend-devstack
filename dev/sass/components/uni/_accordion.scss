@@ -1,71 +1,71 @@
 /* Accordion block */
 
-.accordion-item{
-	position: relative;
-	z-index: 2;
-	border-bottom: 1px solid $color-black-normal;
-	&.is-active{
-		> .accordion-trigger{
-			@include transition(none);
-			&:after{
-				background-image: url('../images/icons/chevron-up.svg');
-			}
-		}
-		> .accordion-content{
-			visibility: visible;
-			overflow: visible;
-			width: auto;
-			height: auto;
-			padding: 1rem 4rem 1rem 1rem;
-			opacity: 1;
+.accordion__item {
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid $color-black;
+  &.is-active {
+    > .accordion__trigger {
+      @include transition(none);
+      &:after {
+        background-image: url("../images/icons/chevron-up.svg");
+      }
+    }
+    > .accordion__content {
+      visibility: visible;
+      overflow: visible;
+      width: auto;
+      height: auto;
+      padding: 1rem 4rem 1rem 1rem;
+      opacity: 1;
 
-			@include transition(opacity, 250ms, ease);
-		}
-	}
+      @include transition(opacity, 250ms, ease);
+    }
+  }
 }
 
-.accordion-trigger{
-	position: relative;
-	display: block;
-	margin-bottom: 0;
-	padding: 1rem 4rem 1rem 1rem;
-	font-family: $font-secondary;
-	font-weight: 700;
-	cursor: pointer;
-	color: $color-black-normal;
-	// background-color: $color-black-normal;
+.accordion__trigger {
+  position: relative;
+  display: block;
+  margin-bottom: 0;
+  padding: 1rem 4rem 1rem 1rem;
+  font-family: $font-secondary;
+  font-weight: 700;
+  cursor: pointer;
+  color: $color-black;
+  // background-color: $color-black;
 
-	@include transition(none);
-	@include font-size(20px);
-	&:after{
-		content: ""!important;
-		width: 28px;
-		height: 19px;
-		display: block;
-		position: absolute;
-		top: 50%;
-		right: 10px;
-		transform: translate(-50%, -50%);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		background-image: url('../images/icons/chevron-down.svg');
-	}
+  @include transition(none);
+  @include font-size(20px);
+  &:after {
+    content: "" !important;
+    width: 28px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/icons/chevron-down.svg");
+  }
 }
 
-.accordion-content{
-	visibility: hidden;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	opacity: 0;
-	border-top: 0;
+.accordion__content {
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-top: 0;
 
-	@include transition(opacity, 250ms, ease);
+  @include transition(opacity, 250ms, ease);
 }
 
-@include bp(small){
-	.accordion-sm-group{
-		display: none;
-	}
+@include bp(small) {
+  .accordion--sm {
+    display: none;
+  }
 }

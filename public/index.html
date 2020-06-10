@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="">
-	<!-- Head -->
+	<!-- Head-->
 	<head>
 		<meta charset="utf-8">
-		<title> </title>
+		<title></title>
 		<meta name="description" content="">
 		<meta name="Robots" content="all, follow">
 		<meta name="Author" content="">
@@ -65,11 +65,12 @@
 		<link rel="stylesheet" href="css/app.css">
 	</head>
 	<body class="page-index overflow-x-hidden">
-		<!-- Page loader-->
+		<!-- Begin Page loader-->
 		<div class="page-loader">
 			<div class="loading-spinner"></div>
 		</div>
-		<!-- SVG group-->
+		<!-- End Page loader-->
+		<!-- Begin SVG group-->
 		<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs>
 				<symbol id="icon-play" viewBox="0 0 32 32">
@@ -98,7 +99,8 @@
 				</symbol>
 			</defs>
 		</svg>
-		<!-- Grid-->
+		<!-- End SVG group-->
+		<!-- Begin Grid-->
 		<div class="grid-switcher js-grid-switcher">
 			<div class="grid-switcher-text">grid</div>
 		</div>
@@ -154,31 +156,32 @@
 				gridContainer.classList.toggle('is-active');
 			});
 		</script>
-		<!-- Header -->
+		<!-- End Grid-->
+		<!-- Begin Header-->
 		<header class="header">
-			<div class="navigation">
-				<div class="header-flex"><span class="navigation-trigger"><span class="navigation-trigger-icon"></span></span>
-					<div class="header-logo"><a class="header-logo-link" href="index.html"><img class="img-responsive header-image" src="images/logo.svg" alt="" width="80"></a></div>
-					<nav class="nav-collapse">
-						<ul class="dropdown-list d-block d-lg-none">
-							<li class="dropdown-list-item is-active"><a class="dropdown-list-link" href="#">SK</a></li>
-							<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">CZ</a></li>
-							<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">EN</a></li>
-							<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">DE</a></li>
+			<div class="header__navigation js-navigation">
+				<div class="header__flex"><span class="header__hamburger js-navigation-trigger"><span class="header__hamburger-icon"></span></span>
+					<div class="header__logo"><a class="header__logo-link" href="index.html"><img class="img--responsive header__logo-image" src="images/logo.svg" alt="" width="80"></a></div>
+					<nav class="main-nav">
+						<ul class="dropdown__list d-block d-lg-none">
+							<li class="dropdown__item is-active"><a class="dropdown__link" href="#">SK</a></li>
+							<li class="dropdown__item"><a class="dropdown__link" href="#">CZ</a></li>
+							<li class="dropdown__item"><a class="dropdown__link" href="#">EN</a></li>
+							<li class="dropdown__item"><a class="dropdown__link" href="#">DE</a></li>
 						</ul>
-						<ul class="menu-list">
-							<li class="menu-list-item"><a class="menu-list-link" href="#">Menu link 1</a></li>
-							<li class="menu-list-item"><a class="menu-list-link" href="#">Menu link 2</a></li>
-							<li class="menu-list-item"><a class="menu-list-link" href="#">Menu link 3</a></li>
-							<li class="menu-list-item"><a class="menu-list-link" href="#">Menu link 4</a></li>
+						<ul class="main-nav__list">
+							<li class="main-nav__item"><a class="main-nav__link" href="#">Menu link 1</a></li>
+							<li class="main-nav__item"><a class="main-nav__link" href="#">Menu link 2</a></li>
+							<li class="main-nav__item"><a class="main-nav__link" href="#">Menu link 3</a></li>
+							<li class="main-nav__item"><a class="main-nav__link" href="#">Menu link 4</a></li>
 						</ul>
-						<div class="header-language-block dropdown-block js-dropdown-block margin-left-2 d-none d-lg-flex">
-							<div class="header-language-text dropdown-trigger js-dropdown-trigger">SK</div>
-							<div class="dropdown-content">
-								<ul class="dropdown-list">
-									<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">CZ</a></li>
-									<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">EN</a></li>
-									<li class="dropdown-list-item"><a class="dropdown-list-link" href="#">DE</a></li>
+						<div class="language dropdown js-dropdown-block margin-left-2 d-none d-lg-flex">
+							<div class="language__text dropdown__trigger js-dropdown-trigger">SK</div>
+							<div class="dropdown__content">
+								<ul class="dropdown__list">
+									<li class="dropdown__item"><a class="dropdown__link" href="#">CZ</a></li>
+									<li class="dropdown__item"><a class="dropdown__link" href="#">EN</a></li>
+									<li class="dropdown__item"><a class="dropdown__link" href="#">DE</a></li>
 								</ul>
 							</div>
 						</div>
@@ -186,9 +189,10 @@
 				</div>
 			</div>
 		</header>
-		<!-- Main content -->
+		<!-- End Header-->
+		<!-- Begin Main content-->
 		<main>
-			<!-- Section hero-->
+			<!-- Begin Section hero-->
 			<div class="section section-hero section-shaped">
 				<div class="shape shape-style-1 shape-primary"><span class="span-200">
 						<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +220,7 @@
 					<div class="container shape-container d-flex align-items-center py-lg">
 						<div class="col px-0">
 							<div class="row align-items-center justify-content-center">
-								<div class="col-lg-6 text-center h-color-white">
+								<div class="col-lg-6 text-center h--white">
 									<h1 class="alfa">Index</h1>
 								</div>
 							</div>
@@ -663,15 +667,16 @@
 					fill: #fff;
 				}
 			</style>
+			<!-- End Section hero-->
 		</main>
-		<!-- Footer -->
+		<!-- Begin Footer-->
 		<footer class="footer">
 			<div class="footer-top margin-bottom-2">
 				<div class="container-large">
 					<div class="row">
-						<ul class="footer-list col-12 txt-c">
-							<li class="footer-list-item"><a class="footer-list-link" href="#">Contact</a></li>
-							<li class="footer-list-item"><a class="footer-list-link" href="#">FAQ</a></li>
+						<ul class="footer__list col-12 txt-c">
+							<li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+							<li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
 						</ul>
 					</div>
 				</div>
@@ -680,28 +685,30 @@
 				<div class="container-large">
 					<div class="row">
 						<div class="col-12 txt-c">
-							<div class="footer-copy">© Copyright</div>
-							<div class="footer-author">WEB 2018 </div><a class="footer-link" href="#" target="_blank">www</a>
+							<div class="footer__copy">© Copyright</div>
+							<div class="footer__author">WEB 2018</div><a class="footer__link" href="#" target="_blank">www</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<!-- Modals -->
-		<div class="modal-overlay"></div>
-		<div class="modal-block" data-modal="modal">
-			<div class="modal-scroll">
-				<div class="modal-box"><span class="modal-close close-trigger js-close-modal">
+		<!-- End Footer-->
+		<!-- Begin Modals-->
+		<div class="modal__overlay js-modal-overlay"></div>
+		<div class="modal js-modal" data-modal="modal">
+			<modal__scroll>
+				<div class="modal__box"><span class="modal__close close-trigger js-close-modal">
 								<svg class="icon-svg icon-close">
 									<use xlink:href="#icon-close"></use>
 								</svg></span>
-					<div class="modal-body">
+					<div class="modal__body js-modal-body">
 						<div class="alfa">Modal title</div>
 					</div>
 				</div>
-			</div>
+			</modal__scroll>
 		</div>
-		<!-- Scripts -->
+		<!-- End Modals-->
+		<!-- Begin Scripts-->
 		<script src="js/plugins/jquery.min.js" defer></script>
 		<script src="//platform.linkedin.com/in.js" type="text/javascript" defer>
 			<lang>
@@ -725,5 +732,6 @@
 		<script src="js/plugins/parsley.min.js" defer></script>
 		<script src="js/localization/error-messages-sk.js" defer></script>
 		<script src="js/app.js" defer></script>
+		<!-- End Scripts-->
 	</body>
 </html>

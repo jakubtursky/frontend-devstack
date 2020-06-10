@@ -1,35 +1,35 @@
 /* Rate block */
 
-.rate-list{
-	display: flex;
-	align-items: center;
+.rate {
+  display: flex;
+  align-items: center;
 }
 
-.rate-list-item{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	// margin-right: 3px;
-	width: 40px;
-	height: 38px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: url(../images/rate.svg);
-	margin-left: 10px;
-	cursor: pointer;
-	&.is-active{
-		background-image: url(../images/rate-active.svg);
-	}
+.rate__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-right: 3px;
+  width: 40px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/rate.svg);
+  margin-left: 10px;
+  cursor: pointer;
+  &.is-active {
+    background-image: url(../images/rate-active.svg);
+  }
 }
 
-.rate-value{
-	display: inline-block;
-	vertical-align: middle;
-	text-align: right;
-	margin-top: 10px;
-	color: $color-black-normal;
-	font-family: $font-secondary;
-	font-weight: 700;
-	@include font-size(28px);
+.rate__value {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  margin-top: 10px;
+  color: $color-black;
+  font-family: $font-secondary;
+  font-weight: 700;
+  @include font-size(28px);
 }

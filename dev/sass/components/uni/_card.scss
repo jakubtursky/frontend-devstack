@@ -1,61 +1,58 @@
 /* Card block */
-.card-item{
-	margin-bottom: 2rem;
+.card__item {
+  margin-bottom: 2rem;
 }
 
-.card-content{
-	display: block;
-	overflow: hidden;
-	border: 1px solid $color-gray-light;
-	border-radius: 20px;
-	background-color: #ffffff;
-	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+.card__content {
+  display: block;
+  overflow: hidden;
+  border: 1px solid $color-gray-light;
+  border-radius: 20px;
+  background-color: $color-white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 
-	&:hover{
-		.card-title{
-			text-decoration: underline;
-		}
+  &:hover {
+    .card__title {
+      text-decoration: underline;
+    }
 
-		img{
-			transform: scale(1.05, 1.05);
-		}
-
-	}
-
+    img {
+      transform: scale(1.05, 1.05);
+    }
+  }
 }
 
-.card-image-block{
-	display: block;
-	overflow: hidden;
-	position: relative;
+.card__image-block {
+  display: block;
+  overflow: hidden;
+  position: relative;
 
-	img{
-		transition: transform 400ms ease-out;
-	}
-
+  img {
+    transition: transform 400ms ease-out;
+    will-change: transform;
+  }
 }
 
-.card-text-block{
-	padding: 2rem 2rem;
+.card__text-block {
+  padding: 2rem 2rem;
 }
 
-.card-btn{
-
+.card__btn {
 }
 
-.card-tag-list {
-	position: absolute;
-	top: 10px;
-	left: 10px;
+.card__tag-list {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-.card-tag-list-item {
-	display: inline-block;
-	border-radius: 10px;
-	padding: 5px 10px;
-	color: #ffffff;
-	font-weight: 700;
-	margin-bottom: 5px;
-	background-color: $color-purple-normal;
-	@include font-size(14px);
+.card__tag-list-item {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: $color-white;
+  font-weight: 700;
+  margin-bottom: 5px;
+  background-color: $color-purple;
+  @include font-size(14px);
 }

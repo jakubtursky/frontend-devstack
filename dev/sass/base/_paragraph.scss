@@ -1,0 +1,173 @@
+p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  color: $color-black;
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.5;
+
+  @include font-size(16px);
+  a {
+    color: currentColor;
+  }
+}
+
+// Paragraph FONT SIZE
+.p--size-12 {
+  p {
+    @include font-size(12px);
+  }
+}
+
+.p--size-14 {
+  p {
+    @include font-size(14px);
+  }
+}
+
+.p--size-18 {
+  p {
+    @include font-size(18px);
+  }
+}
+
+.p--size-20 {
+  p {
+    @include font-size(20px);
+  }
+}
+
+// Paragraph LINE HEIGHT
+.p--line-1 {
+  p {
+    line-height: 1;
+  }
+}
+
+.p--line-1-2 {
+  p {
+    line-height: 1.2;
+  }
+}
+
+.p--line-1-4 {
+  p {
+    line-height: 1.4;
+  }
+}
+
+.p--line-1-5 {
+  p {
+    line-height: 1.5;
+  }
+}
+
+.p--line-1-6 {
+  p {
+    line-height: 1.6;
+  }
+}
+
+.p--line-1-8 {
+  p {
+    line-height: 1.8;
+  }
+}
+
+.p--line-2 {
+  p {
+    line-height: 2;
+  }
+}
+
+// Paragraphs MARGIN
+.p--margin-0 {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.p--margin-01 {
+  p {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.p--margin-02 {
+  p {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.p--margin-03 {
+  p {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.p--margin-04 {
+  p {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.p--margin-05 {
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.p--margin-06 {
+  p {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.p--margin-07 {
+  p {
+    margin-bottom: 0.7rem;
+  }
+}
+
+.p--margin-08 {
+  p {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.p--margin-09 {
+  p {
+    margin-bottom: 0.9rem;
+  }
+}
+
+.p--margin-1 {
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.p--margin-1-2 {
+  p {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.p--margin-1-5 {
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.p--margin-2 {
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.p--margin-2-5 {
+  p {
+    margin-bottom: 2.5rem;
+  }
+}
