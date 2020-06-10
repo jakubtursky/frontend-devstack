@@ -17,6 +17,7 @@
   margin-right: -4px;
   color: $color-purple;
   @include font-size(24px);
+  &:focus,
   &:hover {
     color: darken($color-purple, 10%);
   }
@@ -68,6 +69,7 @@
 .pagination-list__item {
   display: inline-block;
   vertical-align: middle;
+  &:focus,
   &:hover,
   &.is-active {
     .pagination-list__link {

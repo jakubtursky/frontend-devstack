@@ -99,6 +99,7 @@
     fill: $color-black;
     @include font-size(22px);
   }
+  &:focus,
   &:hover {
     color: $color-black;
   }

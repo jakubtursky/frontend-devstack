@@ -20,6 +20,7 @@
     z-index: 99999999;
     font-family: $font-primary;
     &.is-active,
+    &:focus,
     &:hover {
       color: $color-black;
       background-color: #ffe5e5;

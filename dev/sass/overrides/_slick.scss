@@ -245,7 +245,7 @@
       display: block;
       width: 15px;
       height: 15px;
-      content: "";
+      content: '';
       transform: translate(-50%, -50%);
       border: 2px solid $color-purple;
       background-color: $color-white;
@@ -298,6 +298,7 @@
     align-items: center;
     justify-content: center;
     @include font-size(36px);
+    &:focus,
     &:hover {
       color: $color-purple;
     }

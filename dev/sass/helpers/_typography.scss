@@ -110,6 +110,7 @@
   a {
     text-decoration: underline;
     color: $color-black;
+    &:focus,
     &:hover {
       text-decoration: underline;
     }
@@ -163,7 +164,7 @@
         display: block;
         width: 6px;
         height: 6px;
-        content: "";
+        content: '';
         color: $color-black;
         border-radius: 100%;
         background-color: $color-black;
@@ -181,7 +182,7 @@
         left: 0;
         display: inline-block;
         line-height: 1.4;
-        content: counter(item) ".";
+        content: counter(item) '.';
         counter-increment: item;
         color: $color-black;
 

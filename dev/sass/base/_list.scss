@@ -23,6 +23,7 @@ ol.list-style {
   a {
     // color: $color-purple;
     text-decoration: underline;
+    &:focus,
     &:hover {
       text-decoration: underline;
     }
@@ -32,7 +33,7 @@ ol.list-style {
 ul.list-style {
   li {
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: 9px;
       left: 3px;
@@ -51,7 +52,7 @@ ol.list-style {
   counter-reset: item;
   li {
     &:before {
-      content: counter(item) ".";
+      content: counter(item) '.';
       counter-increment: item;
       position: absolute;
       top: 0;

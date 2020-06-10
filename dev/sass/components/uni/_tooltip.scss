@@ -6,6 +6,7 @@
   position: relative;
   z-index: 9;
   margin-left: 5px;
+  &:focus,
   &:hover {
     .tooltip__content {
       opacity: 1;
@@ -52,6 +53,7 @@
 }
 
 .tooltip__text--purple {
+  &:focus,
   &:hover {
     .tooltip__text--small {
       color: $color-white;
@@ -85,7 +87,7 @@
   @include transform(translateX(-50%));
   @include transition(bottom, 450ms, ease);
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -10px;
     left: 50%;

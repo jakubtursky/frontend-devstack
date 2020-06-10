@@ -24,11 +24,12 @@
   margin-right: 1rem;
   margin-bottom: 0.8rem;
   position: relative;
+  &:focus,
   &:hover {
     color: $color-purple;
   }
   &:after {
-    content: "/";
+    content: '/';
     position: absolute;
     right: -10px;
     top: 2px;

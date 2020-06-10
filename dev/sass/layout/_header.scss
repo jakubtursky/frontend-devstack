@@ -179,6 +179,7 @@
     text-align: left;
   }
 
+  &:focus,
   &:hover,
   &.is-active {
     .main-nav__link {

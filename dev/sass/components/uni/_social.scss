@@ -21,6 +21,7 @@
     @include font-size(18px);
     fill: $color-black;
   }
+  &:focus,
   &:hover {
     svg {
       fill: $color-purple;

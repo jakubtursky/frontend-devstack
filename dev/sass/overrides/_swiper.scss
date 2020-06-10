@@ -32,6 +32,7 @@
   height: 40px;
   width: 40px;
   cursor: pointer;
+  &:focus,
   &:hover {
     svg {
       fill: $color-purple;
@@ -59,7 +60,7 @@
   opacity: 1;
   background: transparent;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;

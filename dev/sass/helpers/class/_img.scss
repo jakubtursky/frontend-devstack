@@ -28,6 +28,7 @@
 .img-hover {
   display: block;
   overflow: hidden;
+  &:focus,
   &:hover {
     > img {
       transform: scale(1.05, 1.05);
